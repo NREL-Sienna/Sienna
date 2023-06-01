@@ -25,6 +25,19 @@ parsing capabilities
 - Optimized Serialization of Huge Datasets: Compressed file formats allow users to save vast quantities of energy systems data and read it easily.
 - Comprehensive Validation: Sienna\Data assigns a range of valid values for every parameter of every device the data describes, thereby automatically validating the values of each new representation of any device and then crosschecking its compatibility in the system, ultimately enabling consistent representation of millions of devices.
 
+### Sienna\Data Packages
+
+- [PowerSystems.jl](https://github.com/nrel-sienna/powersystems.jl)
+- [PowerNetworkMatrices.jl](https://github.com/nrel-sienna/powernetworkmatrices.jl)
+- [PowerFlows.jl](https://github.com/nrel-sienna/powerflows.jl)
+- [PowerSystemCaseBuilder.jl](https://ghithub.com/nrel-sienna/powersystemcasebuilder.jl)
+
+### Sienna\Data Installation
+
+```julia
+using Pkg; add(["PowerSystems", "PowerNetworkMatrices", "PowerFlows", "PowerSystemCaseBuilder"])
+```
+
 ## ![Sienna\Ops](./assets/Sienna-Ops-logo.png#gh-light-mode-only) ![Sienna\Ops](./assets/Sienna-Ops-logo-rev.png#gh-dark-mode-only)
 
 ### Key Features of Sienna\Ops
@@ -39,6 +52,19 @@ parsing capabilities
 - Efficient Definition of and Streamlined Solutions to New Optimization Problems: Sienna\Ops facilitates modification of complex optimization problems to represent new time periods, minimizing compilation time and allowing incumbent solutions from previous periods to guide the search for optimal results.
 - Scientifically Reproducible Simulations: Sienna\Ops' rigorous data models and dependable interfaces ensure that when users define a simulation, they can reproduce the exact same results tomorrow, next year, or whenever. This improves the scientific integrity of studies using Sienna and allows users to update simulations with new information as it comes to light.
 - Game-Changing Extensibility: Sienna\Ops allows for the development of new tools and models to represent new ways of operating devices, or entirely different decision processes or system.
+
+### Sienna\Ops Packages
+
+- [PowerSystems.jl](https://github.com/nrel-sienna/powersystems.jl)
+- [PowerSimulations.jl](https://github.com/nrel-sienna/powersimulations.jl)
+- [PowerGraphics.jl](https://github.com/nrel-sienna/powergraphics.jl)
+- [PowerAnalytics.jl](https://github.com/nrel-sienna/poweranalytics.jl)
+
+### Sienna\Ops Installation
+
+```julia
+using Pkg; add(["PowerSystems", "PowerSimulations", "PowerGraphics", "PowerAnalytics"])
+```
 
 ## ![Sienna\Dyn](./assets/Sienna-Dyn-logo.png#gh-light-mode-only) ![Sienna\Dyn](./assets/Sienna-Dyn-logo-rev.png#gh-dark-mode-only)
 
@@ -58,3 +84,14 @@ parsing capabilities
 - Provides flexibility when making trade-offs between precision and solution speed for distinct use cases and requirements
 - Increases levels of control for modelers to arrive at conclusions about system stability within a required parameter of precision
 - Allows researchers to implement new control techniques for modern inverter-based generation and assess the numerical requirements of the proposed controls
+
+### Sienna\Dyn Packages
+
+- [PowerSystems.jl](https://github.com/nrel-sienna/powersystems.jl)
+- [PowerSimulationsDynamics.jl](https://github.com/nrel-sienna/powersimulationsdynamics.jl)
+
+### Sienna\Dyn Installation
+
+```julia
+using Pkg; add(["PowerSystems", "PowerSimulationsDynamics"])
+```
