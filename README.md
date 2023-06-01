@@ -1,10 +1,10 @@
-# ![Sienna](./assets/Sienna-logo.png)
+# ![Sienna](./assets/Sienna-logo.png#gh-light-mode-only) ![Sienna](./assets/Sienna-logo-rev.png#gh-dark-mode-only)
 
 Sienna is an extensible set of open-source software applications that enables the planning, evaluation, and optimization rapidly transforming energy systems. The flexible modular framework incorporates novel solution algorithms, advanced data analytics, and scalable computing to enable efficient large-scale simulations of modern energy systems.
 
 The Sienna environment consists of a suite of three interoperable software applications, each focused on a different capability.
 
-## ![Sienna\Data](./assets/Sienna-Data-logo.png)
+## ![Sienna\Data](./assets/Sienna-Data-logo.png#gh-light-mode-only) ![Sienna\Data](./assets/Sienna-Data-logo-rev.png#gh-dark-mode-only)
 
 ### Key Features of Sienna\Data
 
@@ -21,7 +21,7 @@ parsing capabilities
 - Optimized Serialization of Huge Datasets: Compressed file formats allow users to save vast quantities of energy systems data and read it easily.
 - Comprehensive Validation: Sienna\Data assigns a range of valid values for every parameter of every device the data describes, thereby automatically validating the values of each new representation of any device and then crosschecking its compatibility in the system, ultimately enabling consistent representation of millions of devices.
 
-## ![Sienna\Ops](./assets/Sienna-Ops-logo.png)
+## ![Sienna\Ops](./assets/Sienna-Ops-logo.png#gh-light-mode-only) ![Sienna\Ops](./assets/Sienna-Ops-logo-rev.png#gh-dark-mode-only)
 
 ### Key Features of Sienna\Ops
 
@@ -36,7 +36,7 @@ parsing capabilities
 - Scientifically Reproducible Simulations: Sienna\Ops' rigorous data models and dependable interfaces ensure that when users define a simulation, they can reproduce the exact same results tomorrow, next year, or whenever. This improves the scientific integrity of studies using Sienna and allows users to update simulations with new information as it comes to light.
 - Game-Changing Extensibility: Sienna\Ops allows for the development of new tools and models to represent new ways of operating devices, or entirely different decision processes or system.
 
-## ![Sienna\Dyn](./assets/Sienna-Dyn-logo.png)
+## ![Sienna\Dyn](./assets/Sienna-Dyn-logo.png#gh-light-mode-only) ![Sienna\Dyn](./assets/Sienna-Dyn-logo-rev.png#gh-dark-mode-only)
 
 ### Key Features of Sienna\Dyn
 
