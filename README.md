@@ -27,10 +27,10 @@ parsing capabilities
 
 ### Sienna\Data Packages
 
-- [PowerSystems.jl](https://github.com/nrel-sienna/powersystems.jl)
-- [PowerNetworkMatrices.jl](https://github.com/nrel-sienna/powernetworkmatrices.jl)
-- [PowerFlows.jl](https://github.com/nrel-sienna/powerflows.jl)
-- [PowerSystemCaseBuilder.jl](https://ghithub.com/nrel-sienna/powersystemcasebuilder.jl)
+- [PowerSystems.jl](https://github.com/nrel-sienna/powersystems.jl) [![Documentation Build](https://github.com/NREL-Sienna/PowerSystems.jl/workflows/Documentation/badge.svg?)](https://nrel-sienna.github.io/PowerSystems.jl/stable)
+- [PowerNetworkMatrices.jl](https://github.com/nrel-sienna/powernetworkmatrices.jl) [![Documentation Build](https://github.com/NREL-Sienna/PowerNetworkMatrices.jl/workflows/Documentation/badge.svg?)](https://nrel-sienna.github.io/PowerNetworkMatrices.jl/stable)
+- [PowerFlows.jl](https://github.com/nrel-sienna/powerflows.jl) [![Documentation](https://github.com/NREL-Sienna/PowerFlows.jl/actions/workflows/docs.yml/badge.svg)](https://nrel-sienna.github.io/PowerFlows.jl/dev/)
+- [PowerSystemCaseBuilder.jl](https://ghithub.com/nrel-sienna/powersystemcasebuilder.jl) [![Documentation](https://github.com/NREL-Sienna/PowerSystems.jl/workflows/Documentation/badge.svg?)](https://nrel-sienna.github.io/PowerSystems.jl/stable/tutorials/powersystembuilder/)
 
 ### Sienna\Data Installation
 
@@ -55,10 +55,10 @@ using Pkg; add(["PowerSystems", "PowerNetworkMatrices", "PowerFlows", "PowerSyst
 
 ### Sienna\Ops Packages
 
-- [PowerSystems.jl](https://github.com/nrel-sienna/powersystems.jl)
-- [PowerSimulations.jl](https://github.com/nrel-sienna/powersimulations.jl)
-- [PowerGraphics.jl](https://github.com/nrel-sienna/powergraphics.jl)
-- [PowerAnalytics.jl](https://github.com/nrel-sienna/poweranalytics.jl)
+- [PowerSystems.jl](https://github.com/nrel-sienna/powersystems.jl) [![Documentation Build](https://github.com/NREL-Sienna/PowerSystems.jl/workflows/Documentation/badge.svg?)](https://nrel-sienna.github.io/PowerSystems.jl/stable)
+- [PowerSimulations.jl](https://github.com/nrel-sienna/powersimulations.jl) [![Documentation](https://github.com/NREL-Sienna/PowerSimulations.jl/workflows/Documentation/badge.svg)](https://nrel-sienna.github.io/PowerSimulations.jl/latest)
+- [PowerGraphics.jl](https://github.com/nrel-sienna/powergraphics.jl) [![Documentation Build](https://github.com/NREL-Sienna/PowerGraphics.jl/workflows/Documentation/badge.svg?)](https://nrel-sienna.github.io/PowerGraphics.jl/stable)
+- [PowerAnalytics.jl](https://github.com/nrel-sienna/poweranalytics.jl) [![Documentation Build](https://github.com/NREL-Sienna/PowerAnalytics.jl/workflows/Documentation/badge.svg?)](https://nrel-sienna.github.io/PowerAnalytics.jl/stable)
 
 ### Sienna\Ops Installation
 
@@ -87,8 +87,8 @@ using Pkg; add(["PowerSystems", "PowerSimulations", "PowerGraphics", "PowerAnaly
 
 ### Sienna\Dyn Packages
 
-- [PowerSystems.jl](https://github.com/nrel-sienna/powersystems.jl)
-- [PowerSimulationsDynamics.jl](https://github.com/nrel-sienna/powersimulationsdynamics.jl)
+- [PowerSystems.jl](https://github.com/nrel-sienna/powersystems.jl) [![Documentation Build](https://github.com/NREL-Sienna/PowerSystems.jl/workflows/Documentation/badge.svg?)](https://nrel-sienna.github.io/PowerSystems.jl/stable)
+- [PowerSimulationsDynamics.jl](https://github.com/nrel-sienna/powersimulationsdynamics.jl) [![Documentation](https://github.com/NREL-Sienna/PowerSimulationsDynamics.jl/workflows/Documentation/badge.svg)](https://nrel-sienna.github.io/PowerSimulationsDynamics.jl/stable)
 
 ### Sienna\Dyn Installation
 
