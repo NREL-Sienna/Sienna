@@ -35,7 +35,7 @@ parsing capabilities
 ### Sienna\Data Installation
 
 ```julia
-using Pkg; add(["PowerSystems", "PowerNetworkMatrices", "PowerFlows", "PowerSystemCaseBuilder"])
+using Pkg; Pkg.add(["PowerSystems", "PowerNetworkMatrices", "PowerFlows", "PowerSystemCaseBuilder"])
 ```
 
 ## ![Sienna\Ops](./assets/Sienna-Ops-logo.png#gh-light-mode-only) ![Sienna\Ops](./assets/Sienna-Ops-logo-rev.png#gh-dark-mode-only)
@@ -63,7 +63,7 @@ using Pkg; add(["PowerSystems", "PowerNetworkMatrices", "PowerFlows", "PowerSyst
 ### Sienna\Ops Installation
 
 ```julia
-using Pkg; add(["PowerSystems", "PowerSimulations", "PowerGraphics", "PowerAnalytics"])
+using Pkg; Pkg.add(["PowerSystems", "PowerSimulations", "PowerGraphics", "PowerAnalytics"])
 ```
 
 ## ![Sienna\Dyn](./assets/Sienna-Dyn-logo.png#gh-light-mode-only) ![Sienna\Dyn](./assets/Sienna-Dyn-logo-rev.png#gh-dark-mode-only)
@@ -93,5 +93,5 @@ using Pkg; add(["PowerSystems", "PowerSimulations", "PowerGraphics", "PowerAnaly
 ### Sienna\Dyn Installation
 
 ```julia
-using Pkg; add(["PowerSystems", "PowerSimulationsDynamics"])
+using Pkg; Pkg.add(["PowerSystems", "PowerSimulationsDynamics"])
 ```
