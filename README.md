@@ -1,4 +1,6 @@
-# ![Sienna](./assets/Sienna-logo.png#gh-light-mode-only) ![Sienna](./assets/Sienna-logo-rev.png#gh-dark-mode-only)
+# 
+![Sienna](assets/Sienna-logo.png#gh-light-mode-only)
+![Sienna](assets/Sienna-logo-rev.png#gh-dark-mode-only)
 
 Sienna is an extensible set of open-source software applications that enables the planning, evaluation, and optimization rapidly transforming energy systems. The flexible modular framework incorporates novel solution algorithms, advanced data analytics, and scalable computing to enable efficient large-scale simulations of modern energy systems.
 
@@ -8,7 +10,9 @@ The Sienna environment consists of a suite of three interoperable software appli
 - [Sienna\Ops](#--2)
 - [Sienna\Dyn](#--3)
 
-## ![Sienna\Data](./assets/Sienna-Data-logo.png#gh-light-mode-only) ![Sienna\Data](./assets/Sienna-Data-logo-rev.png#gh-dark-mode-only)
+## 
+![Sienna\Data](./assets/Sienna-Data-logo.png#gh-light-mode-only)
+![Sienna\Data](./assets/Sienna-Data-logo-rev.png#gh-dark-mode-only)
 
 ### Key Features of Sienna\Data
 
@@ -38,7 +42,9 @@ parsing capabilities
 using Pkg; Pkg.add(["PowerSystems", "PowerNetworkMatrices", "PowerFlows", "PowerSystemCaseBuilder"])
 ```
 
-## ![Sienna\Ops](./assets/Sienna-Ops-logo.png#gh-light-mode-only) ![Sienna\Ops](./assets/Sienna-Ops-logo-rev.png#gh-dark-mode-only)
+## 
+![Sienna\Ops](./assets/Sienna-Ops-logo.png#gh-light-mode-only)
+![Sienna\Ops](./assets/Sienna-Ops-logo-rev.png#gh-dark-mode-only)
 
 ### Key Features of Sienna\Ops
 
@@ -66,7 +72,9 @@ using Pkg; Pkg.add(["PowerSystems", "PowerNetworkMatrices", "PowerFlows", "Power
 using Pkg; Pkg.add(["PowerSystems", "PowerSimulations", "PowerGraphics", "PowerAnalytics"])
 ```
 
-## ![Sienna\Dyn](./assets/Sienna-Dyn-logo.png#gh-light-mode-only) ![Sienna\Dyn](./assets/Sienna-Dyn-logo-rev.png#gh-dark-mode-only)
+## 
+![Sienna\Dyn](./assets/Sienna-Dyn-logo.png#gh-light-mode-only)
+![Sienna\Dyn](./assets/Sienna-Dyn-logo-rev.png#gh-dark-mode-only)
 
 ### Key Features of Sienna\Dyn
 
