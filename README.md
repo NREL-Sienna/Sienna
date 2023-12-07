@@ -10,7 +10,7 @@ The Sienna environment consists of a suite of three interoperable software appli
 - [Sienna\Ops](#--2)
 - [Sienna\Dyn](#--3)
 
-## 
+## Sienna\Data
 ![Sienna\Data](./assets/Sienna-Data-logo.png#gh-light-mode-only)
 ![Sienna\Data](./assets/Sienna-Data-logo-rev.png#gh-dark-mode-only)
 
@@ -42,7 +42,7 @@ parsing capabilities
 using Pkg; Pkg.add(["PowerSystems", "PowerNetworkMatrices", "PowerFlows", "PowerSystemCaseBuilder"])
 ```
 
-## 
+## Sienna\Ops
 ![Sienna\Ops](./assets/Sienna-Ops-logo.png#gh-light-mode-only)
 ![Sienna\Ops](./assets/Sienna-Ops-logo-rev.png#gh-dark-mode-only)
 
@@ -72,7 +72,7 @@ using Pkg; Pkg.add(["PowerSystems", "PowerNetworkMatrices", "PowerFlows", "Power
 using Pkg; Pkg.add(["PowerSystems", "PowerSimulations", "PowerGraphics", "PowerAnalytics"])
 ```
 
-## 
+## Sienna\Dyn
 ![Sienna\Dyn](./assets/Sienna-Dyn-logo.png#gh-light-mode-only)
 ![Sienna\Dyn](./assets/Sienna-Dyn-logo-rev.png#gh-dark-mode-only)
 
