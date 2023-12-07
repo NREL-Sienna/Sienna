@@ -6,9 +6,9 @@ Sienna is an extensible set of open-source software applications that enables th
 
 The Sienna environment consists of a suite of three interoperable software applications, each focused on a different capability.
 
-- [Sienna\Data](#Sienna\Data)
-- [Sienna\Ops](#Sienna\Ops)
-- [Sienna\Dyn](#Sienna\Dyn)
+- [Sienna\Data](#siennadata)
+- [Sienna\Ops](#siennaops)
+- [Sienna\Dyn](#siennadyn)
 
 ## Sienna\Data
 ![Sienna\Data](./assets/Sienna-Data-logo.png#gh-light-mode-only)
