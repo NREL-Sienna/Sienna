@@ -2,7 +2,7 @@
 ![Sienna](assets/Sienna-logo.png#gh-light-mode-only)
 ![Sienna](assets/Sienna-logo-rev.png#gh-dark-mode-only)
 
-Sienna is an extensible set of open-source software applications that enables the planning, evaluation, and optimization rapidly transforming energy systems. The flexible modular framework incorporates novel solution algorithms, advanced data analytics, and scalable computing to enable efficient large-scale simulations of modern energy systems.
+Sienna is an extensible set of open-source software applications that enables the planning, evaluation, and optimization of rapidly transforming energy systems. The flexible modular framework incorporates novel solution algorithms, advanced data analytics, and scalable computing to enable efficient large-scale simulations of modern energy systems.
 
 The Sienna environment consists of a suite of three interoperable software applications, each focused on a different capability.
 
