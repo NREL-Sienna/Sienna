@@ -34,7 +34,7 @@ parsing capabilities
 - [PowerSystems.jl](https://github.com/nrel-sienna/powersystems.jl) [![Documentation Build](https://github.com/NREL-Sienna/PowerSystems.jl/workflows/Documentation/badge.svg?)](https://nrel-sienna.github.io/PowerSystems.jl/stable)
 - [PowerNetworkMatrices.jl](https://github.com/nrel-sienna/powernetworkmatrices.jl) [![Documentation Build](https://github.com/NREL-Sienna/PowerNetworkMatrices.jl/workflows/Documentation/badge.svg?)](https://nrel-sienna.github.io/PowerNetworkMatrices.jl/stable)
 - [PowerFlows.jl](https://github.com/nrel-sienna/powerflows.jl) [![Documentation](https://github.com/NREL-Sienna/PowerFlows.jl/actions/workflows/docs.yml/badge.svg)](https://nrel-sienna.github.io/PowerFlows.jl/dev/)
-- [PowerSystemCaseBuilder.jl](https://ghithub.com/nrel-sienna/powersystemcasebuilder.jl) [![Documentation](https://github.com/NREL-Sienna/PowerSystems.jl/workflows/Documentation/badge.svg?)](https://nrel-sienna.github.io/PowerSystems.jl/stable/tutorials/powersystembuilder/)
+- [PowerSystemCaseBuilder.jl](https://github.com/nrel-sienna/powersystemcasebuilder.jl) [![Documentation](https://github.com/NREL-Sienna/PowerSystems.jl/workflows/Documentation/badge.svg?)](https://nrel-sienna.github.io/PowerSystems.jl/stable/tutorials/powersystembuilder/)
 
 ### Sienna\Data Installation
 
