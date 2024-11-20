@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-marketing-agency.html %}
+      <!--header-v8 end-->
+
+
+      <div class="promo promo-primary-container">
+        {% assign banner = page.banner %}
+        <div class="section-bg promo-primary-bg">
+          <div class="inside"></div>
+        </div>
+        <div class="step-position"></div>
+        <div class="promo-primary">
+          <div class="container">
+            <div class="promo-primary-content">
+              <span>{{ banner.sub_title}}</span>
+              <h2>{{banner.title}}</h2>
+              <p>{{ banner.content}}</p>
+              {% assign button = banner.button %}
+              <a href="{{button.link}}" class="btn-default">{{button.label}}</a>
+            </div>
+          </div>
+          <div class="square"></div>
+        </div>
+      </div>
+
+      <section class="banner-sec" style="display: none">
+        {% assign banner = page.banner %}
+        <div class="section-bg promo-primary-bg">
+          <div class="inside"></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-6">
+              <div
+                class="banner-text wow fadeInUp"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+                <span>{{ banner.sub_title}}</span>
+                <h2>{{ banner.title}}</h2>
+                <p>{{ banner.content}}</p>
+                {% assign button = banner.button %}
+                <a href="{{button.link}}" class="btn-default"
+                  >{{button.label}}</a
+                >
+              </div>
+              <!--banner-text end-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--banner-sec end-->
+
+      <section class="partners-section">
+        <div class="container">
+          <div
+            class="pt-logos text-center d-flex flex-wrap justify-content-center align-items-center"
+          >
+            {% for clients in site.data.clients.clients-v5 %}
+            <div class="pt-logo">
+              <a href="{{clients.link}}" title="">
+                <img src="{{clients.image}}" alt="" />
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+          <!--pt-logos end-->
+        </div>
+      </section>
+      <!--partners-section end-->
+
+      <section class="services-home">
+        {% assign services = page.services %}
+        <div class="vector-bg"></div>
+        <div class="container">
+          <div class="services-content">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="service-text">
+                  <span>{{services.section_title}}</span>
+                  <h2>{{services.title}}</h2>
+                  <h3>{{services.label}}</h3>
+                  <p>{{services.content}}</p>
+                  <a href="{{services.link}}" title="" class="btn-default no-bg"
+                    >{{services.button}}</a
+                  >
+                </div>
+                <!--service-text end-->
+              </div>
+              <div class="col-lg-6">
+                <div class="services-card-list">
+                  {% for service in services.service %}
+                  <div
+                    class="service-card wow {{service.class}}"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="{{service.delay}}"
+                  >
+                    <div class="service-icon">
+                      <img src="{{service.icon}}" alt="" />
+                    </div>
+                    <div class="service-info">
+                      <h3>{{service.title}}</h3>
+                      <p>{{service.content}}</p>
+                    </div>
+                  </div>
+                  <!--service-card end-->
+                  {% endfor %}
+                </div>
+                <!--services-card-list end-->
+              </div>
+            </div>
+          </div>
+          <!--services-content end-->
+        </div>
+      </section>
+      <!--services-home end-->
+
+      <section class="projects-sec">
+        <div class="container">
+          <div class="projects-sec-content">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="mile-projects v1">
+                  <div class="mile-project">
+                    <div
+                      class="project-thumb"
+                      style="background-color: #78901b"
+                    >
+                      <img src="assets/img/pic21.png" alt="" class="w-100" />
+                    </div>
+                    <div class="project-info">
+                      <span>Branding</span>
+                      <h2>
+                        <a href="17_portfolio_single_layout_1.html" title=""
+                          >Ls. Boxes Package</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                  <!--mile-project end-->
+                  <div class="mile-project">
+                    <div
+                      class="project-thumb"
+                      style="background-color: #5169fb"
+                    >
+                      <img src="assets/img/pic22.png" alt="" class="w-100" />
+                    </div>
+                    <div class="project-info">
+                      <span>Interaction - Motion</span>
+                      <h2>
+                        <a href="17_portfolio_single_layout_1.html" title=""
+                          >Lewis Creative Agency</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                  <!--mile-project end-->
+                </div>
+                <!--mile-projects end-->
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="mile-projects v2">
+                  {% assign projects = page.projects %}
+                  <div
+                    class="section-title wow fadeInUp"
+                    data-wow-duration="1000ms"
+                  >
+                    <span>{{projects.title}}</span>
+                    <h2>{{ projects.sub_title }}</h2>
+                  </div>
+                  <!--section-title end-->
+                  <div class="mile-project">
+                    <div
+                      class="project-thumb"
+                      style="background-color: #f1445a"
+                    >
+                      <img src="assets/img/pic23.png" alt="" class="w-100" />
+                    </div>
+                    <div class="project-info">
+                      <span>Interaction - Motion</span>
+                      <h2>
+                        <a href="17_portfolio_single_layout_1.html" title=""
+                          >Bynazo Finance Manage App</a
+                        >
+                      </h2>
+                    </div>
+                  </div>
+                  <!--mile-project end-->
+                  <a
+                    href="15_portfolio_horizontal_scroll.html"
+                    title=""
+                    class="btn-default no-bg"
+                    >See More Projects <i class="lni lni-chevron-right"></i
+                  ></a>
+                </div>
+                <!--mile-projects end-->
+              </div>
+            </div>
+          </div>
+          <!--projects-sec-content end-->
+        </div>
+      </section>
+      <!--projects-sec end-->
+
+      {% include testimonial/marketing-agency.html %}
+      <section class="team-sec">
+        <div class="container">
+          <div class="team-sec-content">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <div class="team-thumb wow zoomIn" data-wow-duration="1000ms">
+                  <img src="assets/img/img4.png" alt="" />
+                </div>
+                <!--testi-thumbe end-->
+              </div>
+              <div class="col-lg-5">
+                <div class="team-info">
+                  {% assign team = page.team %}
+                  <div class="section-title">
+                    <span>{{team.section_title}}</span>
+                    <h2>{{team.title}}</h2>
+                  </div>
+                  <p>{{team.content}}</p>
+                  <a href="{{team.link}}" title="" class="btn-default no-bg"
+                    >{{team.button}}</a
+                  >
+                </div>
+                <!--testi-info end-->
+              </div>
+            </div>
+          </div>
+          <!--test-sec-content end-->
+        </div>
+      </section>
+      <!--testi-sec end-->
+
+      <section class="featured-post-sec">
+        {% assign posts = page.posts%}
+        <div class="container">
+          <div class="featured-post">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="featured-post-text">
+                  <span>{{posts.section_title}}</span>
+                  <h2>{{posts.title}}</h2>
+                  <p>{{posts.content}}</p>
+                  <a href="{{posts.link}}" title="" class="btn-default"
+                    >{{posts.button}} <i class="lni lni-chevron-right"></i
+                  ></a>
+                </div>
+                <!--featured-post-text end-->
+              </div>
+              <div class="col-lg-6">
+                <div class="vector-img">
+                  <img src="{{posts.image}}" alt="" />
+                </div>
+                <!--vector-img end-->
+              </div>
+            </div>
+          </div>
+          <!--featured-content end-->
+          <div class="row">
+            {% for blog in site.blog limit: 4 %}
+            <div class="col-lg-6" style="margin-top: 20px">
+              <div
+                class="mile-post wow fadeIn"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+                <div class="mile-thumb">
+                  <img src="{{blog.layout_image}}" alt="" />
+                </div>
+                <div class="mile-info">
+                  <span
+                    >{{ blog.date | date_to_long_string: "ordinal", "US"
+                    }}</span
+                  >
+                  <h2>
+                    <a href="{{blog.url}}" title="">{{blog.title}}</a>
+                  </h2>
+                </div>
+              </div>
+              <!--mile-post end-->
+            </div>
+            {% endfor%}
+          </div>
+        </div>
+      </section>
+      <!--featured-post-sec end-->
+
+      <section class="contact-sec">
+        <div class="container">
+          <div
+            class="sec-title text-center wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <h2>Ready to get started</h2>
+            <span>Ask away! we will response within 24 hours</span>
+          </div>
+          <!--sec-title end-->
+          <form class="contact-form">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form--control"
+                    id="name"
+                    name="name"
+                    placeholder=""
+                  />
+                  <label for="name">Full Name</label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form--control"
+                    id="email"
+                    name="email"
+                    placeholder=""
+                  />
+                  <label for="email">Email Address <span>*</span></label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form--control"
+                    id="subject"
+                    name="subject"
+                    placeholder=""
+                  />
+                  <label for="subject">Subject</label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form--control" id="message"></textarea>
+                  <label for="message">Your message here</label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-12">
+                <div class="form-group text-center m-0">
+                  <button type="submit" class="btn-default no-bg">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!--contact-sec end-->
+
+      {% include footer/footer-marketing-agency.html %}
+      <!--footer end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+    <script>
+      $(document).on("ready", function () {
+        if ($(window).width() > 768) {
+          // init controller
+          var controller = new ScrollMagic.Controller();
+
+          // build scenes
+          new ScrollMagic.Scene({
+            triggerElement: ".promo-primary-container",
+            triggerHook: 0,
+            duration: "25%",
+          })
+            // .setClassToggle('.brand', 'white')
+            // .addIndicators()
+            .addTo(controller);
+
+          new ScrollMagic.Scene({
+            triggerElement: ".promo-primary-container",
+            triggerHook: 0,
+            duration: "48%",
+          })
+            .setTween(".promo-primary-bg", {
+              left: "-68%",
+              backgroundPosition: "620px 0",
+              ease: Linear.easeNone,
+            })
+            // .addIndicators()
+            .addTo(controller);
+
+          new ScrollMagic.Scene({
+            triggerElement: ".promo-primary-container",
+            triggerHook: 0,
+            duration: "50%",
+          })
+            .setTween(".promo-primary-content", {
+              left: 0,
+              ease: Linear.easeNone,
+            })
+            // .addIndicators()
+            .addTo(controller);
+
+          new ScrollMagic.Scene({
+            triggerElement: ".promo-primary-container",
+            triggerHook: 0,
+            duration: "50%",
+          })
+            .setTween(".promo-primary .square", {
+              left: "75%",
+              ease: Linear.easeNone,
+            })
+            // .addIndicators()
+            .addTo(controller);
+
+          new ScrollMagic.Scene({
+            triggerElement: ".step-position",
+            triggerHook: 0,
+            duration: "130%",
+          })
+            .setTween(".promo-primary .square", {
+              top: "85%",
+              ease: Linear.easeNone,
+            })
+            // .addIndicators()
+            .addTo(controller);
+
+          new ScrollMagic.Scene({
+            triggerElement: ".step-position",
+            triggerHook: 0,
+            duration: "100%",
+          })
+            .setTween(".promo-primary", {
+              position: "absolute",
+              ease: Linear.easeNone,
+            })
+            // .addIndicators()
+            .addTo(controller);
+        }
+      });
+    </script>
+    {% include chat-script.html %}
+
+  </body>
+</html>

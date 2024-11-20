@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-default.html %}
+      <section class="contact-v1-map">
+        <div class="container-fluid">
+          <div class="mapouter">
+            {% include gmap-v1.html%}
+            <div
+              class="map-address wow fadeIn"
+              data-wow-duration="1000ms"
+              data-wow-delay="0ms"
+            >
+              <h3>Brooklyn, <span>New York</span></h3>
+              <p>
+                {{ site.data.settings.contact_settings.address1 }}
+              </p>
+              <span class="mail"
+                >Email:
+                <a href="{{site.data.settings.contact_settings.mailto}}" title=""
+                  >{{site.data.settings.contact_settings.email}}</a
+                ></span
+              >
+              <span class="call-dir">Call directly:</span>
+              <h2 class="phone">{{site.data.settings.contact_settings.phone_number}}</h2>
+              <div class="office-addrs">
+                <h3>Brand Offices:</h3>
+                <ul>
+                  <li><a href="#" title="">Allentown PA</a></li>
+                  <li><a href="#" title="">Allanta, GA</a></li>
+                  <li><a href="#" title="">Chicago, IL</a></li>
+                  <li><a href="#" title="">Dallas, TX</a></li>
+                  <li><a href="#" title="">Edison, NJ</a></li>
+                  <li><a href="#" title="">Houston, TX</a></li>
+                </ul>
+              </div>
+              <a href="#" title="" class="btn-default box-shadow-none"
+                >Get In Touch</a
+              >
+            </div>
+            <!--map-address end-->
+          </div>
+          <!--map-outer end-->
+        </div>
+      </section>
+      <!--contact-v1-map end-->
+
+      <section class="contact-sec no-bg">
+        <div class="container">
+          <div
+            class="sec-title text-center wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <h2>Ready to get started</h2>
+            <span>Ask away! we will response within 24 hours</span>
+          </div>
+          <!--sec-title end-->
+          <form class="contact-form">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form--control"
+                    id="name"
+                    name="name"
+                    placeholder=""
+                  />
+                  <label for="name">Full Name</label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form--control"
+                    id="email"
+                    name="email"
+                    placeholder=""
+                  />
+                  <label for="email">Email Address <span>*</span></label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form--control"
+                    id="subject"
+                    name="subject"
+                    placeholder=""
+                  />
+                  <label for="subject">Subject</label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form--control" id="message"></textarea>
+                  <label for="message">Your message here</label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-12">
+                <div class="form-group text-center m-0">
+                  <button type="submit" class="btn-default no-bg">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      {% include footer/footer-team.html %}
+      <!--footer end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+    {% include chat-script.html %}
+
+  </body>
+</html>

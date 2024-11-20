@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-comingsoon.html %}
+      <!--header end-->
+
+      <section class="coming-soon-page">
+        <div class="container">
+          <div class="cm-content">
+            <h2>{{page.title}}</h2>
+            <img src="{{page.image}}" alt="" />
+            <h3>{{page.subtitle}}</h3>
+            <div class="time-counter" id="clockdiv">
+              <ul>
+                <li>
+                  <h2 class="days">20</h2>
+                  <span>Days</span>
+                </li>
+                <li>
+                  <h2 class="hours">09</h2>
+                  <span>Hours</span>
+                </li>
+                <li>
+                  <h2 class="minutes">59</h2>
+                  <span>Minutes</span>
+                </li>
+                <li>
+                  <h2 class="seconds">47</h2>
+                  <span>Seconds</span>
+                </li>
+              </ul>
+            </div>
+            <ul class="social-links">
+              <li>
+                <a href="#" title=""><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="#" title=""><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#" title=""><i class="fab fa-behance"></i></a>
+              </li>
+              <li>
+                <a href="#" title=""><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!--cm-content end-->
+        </div>
+      </section>
+      <!--coming-soon-page end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>

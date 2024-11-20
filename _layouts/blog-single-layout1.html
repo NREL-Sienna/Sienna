@@ -1,0 +1,159 @@
+---
+layout: default
+---
+<section class="page-content bb-0">
+  <div class="container v2">
+    <div class="featured-post-sec">
+      <div class="featured-post-slider">
+        <div class="featured-post">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="vector-img">
+                <img src="{{ page.image }}" alt="" />
+              </div>
+              <!--vector-img end-->
+            </div>
+          </div>
+        </div>
+        <!--featured-content end-->
+      </div>
+      <!--featured-post-slider end-->
+    </div>
+    <!--featured-post-sec end-->
+    <div class="single-post-layout1">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="blog-posts-layout2">
+            <div class="bg-post">
+              <div class="bg-post-info">
+                <ul class="meta">
+                  <li>
+                    {{ page.date | date_to_long_string: "ordinal", "US" }}
+                  </li>
+                </ul>
+                <h2>{{page.title}}</h2>
+                {{ page.content}}
+                <div class="row post-cont align-items-center">
+                  <div class="col-lg-6 col-md-6">
+                    <ul class="post-tags">
+                      {% for cat in site.categories %}
+                      {% assign cat_name = cat | first %}
+                      {% assign cat_size = cat | last | size %}
+                      {% assign cat_slug = cat_name | slugify  %}
+                      <li>
+                        <a href="{{ site.baseurl }}/category/{{cat_slug}}" title="">{{cat_name}}</a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  {% include social-share.html %}
+                </div>
+              </div>
+            </div>
+            <!--bg-posted-author end-->
+            <div class="related-posts-ly">
+              <h3>Related Posts</h3>
+              <div class="blog-posts-v10 row">
+                {% for post in site.posts limit: 2 %}
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="post-v10">
+                    <div class="post-thumb">
+                      <img
+                        src="{{ post.layout_image }}"
+                        alt=""
+                        class="w-100"
+                      />
+                    </div>
+                    <div class="post-info">
+                      <h2>
+                        <a href="{{blog.url}}" title=""
+                          >{{ post.title}}
+                        </a>
+                      </h2>
+                      <p>{{ post.description}}</p>
+                      <span class="posted-on"
+                        >{{ page.date | date_to_long_string: "ordinal",
+                        "US" }} by</span
+                      >
+                    </div>
+                  </div>
+                  <!--post-v10 end-->
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="sidebar blog-sidebar">
+            {% include search.html %}
+            {% include categories-widget.html %}
+            <!--widget-categories end-->
+            <div class="widget widget-popular-posts">
+              <h3 class="widget-title">Popular Posts</h3>
+              <ul class="wd-posts">
+                <li>
+                  <div class="pp-post">
+                    <h3>
+                      <a href="#" title=""
+                        >Brief Guide into Social Media Marketing Trends
+                        2020</a
+                      >
+                    </h3>
+                    <span>June 21st, 2020</span>
+                  </div>
+                  <!--pp-post end-->
+                </li>
+                <li>
+                  <div class="pp-post">
+                    <h3>
+                      <a href="#" title=""
+                        >How to Make Your Brand Great Again!</a
+                      >
+                    </h3>
+                    <span>June 25th, 2020</span>
+                  </div>
+                  <!--pp-post end-->
+                </li>
+                <li>
+                  <div class="pp-post">
+                    <h3>
+                      <a href="#" title=""
+                        >UI Inspiration: 20+ Creative Tab Bar
+                        Animations</a
+                      >
+                    </h3>
+                    <span>May 16, 2020</span>
+                  </div>
+                  <!--pp-post end-->
+                </li>
+              </ul>
+            </div>
+            <!--widget-popular-posts end-->
+            <div class="widget widget-tags">
+            									<h3 class="widget-title">Popular Tags</h3>
+            									<ul class="tags-link">
+            										<li><a href="#" title="">wordpress</a></li>
+            										<li><a href="#" title="">theme</a></li>
+            										<li><a href="#" title="">portfolio</a></li>
+            										<li><a href="#" title="">color</a></li>
+            										<li><a href="#" title="">inspiration</a></li>
+            										<li><a href="#" title="">web</a></li>
+            										<li><a href="#" title="">site</a></li>
+            										<li><a href="#" title="">creativity</a></li>
+            										<li><a href="#" title="">daily</a></li>
+            									</ul>
+            </div>            <!--widget-tags end-->
+            <div class="widget widget-adver">
+              <img src="/assets/img/ad-img2.jpg" alt="" class="w-100" />
+            </div>
+            <!--widget-adver end-->
+          </div>
+          <!--sidebar end-->
+        </div>
+      </div>
+    </div>
+    <!--single-post-layout1 end-->
+  </div>
+</section>
+{% include disqus_comments.html %}

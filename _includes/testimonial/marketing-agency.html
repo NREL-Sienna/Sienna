@@ -1,0 +1,37 @@
+<section class="testimonial-sec">
+  {% assign testimonials = page.testimonials %}
+  <div class="container">
+    <div class="section-title">
+      <span>{{testimonials.title}}</span>
+      <h2>{{testimonials.subtitle}}</h2>
+    </div>
+    <!--section-title end-->
+    <div class="testimonial-slider dots-hide">
+      {% assign testimonials = page.testimonials %}
+      <div class="row testimo-slider">
+        {% for testimonials in site.data.testimonials.testimonials-v6 %}
+        <div class="col-lg-6">
+          <div class="testimonial-slide">
+            <p>“{{testimonials.content}}”</p>
+            <div class="thmb-row">
+              <div class="thmb-img">
+                <img src="{{testimonials.image}}" alt="" />
+              </div>
+              <div class="thmb-info">
+                <h3>{{testimonials.name}}</h3>
+                <span
+                  >{{testimonials.position}}<em>
+                    {{testimonials.company}}</em
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <!--testimonial-slide end-->
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <!--testimonial-slider end-->
+  </div>
+</section>

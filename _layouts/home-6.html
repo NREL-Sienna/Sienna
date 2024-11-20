@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-startup.html %}
+      <!--header-v6 end-->
+
+
+      <section class="main-banner-v6">
+        {% assign banner = page.banner%}
+        <div class="container">
+          <div class="main-banner-content">
+            <div class="row">
+              <div class="col-lg-6">
+                <div
+                  class="banner-v6-text wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="0ms"
+                >
+                  <h2>{{banner.title}}</h2>
+                  <p>{{banner.content}}</p>
+                  <ul class="btns">
+                    {% assign button1 = banner.button1%} {% assign button2 =
+                    banner.button2%}
+                    <li>
+                      <a href="{{button1.link}}" title="" class="active"
+                        >{{button1.label}}</a
+                      >
+                    </li>
+                    <li>
+                      <a href="{{button2.link}}" title="">{{button2.label}}</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--banner-v6-text end-->
+                <div class="banner-btm-info">
+                  {% assign call = banner.call%}
+                  <p>{{ call.title}}</p>
+                  <div class="btm-hd-info">
+                    <span class="bt-icon"><i class="lni lni-phone"></i></span>
+                    <div class="bt-para">
+                      <span>hotline 24/7</span>
+                      <h3>{{ site.data.settings.contact_settings.phone_number}}</h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- banner-btm-info end-->
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="ban-img wow zoomIn"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="0ms"
+                >
+                  <img src="assets/img/ban-img4.jpg" alt="" class="w-100" />
+                </div>
+                <!--ban-img end-->
+                <ul class="vl-list">
+                  <li class="active">{{ call.text1}}</li>
+                  <li>{{ call.text2}}</li>
+                  <li>{{ call.text3}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--main-banner-content end-->
+        </div>
+      </section>
+      <!--main-banner-v6 end-->
+
+      <section class="partners-section v-2">
+        <div class="container">
+          <div
+            class="pt-logos text-center d-flex flex-wrap justify-content-center align-items-center"
+          >
+            {% for clients in site.data.clients.clients-v5 %}
+            <div class="pt-logo">
+              <a href="{{ clients.link}}" title="">
+                <img src="{{ clients.image}}" alt="" />
+              </a>
+            </div>
+            {% endfor %}
+            <!--pt-logo end-->
+          </div>
+          <!--pt-logos end-->
+        </div>
+      </section>
+
+      <section class="our-services-sec">
+        <div class="container">
+          <div class="mile-title">
+            <h3>our services</h3>
+          </div>
+          <!--mile-title end-->
+          <div class="our-services-content">
+            <div class="row svs-slider">
+              {% for service in page.service %}
+              <div class="col-lg-5">
+                <div class="service-card-mile">
+                  <img src="{{ service.icon }}" alt="" />
+                  <h2>
+                    <a href="{{ service.link }}" title=""
+                      >{{ service.title }}</a
+                    >
+                  </h2>
+                  <p>{{ service.content }}</p>
+                  <a href="#" title="" class="cat-up">case study</a>
+                </div>
+                <!--service-card end-->
+              </div>
+              {% endfor %}
+            </div>
+            <ul
+              class="counter-sec-v6 wow fadeInUp"
+              id="counter"
+              data-wow-duration="1000ms"
+              data-wow-delay="0ms"
+            >
+              {% for count in page.count %}
+              <li>
+                <div class="counter-cont">
+                  <h2 class="count">{{ count.number }}</h2>
+                  <span>{{ count.title }}</span>
+                </div>
+                <!--counter-cont end-->
+              </li>
+              {% endfor %}
+            </ul>
+            <!--counter-sec-v6 end-->
+          </div>
+          <!--our-services-content end-->
+        </div>
+      </section>
+      <!--our-services-sec end-->
+
+      <section class="recent-works-v6-sec">
+        <div class="container">
+          <div class="rc-work-content">
+            <div class="row">
+              <div class="col-lg-7 col-md-7">
+                <div class="mile-title">
+                  <h3>recent works</h3>
+                </div>
+                <!--mile-title end-->
+                <div class="rc-posts">
+                  <div class="rc-work-post">
+                    <div class="rc-thumbnail">
+                      <img src="assets/img/rc1.jpg" alt="" class="w-100" />
+                    </div>
+                    <div class="rc-info">
+                      <span>Interaction, Motion</span>
+                      <h3>
+                        <a href="17_portfolio_single_layout_1.html" title=""
+                          >Faye Fo</a
+                        >
+                      </h3>
+                      <p>
+                        Discover how we helped CleanCloud to increase their
+                        presence on a global market by their scaling up its
+                        visual identity and building a flexible style guide for
+                        their future product elaboration.
+                      </p>
+                    </div>
+                  </div>
+                  <!--rc-work-post end-->
+                </div>
+                <!--rc-posts end-->
+              </div>
+              <div class="col-lg-5 col-md-5">
+                <div class="rc-posts v-2">
+                  <div class="rc-work-post v-2">
+                    <div class="rc-thumbnail">
+                      <img src="assets/img/rc2.jpg" alt="" class="w-100" />
+                    </div>
+                    <div class="rc-info">
+                      <span>Branding</span>
+                      <h3>
+                        <a href="17_portfolio_single_layout_1.html" title=""
+                          >Taskly Dashboard</a
+                        >
+                      </h3>
+                      <p>
+                        BibliU is a digital platform that provides university
+                        students with personalized learning pathways
+                      </p>
+                    </div>
+                  </div>
+                  <!--rc-work-post end-->
+                  <div class="rc-work-post v-2">
+                    <div class="rc-thumbnail">
+                      <img src="assets/img/rc3.jpg" alt="" class="w-100" />
+                    </div>
+                    <div class="rc-info">
+                      <span>Interaction, Brandingv</span>
+                      <h3>
+                        <a href="17_portfolio_single_layout_1.html" title=""
+                          >Nike Workout</a
+                        >
+                      </h3>
+                      <p>
+                        Discover how we helped them scale up from <br />
+                        local to global.
+                      </p>
+                    </div>
+                  </div>
+                  <!--rc-work-post end-->
+                </div>
+                <!--rc-posts end-->
+              </div>
+            </div>
+            <a
+              href="15_portfolio_horizontal_scroll.html"
+              title=""
+              class="btn-deafult-v6"
+              >more projects</a
+            >
+          </div>
+          <!--rc-work-content end-->
+        </div>
+      </section>
+      <!--recent-works-v6-sec end-->
+
+      <section class="about-sec-v6">
+        {% assign about_us = page.about_us %}
+        <div class="about-v6-content">
+          <div class="container">
+            <div
+              class="mile-title wow fadeInUp"
+              data-wow-duration="1000ms"
+              data-wow-delay="0ms"
+            >
+              <h3>{{about_us.title}}</h3>
+              <p>{{about_us.content}}</p>
+            </div>
+            <!--mile-title end-->
+          </div>
+          <div class="mile-large-abt">
+            <div class="row">
+              <div class="col-lg-9 col-md-8 col-sm-7">
+                <div
+                  class="lrg-col wow slideInLeft"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="0ms"
+                >
+                  <img src="{{about_us.image}}" alt="" class="w-100" />
+                </div>
+                <!--lrg-col end-->
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-5">
+                <div
+                  class="lrg-col wow slideInLeft"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="0ms"
+                >
+                  <img src="{{about_us.image2}}" alt="" class="w-100" />
+                  <a
+                    href="{{about_us.video}}"
+                    title=""
+                    class="play-video-btn html5lightbox"
+                  >
+                    play <br />video
+                  </a>
+                </div>
+                <!--lrg-col end-->
+              </div>
+            </div>
+          </div>
+          <!--mile-large-abt end-->
+          <div class="container">
+            <div class="abtt-para">
+              {% assign awards = page.awards %}
+              <p>{{ awards.text}}</p>
+            </div>
+            <!-- abtt-para end-->
+            <div class="certicications-sec">
+              <div class="certificate-details">
+                {% assign awards_list1 = page.awards_list1 %}
+                <span class="date">{{ awards_list1.year }}</span>
+                <div class="awd-logo">
+                  <img src="{{awards_list1.logo}}" alt="" />
+                </div>
+                <div class="awd-list">
+                  {% for name in awards_list1.name %}
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <div class="awd-info">
+                        <h3>{{ name.name }}</h3>
+                        <span>{{ name.content }}</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <a href="{{ name.link }}" title="" class="web-link"
+                        >{{ name.button }}</a
+                      >
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <!--certificate-details end-->
+              <div class="certificate-details">
+                {% assign awards_list2 = page.awards_list2 %}
+                <span class="date">{{ awards_list2.year }}</span>
+                <div class="awd-logo">
+                  <img src="{{awards_list2.logo}}" alt="" />
+                </div>
+                <div class="awd-list">
+                  {% for name in awards_list2.name %}
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <div class="awd-info">
+                        <h3>{{ name.name }}</h3>
+                        <span>{{ name.content }}</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <a href="{{ name.link }}" title="" class="web-link"
+                        >{{ name.button }}</a
+                      >
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <!--certificate-details end-->
+              <div class="certificate-details">
+                {% assign awards_list3 = page.awards_list3 %}
+                <span class="date">{{ awards_list3.year }}</span>
+                <div class="awd-logo">
+                  <img src="{{awards_list3.logo}}" alt="" />
+                </div>
+                <div class="awd-list">
+                  {% for name in awards_list3.name %}
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <div class="awd-info">
+                        <h3>{{ name.name }}</h3>
+                        <span>{{ name.content }}</span>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <a href="{{ name.link }}" title="" class="web-link"
+                        >{{ name.button }}</a
+                      >
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <!--certificate-details end-->
+            </div>
+            <!--certicications-sec end-->
+          </div>
+        </div>
+        <!--about-v6-content end-->
+      </section>
+      <!--about-sec-v6 end-->
+
+      {% include testimonial/testimonial-startup.html %}
+      {% include footer/footer-startup.html %}
+      <!--footer end-->
+    </div>
+    <!--wrapper ned-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+    {% include chat-script.html %}
+  </body>
+</html>

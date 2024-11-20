@@ -1,0 +1,40 @@
+<section class="testi-v3-sec">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-5">
+        <div class="testi-v3-slider">
+          {% for testimonials in site.data.testimonials.testimonials %}
+          <div
+            class="testi-v3-slide {{ testimonials.class}}"
+            id="{{ testimonials.id}}"
+          >
+            <span class="t-icon"><i class="lni lni-quotation"></i></span>
+            <p>{{ testimonials.content}}</p>
+            <h3>{{ testimonials.name}}</h3>
+            <span>{{ testimonials.designation }}</span>
+          </div>
+          {% endfor %}
+          <!--testi-v3-slide end-->
+        </div>
+        <!--testi-v3-slider end-->
+      </div>
+      <div class="col-lg-6 col-md-7">
+        <div class="testi-bg">
+          <img src="/assets/img/testi-bg.png" alt="" />
+          <ul class="testi-thumbs">
+            {% for testimonials in site.data.testimonials.testimonials %}
+            <li
+              data-tab="{{ testimonials.id}}"
+              class="{{ testimonials.imag-class}} {{ testimonials.class}}"
+            >
+              <img src="{{ testimonials.image}}" alt="" />
+            </li>
+            {% endfor %}
+          </ul>
+          <!--testi-bg end-->
+        </div>
+        <!--test-bg end-->
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+- name: "PERSONAL"
+  image: "/assets/img/ion1.png"
+  type: "Start for everyone"
+  price: "9.99"
+  features:
+    - CUSTOME DOMAINS
+    - SLEEP AFTER 30 MINS OF ACTIVITY
+
+- name: "SMALL TEAM"
+  image: "/assets/img/ion2.png"
+  type: "Start for team"
+  price: "29.99"
+  features:
+    - NEVER SLEEPS
+    - MULTIPLE WORKERS FOR MORE POWERFUL APPS
+
+- name: "ENTERPRISE"
+  image: "/assets/img/ion3.png"
+  type: "Start for enterprise"
+  price: "69.99"
+  features:
+    - DEDICATED
+    - SIMPLE HORIZONTAL SCALABILITY

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html %}
+
+
+<body>
+
+
+	<div class="wrapper">
+
+		{% include header/about-business.html %}
+
+		<section class="business-banner">
+			<div class="container">
+				<div class="business-txt text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+					{% assign banner = page.banner %}
+					<span>{{banner.text}}</span>
+					<h2>{{banner.title}}</h2>
+					<p>{{banner.content}} </p>
+					<a href="{{banner.link}}" title="" class="btn-default">{{banner.button}}</a>
+					<a href="{{banner.youtube}}" title="" class="view-btn yellow html5lightbox">
+						<span class="pl-btn"><i class="lni lni-play"></i></span>
+						<span title="" class="vt">{{banner.videobtn}}</span>
+					</a>
+				</div><!--business-txt end-->
+			</div>
+		</section><!--business-banner end-->
+
+		<section class="about-v9-content v2">
+			<div class="container-fluid">
+				<div class="about-v9-row">
+					{% assign about = page.about %}
+					<div class="ban-img-v9">
+						<img src="{{about.image}}" alt="">
+					</div><!--ban-img-v9 end-->
+					<div class="about-v9-txt wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="0ms">
+						<span>{{about.text}}</span>
+						<h2>{{about.title}}</h2>
+						<p>{{about.content}}</p>
+						<div class="wd-inz">
+							<span class="cinon"><i class="lni lni-phone"></i></span>
+							<div class="wl-info">
+								<span>{{about.hotlinetxt}}</span>
+								<h3>{{ site.data.settings.contact_settings.phone_number }}</h3>
+							</div>
+						</div>
+					</div><!--about-v9-txt end-->
+				</div>
+			</div>
+		</section><!--about-v9-content end-->
+
+		<section class="services-v9 v2">
+			<div class="container">
+				<div class="title-v9 text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+					<span class="gray-color">what we can help</span>
+					<h2 class="black-clr"><span class="clr-yeloow">Delivering End-to-End</span> Company Solutions Online</h2>
+				</div><!--title-v9 end-->
+				<div class="row services_v9">
+					{% for service in site.data.services.about-pages.about-business %}
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="service-v9">
+							<span class="s-icon clr-yeloow"><i class="lni {{service.icon}}"></i></span>
+							<h3><a href="27_service_1.html" title="">{{service.title}}</a></h3>
+							<p>{{service.content}}</p>
+							<span class="s-category">{{service.buttontxt}}</span>
+						</div><!--service-v9 end-->
+					</div>
+					{% endfor %}
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="sv-text-v9">
+							<h2 class="black-clr">“Our Avantage can help you with picking out the best people for your company.”</h2>
+							<img src="/assets/img/sign2.png" alt="">
+							<span>Founder at Misulting</span>
+						</div><!--sv-text-v9 end-->
+					</div>
+				</div><!--services_v9 end-->
+				{% include funfacts.html %}
+			</div>
+		</section>
+
+		<section class="why-us-v9 v2">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="why-txt-v9 v2">
+							{% assign whyus = page.whyus %}
+							<div class="title-v9">
+								<span class="gray-color">{{whyus.text1}}</span>
+								<h2 class="black-clr"><span class="clr-yeloow d-block">{{whyus.orangetitle}}</span> {{whyus.normaltitle}}</h2>
+							</div><!--title-v9 end-->
+							<ul>
+								<li>
+									<div class="us-svs">
+										<span class="svs-icon">
+											<i class="lni lni-money-protection clr-yeloow"></i>
+										</span>
+										<div class="svs-info">
+											<h3 class="black-clr">Affordable Price</h3>
+											<p>Nanotechnology immersion along the information highway will close the loop on focusing solely</p>
+										</div>
+									</div><!--us-svs end-->
+								</li>
+								<li>
+									<div class="us-svs">
+										<span class="svs-icon">
+											<i class="lni lni-crown clr-yeloow"></i>
+										</span>
+										<div class="svs-info">
+											<h3 class="black-clr">Top-notch Experts Consulting</h3>
+											<p>Nanotechnology immersion along the information highway will close the loop on focusing solely</p>
+										</div>
+									</div><!--us-svs end-->
+								</li>
+								<li>
+									<div class="us-svs">
+										<span class="svs-icon">
+											<i class="lni lni-comments-reply clr-yeloow"></i>
+										</span>
+										<div class="svs-info">
+											<h3 class="black-clr">Dedicated Support 24/7</h3>
+											<p>Nanotechnology immersion along the information highway will close the loop on focusing solely</p>
+										</div>
+									</div><!--us-svs end-->
+								</li>
+							</ul>
+						</div><!--why-txt-v9 end-->
+					</div>
+					<div class="col-lg-6">
+						<div class="wy-img v2 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="0ms">
+							<img src="/assets/img/ban-img7.png" alt="">
+						</div><!--wy-img end-->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners-v8-sec v2">
+			<div class="container">
+				<div class="title-v9 text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+					<span class="gray-color">Our Partners</span>
+					<h2 class="black-clr"><span class="clr-yeloow">Your Succesful,</span> Our Reputation</h2>
+				</div><!--title-v9 end-->
+				<div class="pt-logos-v8 row">
+					{% for client in site.data.clients.clients-v1 %}
+					<div class="col-lg-2">
+						<div class="pt-logo-v8">
+							<img src="{{ client.image }}" alt="">
+						</div><!--pt-logo-v8 end-->
+					</div>
+					{% endfor %}
+				</div><!--pt-logos-v8 end-->
+			</div>
+		</section>
+
+		<section class="bz-certificate">
+			<div class="container">
+				<div class="title-v9 text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+					<span class="gray-color">awards winning </span>
+					<h2 class="black-clr"><span class="clr-yeloow">Rewards</span> For Our Effortless</h2>
+				</div><!--title-v9 end-->
+				<div class="certicications-sec">
+					<div class="certificate-details">
+						<span class="date">2020</span>
+						<div class="awd-logo">
+							<img src="/assets/img/awd1.png" alt="">
+						</div>
+						<div class="awd-list">
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="awd-info">
+										<h3>SOTY 2020</h3>
+										<span>Faye Fo Website Redesign</span>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<a href="#" title="" class="web-link">www.fayefo.co.uk</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="awd-info">
+										<h3>Mobile Excellence</h3>
+										<span>Nike Workout App</span>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<a href="#" title="" class="web-link">www.nike-workout.io</a>
+								</div>
+							</div>
+						</div>
+					</div><!--certificate-details end-->
+					<div class="certificate-details">
+						<span class="date">2019</span>
+						<div class="awd-logo">
+							<img src="/assets/img/awd2.png" alt="">
+						</div>
+						<div class="awd-list">
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="awd-info">
+										<h3>Websites Of The Year 2019</h3>
+										<span>Focus - Financial Management System</span>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<a href="#" title="" class="web-link">www.focus.com</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="awd-info">
+										<h3>Websites Of The Month, August 2019 </h3>
+										<span>Lewis Creative Agency</span>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<a href="#" title="" class="web-link">www.lewisstudio.com</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="awd-info">
+										<h3>Best 20 Websites Favourite 2019 </h3>
+										<span>Arquito Architeture &amp; Interior Firm</span>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<a href="#" title="" class="web-link">www.arquito.pl</a>
+								</div>
+							</div>
+						</div>
+					</div><!--certificate-details end-->
+					<div class="certificate-details">
+						<span class="date">2018</span>
+						<div class="awd-logo">
+							<img src="/assets/img/awd3.png" alt="">
+						</div>
+						<div class="awd-list">
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="awd-info">
+										<h3>Winner Portfolio Review United States</h3>
+										<span>Summit Spa Brand</span>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<a href="#" title="" class="web-link">www.submitspa.com.us</a>
+								</div>
+							</div>
+						</div>
+					</div><!--certificate-details end-->
+				</div>
+				<div class="testimonial-sec v10 pb-0">
+					<div class="title-v9 text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+						<span class="gray-color">Testimonials </span>
+						<h2 class="black-clr"><span class="clr-yeloow">The Trusted</span> From Clients For Miles</h2>
+					</div><!--title-v9 end-->
+					{% include testimonial/about-business.html %}
+				</div><!--testimonial-sec end-->
+			</div>
+		</section><!--bz-certificate end-->
+
+		{% include footer/footer-team.html %}
+	</div><!--wrapper end-->
+
+
+<script src="/assets/js/bundle.min.js"></script>
+
+
+</body>
+
+</html>

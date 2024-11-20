@@ -1,0 +1,56 @@
+- name: "Edison Cavani"
+  image: "/assets/img/tm1.jpg"
+  designation: "Product Management at Spotify"
+  content: "I don’t know what else to say, this is something that you
+    haven’t seen before. Unique design, lightweight, and
+    outstanding support."
+  id: "tab1"
+  class: "current"
+  imag-class: "v1"
+
+- name: "Joe Simonds"
+  image: "/assets/img/tm2.jpg"
+  designation: "Salt Strong"
+  content: "this is something that you haven’t seen before. Unique
+    design, lightweight, and outstanding support."
+  id: "tab2"
+  class: ""
+  imag-class: "v2"
+
+- name: "Justin Atlan"
+  image: "/assets/img/tm3.jpg"
+  designation: "Product Management at ClickBank"
+  content: "I don’t know what else to say, this is something that you
+    haven’t seen before. Unique design, lightweight, and
+    outstanding support."
+  id: "tab3"
+  class: ""
+  imag-class: "v3"
+
+- name: "Joost de Valk"
+  image: "/assets/img/tm4.jpg"
+  designation: "Founder Yoast"
+  content: "this is something that you haven’t seen before. Unique
+    design, lightweight, and outstanding support."
+  id: "tab4"
+  class: ""
+  imag-class: "v4"
+
+- name: "Oliver Braithwaite"
+  image: "/assets/img/tm5.jpg"
+  designation: "Lead SEO Consultant, Fastrack"
+  content: "I don’t know what else to say, this is something that you
+    haven’t seen before. Unique design, lightweight, and
+    outstanding support."
+  id: "tab5"
+  class: ""
+  imag-class: "v5"
+
+- name: "Gary Henderson"
+  image: "/assets/img/tm6.jpg"
+  designation: "Owner, DigitalMarketing.org"
+  content: "this is something that you haven’t seen before. Unique
+    design, lightweight, and outstanding support."
+  id: "tab6"
+  class: ""
+  imag-class: "v6"

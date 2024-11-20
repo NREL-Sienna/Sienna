@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-default.html %}
+      <section class="about-v1-page">
+        <div class="about-agency-content">
+          <div class="about-v-main">
+            <div
+              class="about-v-title wow fadeInUp"
+              data-wow-duration="1000ms"
+              data-wow-delay="0ms"
+            >
+              <span>{{page.title}}</span>
+              <h2>
+                <strong>{{page.strongtxt}}</strong> {{page.txt}}
+              </h2>
+            </div>
+          </div>
+          <!--about-v-main end-->
+          <div
+            class="abt-agency-banner wow slideInRight"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <img src="{{page.banner}}" alt="" class="w-100" />
+          </div>
+          <!--abt-agency-banner end-->
+          <div
+            class="agency-banner-info wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+          {{content}}
+          </div>
+          <!--agency-banner-info end-->
+        </div>
+      </section>
+      <!--about-v1-page end-->
+
+      <section class="our-services-sec bg2">
+        <div class="container">
+          <div class="mile-title">
+            <h3>our services</h3>
+          </div>
+          <!--mile-title end-->
+          <div class="our-services-content">
+            <div class="row svs-slider">
+              {% for service in site.data.services.about-pages.services %}
+              <div class="col-lg-5">
+                <div class="service-card-mile">
+                  <img src="{{service.thumb}}" alt="" />
+                  <h2><a href="28_services_2.html" title="">{{service.title}}</a></h2>
+                  <p>
+                    {{service.content}}
+                  </p>
+                  <a href="#" title="" class="cat-up">{{service.buttontxt}}</a>
+                </div>
+                <!--service-card end-->
+              </div>
+              {% endfor %}
+
+              </div>
+            </div>
+            {% include funfacts.html %}
+          </div>
+          <!--our-services-content end-->
+        </div>
+      </section>
+      <!--our-services-sec end-->
+
+      <section class="agy-team-sec">
+        <div class="container">
+          <div
+            class="ag-title wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <h3>Meet Our Team</h3>
+            <p>
+              Meet our talented team of creatives, fun-lovers, and magic makers.
+              Shall seas yielding a he, moveth said gathering under all cattle
+              were years fruit whose isn’t.
+            </p>
+          </div>
+          <!--ag-title end-->
+          <div class="row ag-teams">
+            {% for team in site.data.team.about-agency %}
+            <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="ag-team">
+                <img src="{{team.thumb}}" alt="" />
+                <h3>{{team.name}}</h3>
+                <span>{{team.designation}}</span>
+              </div>
+              <!--ag-team end-->
+            </div>
+            {% endfor %}
+            <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+              <div class="join-team">
+                <i class="lni lni-users"></i>
+                <h3><a href="33_career.html" title="">join team</a></h3>
+              </div>
+              <!--join-team end-->
+            </div>
+
+          </div>
+          <!--ag-teams end-->
+        </div>
+      </section>
+      <!--agy-team-sec end-->
+
+      <section class="ag-office-sec">
+        <div class="container">
+          <div
+            class="ag-title wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <h3>Our Office</h3>
+            <p>
+              Modern life is office life. We don’t know if it’s the future our
+              ancestors dreamed of, but here we are.
+            </p>
+          </div>
+          <!--ag-title end-->
+        </div>
+        <div class="office-imgs row">
+          <div
+            class="col-lg-8 col-md-8 col-sm-8 col-7 wow slideInLeft"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <img src="/assets/img/office1.jpg" class="of-img w-100" alt="" />
+          </div>
+          <div
+            class="col-lg-4 col-md-4 col-sm-4 col-5 wow slideInLeft"
+            data-wow-duration="1000ms"
+            data-wow-delay="200ms"
+          >
+            <img src="/assets/img/office2.jpg" class="of-img v2 w-100" alt="" />
+          </div>
+        </div>
+      </section>
+      <!--ag-office-sec end-->
+
+      {% include partners/partners-v3.html %}
+      <section class="lets-sec">
+        <div class="container">
+          <div
+            class="lets-content wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <h2>
+              Let’s make something amazing together
+              <strong
+                >Start by
+                <a href="30_contact_1.html" title="">saying hi</a></strong
+              >
+            </h2>
+          </div>
+          <!--lets-content end-->
+        </div>
+      </section>
+      <!--lets-sec end-->
+      {% include footer/footer-team.html %}
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+    {% include chat-script.html %}
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container-fluid">
+          <div class="header-content d-flex flex-wrap align-items-center">
+            <div class="logo">
+              <a href="#" title=""><img src="/assets/img/logo2.png" alt="" /></a>
+            </div>
+            <!--logo end-->
+            <div class="mile-right ml-auto">
+              <button class="nav-toggle-btn a-nav-toggle ml-auto">
+                <span class="nav-toggle-title">Menu</span>
+                <span class="nav-toggle nav-toggle-sm">
+                  <span class="stick stick-1"></span>
+                  <span class="stick stick-2"></span>
+                  <span class="stick stick-3"></span>
+                </span>
+              </button>
+              <a href="#" title="" class="btn-default no-bg"
+                >Let’s talk<i class="lni lni-comments"></i
+              ></a>
+            </div>
+            <!--mile-right end-->
+          </div>
+          <!--header-content end-->
+        </div>
+      </header>
+      <!--header end-->
+
+      {% include sidemenu.html %}
+
+      {{content}}
+
+      <footer>
+        <div class="top-footer">
+          <div class="container">
+            <div class="footer-content">
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                  <div class="ft-text">
+                    <p>
+                      We are a close team of creative professionals based out of
+                      Savannah, Georgia. We are passionate about partnering &
+                      organizations to provide exceptional solutions.
+                    </p>
+                    <div class="ft-form">
+                      <h4>Subscribe our newsletter for news update</h4>
+                      <form>
+                        <span class="input input--makiko">
+                          <input
+                            class="input__field input__field--makiko"
+                            type="email"
+                            id="input-16"
+                            placeholder="Enter email address..."
+                          />
+                          <label class="input__label input__label--makiko">
+                            <button
+                              type="submit"
+                              class="input__label-content input__label-content--makiko"
+                            >
+                              subscribe <i class="lni lni-chevron-right"></i>
+                            </button>
+                          </label>
+                        </span>
+                      </form>
+                    </div>
+                    <!--ft-form end-->
+                  </div>
+                  <!--ft-text end-->
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="get-touch-txt">
+                    <span>get in touch</span>
+                    <h3>
+                      116 Fairground Rd, FL 32904, USA
+                      <a href="#" title="">hello@miles.co</a>
+                    </h3>
+                    <ul>
+                      <li><a href="/26_about_me.html" title="">About</a></li>
+                      <li>
+                        <a href="/15_portfolio_horizontal_scroll.html" title=""
+                          >Works</a
+                        >
+                      </li>
+                      <li><a href="/30_contact_1.html" title="">Contact</a></li>
+                      <li>
+                        <a href="/28_services_2.html" title="">Services</a>
+                      </li>
+                      <li><a href="/blog_layout1.html" title="">News</a></li>
+                    </ul>
+                  </div>
+                  <!--get-touch-txt end-->
+                </div>
+              </div>
+            </div>
+            <!--footer-content end-->
+          </div>
+        </div>
+        <!--top-footer end-->
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-6">
+                <div class="cp-mile">
+                  <img src="/assets/img/ft-logo.png" alt="" />
+                  <p>© 2022. All Rights Reserved</p>
+                </div>
+                <!--cp-mile end-->
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <ul class="social-links">
+                  <li>
+                    <a href="#" title=""
+                      ><i class="fab fa-facebook-square"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" title=""><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" title=""><i class="fab fa-behance"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" title=""><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+                <!--social-links end-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--bottom-footer end-->
+      </footer>
+      <!--footer end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>

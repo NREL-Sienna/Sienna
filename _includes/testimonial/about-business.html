@@ -1,0 +1,20 @@
+<div class="testimonial-slider style2">
+  <div class="row testimo-slider">
+    {% for testimonials in site.data.testimonials.about-business %}
+    <div class="col-lg-6">
+      <div class="testimonial-slide">
+        <p>“{{testimonials.content}}”</p>
+        <div class="thmb-row">
+          <div class="thmb-img">
+            <img src="{{testimonials.image}}" alt="">
+          </div>
+          <div class="thmb-info">
+            <h3>{{testimonials.name}}</h3>
+            <span>{{testimonials.position}} of <em>{{testimonials.company}}</em></span>
+          </div>
+        </div>
+      </div><!--testimonial-slide end-->
+    </div>
+    {% endfor %}
+  </div>
+</div><!--testimonial-slider end-->

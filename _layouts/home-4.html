@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body class="dark-v">
+    <div class="wrapper">
+      {% include header/header-developer.html %}
+      <!--header-v4 end-->
+
+      {% include sidemenu.html %}
+      <!--responsive-menu end-->
+
+      <div id="pagepiling">
+        <section class="section pp-scrollable">
+          {% assign banner = page.banner%}
+          <div class="main-banner-v4">
+            <div class="container">
+              <div class="banner-content-v4">
+                <div
+                  class="banner-txt-v4 wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="0ms"
+                >
+                  <span>{{ banner.sub_title}}</span>
+                  <h2>{{ banner.title }}</h2>
+                  <p>{{ banner.content}}</p>
+                  {% assign button = banner.button %}
+                  <a href="{{ button.link }}" title="">{{ button.label }}</a>
+                </div>
+                <!--banner-txt-v4 end-->
+                <div
+                  class="banner-img-v4 wow zoomIn"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="0ms"
+                >
+                  <img src="{{ banner.image }}" alt="" />
+                  <div class="col-icon v1">
+                    <img src="{{ banner.icon_image_1 }}" alt="" />
+                  </div>
+                  <div class="col-icon v2">
+                    <img src="{{ banner.icon_image_2 }}" alt="" />
+                  </div>
+                  <div class="col-icon v3">
+                    <img src="{{ banner.icon_image_3 }}" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!--banner-content-v4 end-->
+            </div>
+            <ul class="baner-count">
+              {% for count in banner.count%}
+              <li>
+                <h2>{{ count.number }}</h2>
+                <span> {{ count.title}} </span>
+              </li>
+              {% endfor%}
+            </ul>
+          </div>
+          <!--main-banner-v4 end-->
+        </section>
+
+        <section class="section pp-scrollable" id="about">
+          {% assign who_we_are = page.who_we_are%}
+          <div class="slide-container">
+            <div class="about-v4-sec p-0">
+              <div class="container">
+                <div class="about-v4-content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="abt-list">
+                        {% for services in who_we_are.services%}
+                        <div class="abt-content">
+                          <h3>
+                            <a href="{{ services.link }}" title=""
+                              >{{ services.title }}</a
+                            >
+                          </h3>
+                          <p>{{ services.content }}</p>
+                          <a href="{{ services.link }}" title=""
+                            >{{ services.button }}</a
+                          >
+                          <span class="iconn"
+                            ><i class="{{ services.icon }}"></i
+                          ></span>
+                        </div>
+                        {% endfor %}
+                        <!--abt-content end-->
+                      </div>
+                      <!--abt-list end-->
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="abt-col-text">
+                        <span>{{who_we_are.label}}</span>
+                        <h2>{{who_we_are.title}}</h2>
+                        <h3>{{ who_we_are.sub_title}}</h3>
+                        <p>{{who_we_are.content}}</p>
+                      </div>
+                      <!--abt-col-text end-->
+                    </div>
+                  </div>
+                </div>
+                <!--about-v4-content end-->
+              </div>
+            </div>
+            <!---about-v4-sec end-->
+          </div>
+        </section>
+
+        <section class="section pp-scrollable">
+          <div class="slide-container">
+            <div class="partners-section p-0">
+              <div class="container">
+                <div
+                  class="pt-logos text-center d-flex flex-wrap justify-content-center align-items-center"
+                >
+                  {% for clients in site.data.clients.clients-v4 %}
+                  <div class="pt-logo">
+                    <a href="{{ clients.link }}" title="">
+                      <img src="{{ clients.image }}" alt="" />
+                    </a>
+                  </div>
+                  {% endfor %}
+                  <!--pt-logo end-->
+                </div>
+                <!--pt-logos end-->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section pp-scrollable">
+          <div class="slide-container">
+            <div class="latest-works-v4-sec p-0">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="sec-title-v4">
+                      {% assign works = page.works %}
+                      <h2>{{ works.title}}</h2>
+                      <span>{{ works.content}}</span>
+                    </div>
+                    <!--sec-title-v4 end-->
+                    <div class="item-work v1">
+                      <img src="assets/img/item1.jpg" alt="" class="w-100" />
+                      <div class="item-caption">
+                        <h2>
+                          <a href="17_portfolio_single_layout_1.html" title=""
+                            >Lewis</a
+                          >
+                        </h2>
+                        <ul>
+                          <li>Javascript</li>
+                          <li>PHP</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--item-work end-->
+                    <div class="all-projects">
+                      <a
+                        href="15_portfolio_horizontal_scroll.html"
+                        title=""
+                        class="btn-default-v4"
+                        >all projects</a
+                      >
+                      <p>
+                        * Some projects not allow publish by NDA, if you want to
+                        see more,
+                        <a href="30_contact_1.html" title="">contact</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="item-works-projects">
+                      <div class="item-work">
+                        <img src="assets/img/item2.jpg" alt="" class="w-100" />
+                        <div class="item-caption">
+                          <h2>
+                            <a href="17_portfolio_single_layout_1.html" title=""
+                              >Finaco</a
+                            >
+                          </h2>
+                          <ul>
+                            <li>GastbyJs</li>
+                            <li>React</li>
+                            <li>HTML</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!--item-work end-->
+                      <div class="item-work">
+                        <img src="assets/img/item3.jpg" alt="" class="w-100" />
+                        <div class="item-caption">
+                          <h2>
+                            <a href="17_portfolio_single_layout_1.html" title=""
+                              >Focus</a
+                            >
+                          </h2>
+                          <ul>
+                            <li>React</li>
+                            <li>HTML</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!--item-work end-->
+                    </div>
+                    <!--item-works-projects end-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--latest-works-v4-sec end-->
+          </div>
+        </section>
+
+        {% include testimonial/testimonial-developer.html %}
+        <section class="section pp-scrollable" id="awards">
+          <div class="slide-container">
+            <div class="awards-v4-sec p-0">
+              <div class="container">
+                <div class="sec-head">
+                  <h2>Awards</h2>
+                  <span>Awards make my projects become valuable </span>
+                </div>
+                <!--sec-head end-->
+                <div class="awards-v4-content-sec">
+                  <div class="award-v4-content">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <span class="year-hd">2017</span>
+                      </div>
+                      <div class="col-lg-9">
+                        <ul class="awd-infoo">
+                          <li>
+                            <h4>Awwwards</h4>
+                            <span
+                              >Site Of The Years for
+                              <a
+                                href="17_portfolio_single_layout_1.html"
+                                title=""
+                                >Lewis</a
+                              ></span
+                            >
+                          </li>
+                          <li>
+                            <h4>Css Design Awards</h4>
+                            <span
+                              >Honorable Mention for
+                              <a
+                                href="17_portfolio_single_layout_1.html"
+                                title=""
+                                >Bauhaus</a
+                              ></span
+                            >
+                          </li>
+                          <li>
+                            <h4>Product Hunt Maker</h4>
+                            <span
+                              >Gold In Digital Craft for
+                              <a
+                                href="17_portfolio_single_layout_1.html"
+                                title=""
+                                >Biforde</a
+                              ></span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!--award-v4-content end-->
+                  <div class="award-v4-content">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <span class="year-hd">2016</span>
+                      </div>
+                      <div class="col-lg-9">
+                        <ul class="awd-infoo">
+                          <li>
+                            <h4>Fwa</h4>
+                            <span
+                              >Coporate Social Responsiblity for
+                              <a
+                                href="17_portfolio_single_layout_1.html"
+                                title=""
+                                >Arquito</a
+                              ></span
+                            >
+                          </li>
+                          <li>
+                            <h4>Semplice</h4>
+                            <span
+                              >Best Showcase for
+                              <a
+                                href="17_portfolio_single_layout_1.html"
+                                title=""
+                                >Focus</a
+                              ></span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!--award-v4-content end-->
+                </div>
+                <!--awards-v4-content-sec end-->
+              </div>
+            </div>
+            <!--awards-v4-sec end-->
+          </div>
+        </section>
+
+        <section class="section pp-scrollable" id="footer">
+          {% assign call_to_action = page.call_to_action %}
+          <div class="slide-container">
+            <div class="footer-v6 dark-v p-0">
+              <div class="container">
+                <div class="footer-content-v6">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div
+                        class="widget-abt wow fadeInUp"
+                        data-wow-duration="1000ms"
+                        data-wow-delay="0ms"
+                      >
+                        <h2>{{call_to_action.title}}</h2>
+                        <h2>
+                          {{call_to_action.content}}<a
+                            href="{{call_to_action.link}}"
+                            title=""
+                          >
+                            {{call_to_action.link_button}}</a
+                          >
+                        </h2>
+                      </div>
+                      <!--widget-abt end-->
+                    </div>
+                    <div class="col-lg-6">
+                      <div
+                        class="get-touch-txt mw-100 wow fadeInRight"
+                        data-wow-duration="1000ms"
+                        data-wow-delay="0ms"
+                      >
+                        <h5>Information</h5>
+                        <h4>5th, Floor, 216 Fairground Rd, FL 3290, USA</h4>
+                        <a href="#" title="">hello@daniel.io</a>
+                        <ul>
+                          <li>
+                            <a href="/27_service_1.html" title="">Services</a>
+                          </li>
+                          <li>
+                            <a
+                              href="/15_portfolio_horizontal_scroll.html"
+                              title=""
+                              >Works</a
+                            >
+                          </li>
+                          <li><a href="/blog_layout1.html" title="">News</a></li>
+                          <li>
+                            <a href="/30_contact_1.html" title="">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!--get-touch-txt end-->
+                    </div>
+                  </div>
+                  <div class="mile-bottom-footer">
+                    <div class="row align-items-center">
+                      <div class="col-lg-8 col-md-8">
+                        <div class="btm-copy">
+                          <img src="assets/img/miles-developer.png" alt="" />
+                          <p>© 2022. All Rights Reserved</p>
+                        </div>
+                        <!--btm-copy end-->
+                      </div>
+                      <div class="col-lg-4 col-md-4">
+                        <ul class="social-header">
+                          <li>
+                            <a href="#" title=""
+                              ><i class="lni lni-twitter-original"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><i class="lni lni-facebook-filled"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><i class="lni lni-instagram-original"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><i class="lni lni-pinterest"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><i class="lni lni-youtube"></i
+                            ></a>
+                          </li>
+                        </ul>
+                        <!--social-header end-->
+                      </div>
+                    </div>
+                  </div>
+                  <!--mile-bottom-footer end-->
+                </div>
+                <!--footer-content-v6 end-->
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--pagepiling end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>

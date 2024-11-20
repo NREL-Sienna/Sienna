@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-default.html%}
+      <section class="vls-sections service-v2">
+        <div class="container">
+          <div
+            class="sv-title wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+          {% assign banner = page.banner %}
+            <span>{{banner.title}}</span>
+            <h2>
+              {{banner.sub_title}}
+            </h2>
+            <p class="mw-100">
+              {{banner.content}}
+            </p>
+          </div>
+        </div>
+        <div
+          class="mile-vl-sec wow slideInLeft"
+          data-wow-duration="1000ms"
+          data-wow-delay="0ms"
+        >
+          <div class="container">
+            <div class="mile-vl-sec-details">
+              {% for service in site.data.services.service.service2.branding %}
+              <div class="mile-vl-dt">
+                <span class="vl-icon clr1"><i class="lni lni-crown"></i></span>
+                <h3>{{service.title}}</h3>
+                <p>{{service.description}}</p>
+                <a href="{{service.link}}" title="">{{service.button}}</a>
+              </div>
+              <!--mile-vl-dt end-->
+              {% endfor %}
+            </div>
+            <!--mile-vl-sec-details end-->
+          </div>
+        </div>
+        <!--mile-vl-sec end-->
+        <div
+          class="mile-vl-sec wow fadeInUp"
+          data-wow-duration="1000ms"
+          data-wow-delay="0ms"
+        >
+          <div class="container">
+            <div class="mile-vl-sec-details v2">
+              {% for service in site.data.services.service.service2.interaction %}
+              <div class="mile-vl-dt">
+                <span class="vl-icon clr2"><i class="lni lni-mobile"></i></span>
+                <h3>{{service.title}}</h3>
+                <p>
+                  {{service.description}}
+                </p>
+                <a href="{{service.link}}" title="">{{service.button}}</a>
+              </div>
+              <!--mile-vl-dt end-->
+              <div class="clearfix"></div>
+              {% endfor %}
+            </div>
+            <!--mile-vl-sec-details end-->
+          </div>
+        </div>
+        <!--mile-vl-sec end-->
+        <div
+          class="mile-vl-sec wow slideInRight"
+          data-wow-duration="1000ms"
+          data-wow-delay="0ms"
+        >
+          <div class="container">
+            <div class="mile-vl-sec-details v3">
+              {% for service in site.data.services.service.service2.interaction %}
+              <div class="mile-vl-dt">
+                <span class="vl-icon clr3"><i class="lni lni-anchor"></i></span>
+                <h3>{{service.title}}</h3>
+                <p>
+                  {{service.description}}
+                </p>
+                <a href="{{service.link}}" title="">{{service.button}}</a>
+              </div>
+              <!--mile-vl-dt end-->
+              {% endfor %}
+            </div>
+            <!--mile-vl-sec-details end-->
+          </div>
+        </div>
+        <!--mile-vl-sec end-->
+      </section>
+      <!--vls-sections end-->
+
+      {% include big-clients.html %}
+      {% include testimonial/testimonial-v1.html %}
+
+      <section class="contact-sec sv-page">
+        <div class="container">
+          <div
+            class="sec-title text-center wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <h2>Ready to get started</h2>
+            <span>Ask away! we will response within 24 hours</span>
+          </div>
+          <!--sec-title end-->
+          <form class="contact-form">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form--control"
+                    id="name"
+                    name="name"
+                    placeholder=""
+                  />
+                  <label for="name">Full Name</label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form--control"
+                    id="email"
+                    name="email"
+                    placeholder=""
+                  />
+                  <label for="email">Email Address <span>*</span></label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form--control"
+                    id="subject"
+                    name="subject"
+                    placeholder=""
+                  />
+                  <label for="subject">Subject</label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form--control" id="message"></textarea>
+                  <label for="message">Your message here</label>
+                </div>
+                <!--form-group end-->
+              </div>
+              <div class="col-md-12">
+                <div class="form-group text-center m-0">
+                  <button type="submit" class="btn-default">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      {% include footer/footer-team.html %}
+      <!--footer end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>

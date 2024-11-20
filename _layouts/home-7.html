@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-coach.html %}
+      <!--header-v7 end-->
+
+
+      <section class="main-banner-v7">
+        {% assign banner = page.banner %}
+        <div class="container">
+          <div class="banner-content-v7">
+            <div
+              class="en-info wow zoomIn"
+              data-wow-duration="1000ms"
+              data-wow-delay="0ms"
+            >
+              <img src="{{ banner.text_imge}}" alt="" />
+              <a
+                href="{{ banner.video}}"
+                title=""
+                class="html5lightbox play-video-btn"
+                >play <br />video</a
+              >
+            </div>
+            <div
+              class="en-img wow fadeInUp"
+              data-wow-duration="1000ms"
+              data-wow-delay="0ms"
+            >
+              <img src="{{ banner.image}}" alt="" />
+            </div>
+          </div>
+          <!--banner-content-v7 end-->
+        </div>
+      </section>
+      <!--main-banner-v7 end-->
+
+      <section class="partners-section v3">
+        <div class="container">
+          <div
+            class="pt-logos text-center d-flex flex-wrap justify-content-center align-items-center"
+          >
+            {% for clients in site.data.clients.clients-v5 %}
+            <div class="pt-logo">
+              <a href="{{clients.link}}" title="">
+                <img src="{{clients.image}}" alt="" />
+              </a>
+            </div>
+            {% endfor %}
+            <!--pt-logo end-->
+          </div>
+          <!--pt-logos end-->
+        </div>
+      </section>
+      <!--partners section end-->
+
+      <section class="about-us-v7-sec">
+        {% assign abobut_us = page.abobut_us %}
+        <div class="container">
+          <div
+            class="about-v7-content wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <h2>{{ abobut_us.title }}</h2>
+            <p>{{ abobut_us.content }}</p>
+            <ul class="lnz-links">
+              {% assign button1 = abobut_us.button1 %}
+              <!---->
+              {% assign button2 = abobut_us.button2 %}
+              <li>
+                <a href="{{button1.link }}" title="{{button1.label }}"
+                  >{{button1.label }}</a
+                >
+              </li>
+              <li>
+                <a href="{{button2.link }}" title="{{button2.label }}"
+                  >{{button2.label }}</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--about-v7-content end-->
+          <div class="mission-sec">
+            <div class="row">
+              <div class="col-xl-6">
+                <div
+                  class="crlce-misz wow zoomIn"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="0ms"
+                >
+                  <ul class="crlce-list">
+                    {% for about_section in page.about_section %}
+                    <li class="{{about_section.class}}">
+                      <div class="crlce-info">
+                        <i class="{{about_section.icon}}"></i>
+                        <h3>{{about_section.label}}</h3>
+                      </div>
+                      <div class="crlce-img">
+                        <img src="{{about_section.image}}" alt="" />
+                      </div>
+                      <!--crlce-img end-->
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  <!--crlce-list end-->
+                </div>
+                <!--crlce-misz end-->
+              </div>
+              <div class="col-xl-6">
+                <div class="vlm-text">
+                  {% assign content_area = page.content_area %}
+                  <h2>{{ content_area.title }}</h2>
+                  <span>“{{ content_area.label}}”</span>
+                  <p>{{ content_area.content}}</p>
+                </div>
+                <!--vlm-text end-->
+              </div>
+            </div>
+          </div>
+          <!--mission-sec end-->
+        </div>
+      </section>
+      <!--about-us-v7-sec end-->
+
+      <section class="book-v7-sec">
+        {% assign download = page.download %}
+        <div class="container">
+          <div class="book-v7-content">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="book-form">
+                  <h2>{{download.title}}</h2>
+                  <span>{{ download.content }}</span>
+                  <form class="bk-form">
+                    <input type="text" name="name" placeholder="First Name" />
+                    <input
+                      type="text"
+                      name="last-name"
+                      placeholder="Last Name"
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email Address"
+                    />
+                    <div class="form_submit">
+                      <button type="submit"><span>get it now</span></button>
+                    </div>
+                  </form>
+                </div>
+                <!--book-form end-->
+              </div>
+              <div class="col-lg-7">
+                <div
+                  class="book-img wow fadeInUp"
+                  data-wow-duration="1000ms"
+                  data-wow-delay="0ms"
+                >
+                  <img src="{{ download.image }}" alt="" />
+                </div>
+                <!--book-img end-->
+              </div>
+            </div>
+          </div>
+          <!--book-v7-content end-->
+        </div>
+      </section>
+      <!--book-v7-sec end-->
+
+      <section class="our-services-sec v2">
+        <div class="container">
+          <div class="mile-title">
+            <h3>Recent Courses</h3>
+          </div>
+          <!--mile-title end-->
+          <div class="our-services-content">
+            <div class="row svs-slider">
+              {% for courses in page.courses %}
+              <div class="col-lg-5">
+                <div class="service-card-mile">
+                  <img src="{{ courses.icon }}" alt="" />
+                  <h2>
+                    <a href="{{ courses.link }}" title=""
+                      >{{ courses.title }}</a
+                    >
+                  </h2>
+                  <p>{{ courses.content }}</p>
+                  <a href="#" title="" class="cat-up">case study</a>
+                </div>
+                <!--service-card end-->
+              </div>
+              {% endfor %}
+            </div>
+            <ul
+              class="counter-sec-v6 wow fadeInUp"
+              id="counter"
+              data-wow-duration="1000ms"
+              data-wow-delay="0ms"
+            >
+              {% for count in page.count %}
+              <li>
+                <div class="counter-cont">
+                  <h2 class="count">{{ count.number }}</h2>
+                  <span>{{ count.title }}</span>
+                </div>
+                <!--counter-cont end-->
+              </li>
+              {% endfor %}
+            </ul>
+            <!--counter-sec-v6 end-->
+          </div>
+          <!--our-services-content end-->
+        </div>
+      </section>
+      <!--our-services-sec end-->
+
+      <section class="testi-v3-sec">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-5">
+              <div class="testi-v3-slider">
+                {% for testimonials in site.data.testimonials.testimonials %}
+                <div
+                  class="testi-v3-slide {{ testimonials.class}}"
+                  id="{{ testimonials.id}}"
+                >
+                  <span class="t-icon"><i class="lni lni-quotation"></i></span>
+                  <p>{{ testimonials.content}}</p>
+                  <h3>{{ testimonials.name}}</h3>
+                  <span>{{ testimonials.designation }}</span>
+                </div>
+                {% endfor %}
+                <!--testi-v3-slide end-->
+              </div>
+              <!--testi-v3-slider end-->
+            </div>
+            <div class="col-lg-6 col-md-7">
+              <div class="testi-bg">
+                <img src="/assets/img/testi-bg.png" alt="" />
+                <ul class="testi-thumbs">
+                  {% for testimonials in site.data.testimonials.testimonials %}
+                  <li
+                    data-tab="{{ testimonials.id}}"
+                    class="{{ testimonials.imag-class}} {{ testimonials.class}}"
+                  >
+                    <img src="{{ testimonials.image}}" alt="" />
+                  </li>
+                  {% endfor %}
+                </ul>
+                <!--testi-bg end-->
+              </div>
+              <!--test-bg end-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--testi-v3-sec end-->
+
+      <section class="upcoming-events-sec">
+        {% assign events = page.events %}
+        <div class="container">
+          <div class="sec-title-v7 text-center">
+            <h2>{{ events.section_title }}</h2>
+          </div>
+          <!--sec-title end-->
+          <div class="solu-upcoming">
+            <h2>{{ events.title }}</h2>
+            <span>{{ events.label }}</span>
+            <div class="uo-com-row">
+              <div class="us-row">
+                <img src="assets/img/us-img1.png" alt="" />
+                <h3>{{ events.names }}</h3>
+              </div>
+              <ul class="ll-list">
+                <li>
+                  <span>Location</span>
+                  <h4>25 Orchard St, NY, CA</h4>
+                </li>
+                <li>
+                  <span>Date</span>
+                  <h4>September 19, 2020</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--solu-upcoming end-->
+          <ul class="events-list">
+            <li>
+              <div class="event-details">
+                <div class="event-date">
+                  <span>Aug</span>
+                  <h3>25</h3>
+                </div>
+                <div class="ms-project">
+                  <img src="assets/img/ms1.png" alt="" />
+                  <div class="ms-info">
+                    <h3>
+                      <a href="#" title=""
+                        >Technology Conference 4.0, E-commerce trends</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <!--ms-project end-->
+                <div class="event-location">
+                  <span>Location</span>
+                  <h4>86 Beverly Hill, Ohio, USA</h4>
+                </div>
+                <!--event-location end-->
+                <div class="get-ticket">
+                  <a href="#" title="" class="active">get ticket</a>
+                </div>
+              </div>
+              <!--event-details end-->
+            </li>
+            <li>
+              <div class="event-details">
+                <div class="event-date">
+                  <span>Aug</span>
+                  <h3>16</h3>
+                </div>
+                <div class="ms-project">
+                  <img src="assets/img/ms2.png" alt="" />
+                  <div class="ms-info">
+                    <h3>
+                      <a href="#" title=""
+                        >Financial Problems & Business Management</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <!--ms-project end-->
+                <div class="event-location">
+                  <span>Location</span>
+                  <h4>252 Queen Ave, Mahatta, CA</h4>
+                </div>
+                <!--event-location end-->
+                <div class="get-ticket">
+                  <a href="#" title="">get ticket</a>
+                </div>
+              </div>
+              <!--event-details end-->
+            </li>
+            <li>
+              <div class="event-details">
+                <div class="event-date">
+                  <span>May</span>
+                  <h3>03</h3>
+                </div>
+                <div class="ms-project">
+                  <img src="assets/img/ms3.png" alt="" />
+                  <div class="ms-info">
+                    <h3>
+                      <a href="#" title=""
+                        >Human Resource Management Consultancy</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <!--ms-project end-->
+                <div class="event-location">
+                  <span>Location</span>
+                  <h4>8 Orchard, Miami, FL</h4>
+                </div>
+                <!--event-location end-->
+                <div class="get-ticket">
+                  <a href="#" title="">get ticket</a>
+                </div>
+              </div>
+              <!--event-details end-->
+            </li>
+          </ul>
+          <!-- events-list end-->
+          <div class="text-center all-events">
+            <p>
+              Excited about our event? <a href="#" title="">View all events</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--upcoming-events-sec end-->
+
+      <section class="blog-section-v7">
+        <div class="container">
+          <div class="blog-posts-v7">
+            <div class="row">
+              {% for blog in site.blog limit: 3 %}
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="blog-post-v7">
+                  <div class="blog-thumbnail">
+                    <img src="{{blog.layout_image}}" alt="" class="w-100" />
+                  </div>
+                  <div class="blog-info">
+                    <ul class="meta">
+                      <li>
+                        <a
+                          >{{ blog.date | date_to_long_string: "ordinal", "US"
+                          }}</a
+                        >
+                      </li>
+                    </ul>
+                    <h2>
+                      <a href="{{ blog.url}}" title="">{{ blog.title }}</a>
+                    </h2>
+                  </div>
+                </div>
+                <!--blog-post-v7 end-->
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          <!--blog-posts-v7 end-->
+        </div>
+      </section>
+      <!--blog-section-v7 end-->
+
+      <section class="newslettter-sec-v7">
+        <div class="container">
+          <div
+            class="news-letter-v7 wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <div class="row align-items-center">
+              <div class="col-lg-5">
+                <div class="newsletter-text">
+                  <h2>Keep Connected</h2>
+                  <span>Get updates by subscribe my weekly newsletter</span>
+                </div>
+                <!--newsletter-text end-->
+              </div>
+              <div class="col-lg-7">
+                <form class="newsletter-form-v7">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                  />
+                  <button type="submit">Subscribe</button>
+                  <i class="lni lni-envelope"></i>
+                </form>
+                <!--newsletter-form-v7 end-->
+              </div>
+            </div>
+          </div>
+          <!--news-letter-v7 end-->
+        </div>
+      </section>
+      <!--newslettter-sec-v7 end-->
+
+      {% include footer/footer-coach.html %}
+      <!--footer-v7 end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>

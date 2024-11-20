@@ -1,0 +1,159 @@
+interaction:
+  - title: "Interaction"
+    image: "/assets/img/service1.jpg"
+    description: "Reach out your clients better through website & mobile app. Boots converastion rate for your business faster"
+
+interactionskills:
+  - title: Mobile App
+    url: /
+
+  - title: UI/UX Website
+    url: /
+
+  - title: WP Development
+    url: /
+
+  - title: User Flow Mapping
+    url: /
+
+interactionprojects:
+  - title: Arquito
+    url: /
+
+  - title: Lewis
+    url: /
+
+  - title: Amazon
+    url: /
+
+  - title: Flipkart
+    url: /
+
+  - title: EBay
+    url: /
+
+  - title: Iloveughly
+    url: /
+
+  - title: Spotify
+    url: /
+
+  - title: Apple
+    url: /
+
+  - title: IBM
+    url: /
+
+
+marketing:
+  - title: "Marketing & SEO"
+    image: "/assets/img/service2.jpg"
+    description: "Impressive and communicate with your clients better throung animation & motion video"
+
+marketingskills:
+  - title: Copywriting
+    url: /
+
+  - title: Marketing Materials
+    url: /
+
+  - title: SEO
+    url: /
+
+marketingprojects:
+  - title: Coinbase
+    url: /
+
+  - title: Coinmarketcap
+    url: /
+
+  - title: Shutterstock
+    url: /
+
+
+branding:
+  - title: "Branding"
+    image: "/assets/img/service3.jpg"
+    description: "We build and activate brands throung cultural insigh and strategic vision to help business growth beter more and more"
+
+brandingskills:
+  - title: Brand Strategy
+    url: /
+
+  - title: Visual Identity
+    url: /
+
+  - title: Collateral
+    url: /
+
+brandingprojects:
+  - title: Arquito
+    url: /
+
+  - title: Lewis
+    url: /
+
+  - title: Amazon
+    url: /
+
+  - title: Flipkart
+    url: /
+
+  - title: EBay
+    url: /
+
+  - title: Iloveughly
+    url: /
+
+  - title: Spotify
+    url: /
+
+  - title: Apple
+    url: /
+
+  - title: IBM
+    url: /
+
+
+motion:
+  - title: "Motion"
+    image: "/assets/img/service4.jpg"
+    description: "Video & Motion create the fast connect with eveyone, easy to interactive and help increase high converastion rate"
+
+motionskills:
+  - title: Brand Strategy
+    url: /
+
+  - title: Visual Identity
+    url: /
+
+  - title: Collateral
+    url: /
+
+motionprojects:
+  - title: Arquito
+    url: /
+
+  - title: Lewis
+    url: /
+
+  - title: Amazon
+    url: /
+
+  - title: Flipkart
+    url: /
+
+  - title: EBay
+    url: /
+
+  - title: Iloveughly
+    url: /
+
+  - title: Spotify
+    url: /
+
+  - title: Apple
+    url: /
+
+  - title: IBM
+    url: /

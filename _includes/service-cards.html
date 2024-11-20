@@ -1,0 +1,96 @@
+<section class="services_03_content">
+  <div class="container">
+    <div class="svs-03-styles">
+      <div class="row fzt-row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="our-fzt">
+            <h3><a href="#" title="">Competitor Research</a></h3>
+            <p>Help business with their brading identity system better</p>
+            <span class="fzt-icon v1"><i class="lni lni-users"></i></span>
+          </div>
+          <!--our-fzt end-->
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="our-fzt">
+            <h3><a href="#" title="">Innovatives Ideas & Strategy</a></h3>
+            <p>
+              Reach out your clients better through website & mobile app
+            </p>
+            <span class="fzt-icon v2"
+              ><i class="lni lni-invention"></i
+            ></span>
+          </div>
+          <!--our-fzt end-->
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="our-fzt">
+            <h3><a href="#" title="">Affordable Cost</a></h3>
+            <p>
+              Building plan & strategy for your business by social
+              marketing
+            </p>
+            <span class="fzt-icon v3"
+              ><i class="lni lni-money-protection"></i
+            ></span>
+          </div>
+          <!--our-fzt end-->
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="our-fzt">
+            <h3><a href="#" title="">Dedicated Support & 24/7</a></h3>
+            <p>Improve quality of product with high resolution photos</p>
+            <span class="fzt-icon v4"
+              ><i class="lni lni-headphone"></i
+            ></span>
+          </div>
+          <!--our-fzt end-->
+        </div>
+      </div>
+      <div class="services-v9">
+        <div
+          class="title-v9 wow fadeInUp"
+          data-wow-duration="1000ms"
+          data-wow-delay="0ms"
+        >
+          <h2>Our Services</h2>
+        </div>
+        <!--title-v9 end-->
+        <div class="row services_v9">
+          {% for service in site.data.services.about-pages.about-business %}
+          <div class="col-lg-4 col-md-6">
+            <div class="service-v9">
+              <span class="s-icon clr-1"
+                ><i class="lni {{service.icon}}"></i
+              ></span>
+              <h3><a href="#" title="">{{service.title}}</a></h3>
+              <p>
+                {{service.content}}
+              </p>
+              <span class="s-category">{{service.buttontxt}}</span>
+            </div>
+            <!--service-v9 end-->
+          </div>
+          {% endfor %}
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="sv-text-v9 wow zoomIn"
+              data-wow-duration="1000ms"
+              data-wow-delay="0ms"
+            >
+              <h2 class="black-clr">
+                “Our Avantage can help you with picking out the best
+                people for your company.”
+              </h2>
+              <img src="/assets/img/sign2.png" alt="" />
+              <span>Founder at Misulting</span>
+            </div>
+            <!--sv-text-v9 end-->
+          </div>
+        </div>
+        <!--services_v9 end-->
+        {% include funfacts.html %}
+      </div>
+    </div>
+    <!--svs-03-styles end-->
+  </div>
+</section>

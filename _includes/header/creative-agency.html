@@ -1,0 +1,63 @@
+<header class="header-v6 v10">
+  <div class="container">
+    <div class="header-content-v6">
+      <div class="logo">
+        <a href="#" title=""><img src="{{site.data.settings.logo_home_creativeagency}}" alt="" /></a>
+      </div>
+      <!--logo end-->
+      <nav>
+        <ul>
+          {% for item in site.data.navigation-menu.secondary.toc %}
+          <li>
+            <a href="#" title="">{{ item.title }}</a>
+            <ul>
+              {% for entry in item.subfolderitems %}
+              <li>
+                <a
+                  href="{{ entry.url }}"
+                  title="{{ entry.page }}"
+                  class="{% if item.url == page.url %}active{% endif %}"
+                  >{{ entry.page }}</a
+                >
+              </li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <!--nav end-->
+      <ul class="social-header">
+        <li>
+          <a href="#" title=""><i class="lni lni-twitter-original"></i></a>
+        </li>
+        <li>
+          <a href="#" title=""><i class="lni lni-facebook-filled"></i></a>
+        </li>
+        <li>
+          <a href="#" title=""><i class="lni lni-instagram-original"></i></a>
+        </li>
+        <li>
+          <a href="#" title=""><i class="lni lni-pinterest"></i></a>
+        </li>
+        <li>
+          <a href="#" title=""><i class="lni lni-youtube"></i></a>
+        </li>
+      </ul>
+      <a href="javascript:void(Tawk_API.toggle())" title="" class="hd-btn"
+        >Let’s chat! <i class="lni lni-comments-reply"></i
+      ></a>
+      <button
+        class="nav-toggle-btn a-nav-toggle desktop-hide mobile-show ml-auto"
+      >
+        <span class="nav-toggle nav-toggle-sm">
+          <span class="stick stick-1"></span>
+          <span class="stick stick-2"></span>
+          <span class="stick stick-3"></span>
+        </span>
+      </button>
+    </div>
+    <!--header-content-v6 end-->
+  </div>
+</header>
+{% include sidemenu.html %}

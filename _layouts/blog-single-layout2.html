@@ -1,0 +1,147 @@
+---
+layout: default
+---
+<section class="page-content bb-0">
+  <div class="single-post-meta">
+    <h2>{{ page.title}}</h2>
+    <ul class="meta">
+      <li>
+        posted {{ page.date | date_to_long_string: "ordinal", "US" }}
+      </li>
+    </ul>
+  </div>
+  <!--single-post-meta end-->
+  <div class="single-layout-featured">
+    <div class="container v4">
+      <div class="featured-post-sec v2">
+        <div class="featured-post-slider">
+          <div class="featured-post">
+            <div class="vector-img">
+              <img src="{{page.image}}" alt="" />
+            </div>
+            <!--vector-img end-->
+          </div>
+          <!--featured-content end-->
+        </div>
+        <!--featured-post-slider end-->
+      </div>
+      <!--featured-post-sec end-->
+    </div>
+  </div>
+  <div class="single-post-layout2">
+    <div class="container">
+      <div class="blog-ppt">
+        <div class="shared-col">
+          <ul class="social-count">
+            <li>
+              <a href="#" title="" class="twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <span>216</span>
+            </li>
+            <li>
+              <a href="#" title="" class="facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <span>686</span>
+            </li>
+            <li>
+              <a href="#" title="" class="rss"
+                ><i class="fas fa-rss"></i
+              ></a>
+              <span>105</span>
+            </li>
+          </ul>
+        </div>
+        <!--shared-col end-->
+        <div class="single-post-layout1">
+          <div class="blog-posts-layout2">
+            <div class="bg-post">
+              <div class="bg-post-info">
+                {{ page.content}}
+                <div class="row post-cont align-items-center">
+                  <div class="col-lg-6 col-md-6">
+                    <ul class="post-tags">
+                      {% for categories in page.categories%}
+                      <li>
+                        <a href="#" title="">{{page.categories}}</a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="share-on">
+                      <h3>Share on</h3>
+                      <ul class="social-circle">
+                        <li>
+                          <a href="#" title="" class="facebook"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" title="" class="twitter"
+                            ><i class="fab fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" title="" class="google"
+                            ><i class="fab fa-google-plus-g"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" title="" class="tumblr"
+                            ><i class="fab fa-tumblr"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" title="" class="rss"
+                            ><i class="fa fa-rss"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!--share-on end-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--bg-post end-->
+            <div class="related-posts-ly">
+              <h3>Related Posts</h3>
+              <div class="blog-posts-v10 row">
+                {% for post in site.posts limit: 2 %}
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="post-v10">
+                    <div class="post-thumb">
+                      <img
+                        src="{{ post.layout_image }}"
+                        alt=""
+                        class="w-100"
+                      />
+                    </div>
+                    <div class="post-info">
+                      <h2>
+                        <a href="{{blog.url}}" title=""
+                          >{{ post.title}}
+                        </a>
+                      </h2>
+                      <p>{{ post.description}}</p>
+                      <span class="posted-on"
+                        >{{ page.date | date_to_long_string: "ordinal",
+                        "US" }} by</span
+                      >
+                    </div>
+                  </div>
+                  <!--post-v10 end-->
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+        </div>
+      </div>
+      <!--blog-ppt end-->
+    </div>
+  </div>
+  <!--single-post-layout2 end-->
+</section>
+{% include disqus_comments.html %}

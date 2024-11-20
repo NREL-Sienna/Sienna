@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html %}
+
+<body>
+
+
+	<div class="wrapper">
+
+		{% include header/header-default.html %}
+		<section class="service_v1_page">
+			<div class="container">
+				<div class="row service_v1_content">
+					<div class="col-lg-6">
+						<div class="sv-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+							{% assign banner = page.banner %}
+							<span>{{banner.title}}</span>
+							<h2>{{banner.sub_title}}</h2>
+							<p>{{banner.content}}</p>
+						</div><!--sv-title end-->
+						<div class="services_items">
+							<div class="service-item">
+								{% for service in site.data.services.service.service1.interaction %}
+
+								<div class="service-thumb">
+									<img src="{{service.image}}" alt="" class="w-100">
+								</div>
+								<div class="service-info">
+									<h3>{{service.title}}</h3>
+									<p>{{service.description}}</p>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="sk-col">
+												<h4>Skills</h4>
+												<ul>
+													{% for item in site.data.services.service.service1.interactionskills %}
+													<li><a href="{{item.url}}" title="">{{item.title}}</a></li>
+													{% endfor %}
+												</ul>
+											</div><!--sk-col end-->
+										</div>
+										<div class="col-md-6">
+											<div class="sk-col pol">
+												<h4>Projects</h4>
+												<ul>
+													{% for item in site.data.services.service.service1.interactionprojects %}
+													<li><a href="{{item.url}}" title="">{{item.title}}</a></li>
+													{% endfor %}
+												</ul>
+											</div><!--sk-col end-->
+										</div>
+									</div>
+								</div>
+								{% endfor %}
+							</div><!--service-item end-->
+							<div class="service-item">
+								{% for service in site.data.services.service.service1.marketing %}
+								<div class="service-thumb">
+									<img src="{{service.image}}" alt="" class="w-100">
+								</div>
+								<div class="service-info">
+									<h3>{{service.title}}</h3>
+									<p>{{service.description}}</p>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="sk-col">
+												<h4>Skills</h4>
+												<ul>
+													{% for item in site.data.services.service.service1.marketingskills %}
+													<li><a href="{{item.url}}" title="">{{item.title}}</a></li>
+													{% endfor %}
+												</ul>
+											</div><!--sk-col end-->
+										</div>
+										<div class="col-md-6">
+											<div class="sk-col pol">
+												<h4>Projects</h4>
+												<ul>
+													{% for item in site.data.services.service.service1.marketingprojects %}
+													<li><a href="{{item.url}}" title="">{{item.title}}</a></li>
+													{% endfor %}
+												</ul>
+											</div><!--sk-col end-->
+										</div>
+									</div>
+								</div>
+								{% endfor %}
+							</div><!--service-item end-->
+						</div><!--services_items end-->
+					</div>
+					<div class="col-lg-6">
+						<div class="services_items style2">
+							<div class="service-item ml-auto">
+								{% for service in site.data.services.service.service1.branding %}
+								<div class="service-thumb">
+									<img src="{{service.image}}" alt="" class="w-100">
+								</div>
+								<div class="service-info">
+									<h3>{{service.title}}</h3>
+									<p>{{service.description}}</p>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="sk-col">
+												<h4>Skills</h4>
+												<ul>
+													{% for item in site.data.services.service.service1.brandingskills %}
+													<li><a href="{{item.url}}" title="">{{item.title}}</a></li>
+													{% endfor %}
+												</ul>
+											</div><!--sk-col end-->
+										</div>
+										<div class="col-md-6">
+											<div class="sk-col pol">
+												<h4>Projects</h4>
+												<ul>
+													{% for item in site.data.services.service.service1.brandingprojects %}
+													<li><a href="{{item.url}}" title="">{{item.title}}</a></li>
+													{% endfor %}
+												</ul>
+											</div><!--sk-col end-->
+										</div>
+									</div>
+								</div>
+								{% endfor %}
+							</div><!--service-item end-->
+							<div class="service-item ml-auto">
+								{% for service in site.data.services.service.service1.motion %}
+								<div class="service-thumb">
+									<img src="{{service.image}}" alt="" class="w-100">
+								</div>
+								<div class="service-info">
+									<h3>{{service.title}}</h3>
+									<p>{{service.description}}</p>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="sk-col">
+												<h4>Skills</h4>
+												<ul>
+													{% for item in site.data.services.service.service1.motionskills %}
+													<li><a href="{{item.url}}" title="">{{item.title}}</a></li>
+													{% endfor %}
+												</ul>
+											</div><!--sk-col end-->
+										</div>
+										<div class="col-md-6">
+											<div class="sk-col pol">
+												<h4>Projects</h4>
+												<ul>
+													{% for item in site.data.services.service.service1.motionprojects %}
+													<li><a href="{{item.url}}" title="">{{item.title}}</a></li>
+													{% endfor %}
+												</ul>
+											</div><!--sk-col end-->
+										</div>
+									</div>
+								</div>
+								{% endfor %}
+							</div><!--service-item end-->
+						</div><!--services_items end-->
+					</div>
+				</div>
+			</div>
+		</section><!--service_v1_page end-->
+
+		{% include pricing/pricing-v1.html %}
+		{% include footer/footer-team.html %}
+	</div><!--wrapper end-->
+
+
+<script src="/assets/js/bundle.min.js"></script>
+
+
+</body>
+
+</html>

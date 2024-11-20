@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-studio.html %}
+      <!--responsive-menu end-->
+
+      <div class="promo promo-studio-container">
+        {% assign banner = page.banner %}
+        <div class="step-animate-nav"></div>
+        <div class="step-animate-nav-hidden"></div>
+        <div class="step-animate-opacity"></div>
+        <div class="promo-studio">
+          <div class="promo-studio-bg"></div>
+          <div class="promo-studio-man"></div>
+          <div class="promo-studio-content">
+            <div class="vertical-text-left">
+              {{ banner.side_title}}
+              <span class="text-muted vertical-text-block"
+                >{{ banner.side_subtitle}}</span
+              >
+            </div>
+            <div class="container">
+              <div class="row wow fadeInUp">
+                <div class="col-lg-6 col-md-6">
+                  <h1 class="title-studio">{{ banner.title}}</h1>
+                </div>
+                <div class="col-lg-2 dis-none"></div>
+                <div class="col-lg-4 col-md-6">
+                  <div
+                    class="banner-text wow fadeInRight"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="300ms"
+                  >
+                    <h3>{{ banner.sub_title}}</h3>
+                    <p>{{ banner.content}}</p>
+                    {% assign button = banner.button %}
+                    <a href="{{ button.link}}" title="">{{button.label}}</a>
+                  </div>
+                  <!--banner-text end-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="about-us-v2 step-visibility section-about-studio">
+        {% assign who_we_are = page.who_we_are %}
+        <!---->
+        {% assign who_we_are2 = page.who_we_are2 %}
+        <div class="step-about-animate"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="abt-nfo d-flex flex-wrap align-items-end">
+                <div
+                  class="abt-img mask-solid wow fadeIn"
+                  data-wow-offset="30"
+                  data-wow-duration="0.2s"
+                  data-wow-delay=".3s"
+                >
+                  <div
+                    class="mask wow slideInLeft"
+                    data-wow-offset="30"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".3s"
+                  ></div>
+                  <img src="{{who_we_are.image}}" alt="" class="img-fluid" />
+                </div>
+                <div
+                  class="abt-info mask-solid wow fadeIn"
+                  data-wow-offset="30"
+                  data-wow-duration="0.2s"
+                  data-wow-delay=".3s"
+                >
+                  <div
+                    class="mask wow slideInLeft"
+                    data-wow-offset="30"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".3s"
+                  ></div>
+                  <h3>{{who_we_are.name}}</h3>
+                  <span>{{who_we_are.possition}}</span>
+                  <img
+                    class="wow zoomIn"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="0ms"
+                    src="{{who_we_are.sign}}"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!--abt-nfo end-->
+            </div>
+            <div class="col-lg-3">
+              <div
+                class="abot-text wow fadeInRight"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+                <h2>{{ who_we_are.title}}</h2>
+                <p>{{ who_we_are.content}}</p>
+                <a href="{{ who_we_are.link}}" title="" class="link2"
+                  >{{ who_we_are.button}}</a
+                >
+              </div>
+              <!--abot-text end-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--about-us-v2 end-->
+
+      <section class="abt-v3-sec">
+        <div class="container">
+          <div class="abt-v3-content d-flex flex-wrap align-items-center">
+            <div
+              class="abt-v-text wow fadeInLeft"
+              data-wow-duration="1000ms"
+              data-wow-delay="0ms"
+            >
+              <h3>{{who_we_are2.name}}</h3>
+              <span>{{ who_we_are2.label}}</span>
+            </div>
+            <!--abt-v-text end-->
+            <div
+              class="abt-v-img mask-solid wow fadeIn"
+              data-wow-offset="30"
+              data-wow-duration="0.2s"
+              data-wow-delay=".3s"
+            >
+              <div
+                class="mask wow slideInLeft"
+                data-wow-offset="30"
+                data-wow-duration="1.2s"
+                data-wow-delay=".3s"
+              ></div>
+              <img src="{{who_we_are2.image}}" alt="" class="img-fluid" />
+            </div>
+            <!--abt-v-img end-->
+          </div>
+          <!--abt-v3-content end-->
+        </div>
+      </section>
+      <!--abt-v3-sec end-->
+
+      <section class="what-we-do-v2">
+        {% assign what_we_do = page.what_we_do%}
+        <div class="container">
+          <div
+            class="section-title-v2 wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <h2>{{ what_we_do.title}}</h2>
+            <p>{{ what_we_do.content}}</p>
+          </div>
+          <!--section-title-v2 end-->
+          <div class="what-we-do-content">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div
+                  class="wed-img mask-solid wow fadeIn"
+                  data-wow-offset="30"
+                  data-wow-duration="0.2s"
+                  data-wow-delay=".3s"
+                >
+                  <div
+                    class="mask wow slideInLeft"
+                    data-wow-offset="30"
+                    data-wow-duration="1.2s"
+                    data-wow-delay=".3s"
+                  ></div>
+                  <img src="{{ what_we_do.image}}" alt="" class="img-fluid" />
+                </div>
+                <!--wed-img end-->
+              </div>
+              <div class="col-lg-8 col-md-8">
+                <div class="mile-sz">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      {% assign service_section1 = what_we_do.service_section1%}
+                      <div
+                        class="sz-list mask-solid wow fadeIn"
+                        data-wow-offset="30"
+                        data-wow-duration="0.2s"
+                        data-wow-delay=".3s"
+                      >
+                        <div
+                          class="mask wow slideInLeft"
+                          data-wow-offset="30"
+                          data-wow-duration="1.2s"
+                          data-wow-delay=".3s"
+                        ></div>
+                        <h3>{{ service_section1.title}}</h3>
+                        <ul>
+                          {% for service_list in service_section1.service_list
+                          %}
+                          <li>
+                            <a href="{{ service_list.link}}" title=""
+                              >{{ service_list.service}}</a
+                            >
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                      <!--sz-list end-->
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      {% assign service_section2 = what_we_do.service_section2%}
+                      <div
+                        class="sz-list mask-solid wow fadeIn"
+                        data-wow-offset="30"
+                        data-wow-duration="0.2s"
+                        data-wow-delay=".3s"
+                      >
+                        <div
+                          class="mask wow slideInLeft"
+                          data-wow-offset="30"
+                          data-wow-duration="1.2s"
+                          data-wow-delay=".3s"
+                        ></div>
+                        <h3>{{ service_section2.title}}</h3>
+                        <ul>
+                          {% for service_list in service_section1.service_list
+                          %}
+                          <li>
+                            <a href="{{ service_list.link}}" title=""
+                              >{{ service_list.service}}</a
+                            >
+                          </li>
+                          {% endfor%}
+                        </ul>
+                      </div>
+                      <!--sz-list end-->
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      {% assign service_section3 = what_we_do.service_section3%}
+                      <div
+                        class="sz-list mask-solid wow fadeIn"
+                        data-wow-offset="30"
+                        data-wow-duration="0.2s"
+                        data-wow-delay=".3s"
+                      >
+                        <div
+                          class="mask wow slideInLeft"
+                          data-wow-offset="30"
+                          data-wow-duration="1.2s"
+                          data-wow-delay=".3s"
+                        ></div>
+                        <h3>{{ service_section3.title}}</h3>
+                        <ul>
+                          {% for service_list in service_section3.service_list
+                          %}
+                          <li>
+                            <a href="{{ service_list.link}}" title=""
+                              >{{ service_list.service}}</a
+                            >
+                          </li>
+                          {% endfor%}
+                        </ul>
+                      </div>
+                      <!--sz-list end-->
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      {% assign service_section4 = what_we_do.service_section4%}
+                      <div
+                        class="sz-list mask-solid wow fadeIn"
+                        data-wow-offset="30"
+                        data-wow-duration="0.2s"
+                        data-wow-delay=".3s"
+                      >
+                        <div
+                          class="mask wow slideInLeft"
+                          data-wow-offset="30"
+                          data-wow-duration="1.2s"
+                          data-wow-delay=".3s"
+                        ></div>
+                        <h3>{{ service_section4.title}}</h3>
+                        <ul>
+                          {% for service_list in service_section4.service_list
+                          %}
+                          <li>
+                            <a href="{{ service_list.link}}" title=""
+                              >{{ service_list.service}}</a
+                            >
+                          </li>
+                          {% endfor%}
+                        </ul>
+                      </div>
+                      <!--sz-list end-->
+                    </div>
+                  </div>
+                  <a
+                    href="{{what_we_do.link}}"
+                    title=""
+                    class="link-btn"
+                    data-text="SEE MORE SERVICES"
+                    >{{what_we_do.button}}</a
+                  >
+                </div>
+                <!--mile-sz end-->
+              </div>
+            </div>
+          </div>
+          <!--what-we-do-content end-->
+        </div>
+      </section>
+      <!--what-we-do-v2 end-->
+
+      <section class="latest-projects-v2">
+        {% assign projects = page.projects %}
+        <div class="container">
+          <div class="section-title-v2 wow fadeInUp">
+            <h2>{{ projects.title}}</h2>
+            <p>{{ projects.content}}</p>
+          </div>
+          <!--section-title-v2 end-->
+          <div class="projects-slider">
+            <div class="project-slide">
+              <div class="project-thumb">
+                <img src="assets/img/project-thumb1.jpg" alt="" />
+                <a href="#" title="" class="pls-btn"
+                  ><i class="lni lni-plus"></i
+                ></a>
+              </div>
+              <div class="project-info">
+                <span>Print Design</span>
+                <h2>
+                  <a href="17_portfolio_single_layout_1.html" title=""
+                    >Fashion Design Morgen</a
+                  >
+                </h2>
+              </div>
+            </div>
+            <!--project-slide end-->
+            <div class="project-slide">
+              <div class="project-thumb">
+                <img src="assets/img/project-thumb2.jpg" alt="" />
+                <a href="#" title="" class="pls-btn"
+                  ><i class="lni lni-plus"></i
+                ></a>
+              </div>
+              <div class="project-info">
+                <span>Package Design / Branding</span>
+                <h2>
+                  <a href="17_portfolio_single_layout_1.html" title=""
+                    >Paint Bucket Gloss</a
+                  >
+                </h2>
+              </div>
+            </div>
+            <!--project-slide end-->
+            <div class="project-slide">
+              <div class="project-thumb">
+                <img src="assets/img/project-thumb1.jpg" alt="" />
+                <a href="#" title="" class="pls-btn"
+                  ><i class="lni lni-plus"></i
+                ></a>
+              </div>
+              <div class="project-info">
+                <span>Print Design</span>
+                <h2>
+                  <a href="17_portfolio_single_layout_1.html" title=""
+                    >Fashion Design Morgen</a
+                  >
+                </h2>
+              </div>
+            </div>
+            <!--project-slide end-->
+            <div class="project-slide">
+              <div class="project-thumb">
+                <img src="assets/img/project-thumb2.jpg" alt="" />
+                <a href="#" title="" class="pls-btn"
+                  ><i class="lni lni-plus"></i
+                ></a>
+              </div>
+              <div class="project-info">
+                <span>Package Design / Branding</span>
+                <h2>
+                  <a href="17_portfolio_single_layout_1.html" title=""
+                    >Paint Bucket Gloss</a
+                  >
+                </h2>
+              </div>
+            </div>
+            <!--project-slide end-->
+          </div>
+          <!--projects-slider end-->
+        </div>
+      </section>
+      <!--latest-projects-v2 end-->
+
+      <div class="success-stories-section">
+        <div class="container">
+          <div class="mega-title v2">
+            <h2>success stories</h2>
+            <div class="clearfix"></div>
+          </div>
+          <!--mega-title end-->
+        </div>
+        <div class="stories-sec-v2">
+          <div class="testi-sec-v2">
+            <div
+              class="mile-slider-sec mask-solid wow fadeIn"
+              data-wow-offset="30"
+              data-wow-duration="0.2s"
+              data-wow-delay=".3s"
+            >
+              <div
+                class="mask wow slideInLeft"
+                data-wow-offset="30"
+                data-wow-duration="1.2s"
+                data-wow-delay=".3s"
+              ></div>
+              <div class="testi-slider-v2">
+                <!--testi-slide-v2 end-->
+                {% for testmoniols in site.data.testmoniols.testmoniols-v2 %}
+                <div class="testi-slide-v2">
+                  <img src="{{ testmoniols.image}}" alt="" />
+                  <p>{{ testmoniols.content}}</p>
+                  <h3>{{ testmoniols.name}}</h3>
+                  <span
+                    >{{ testmoniols.designation}} <a
+                      href="{{ testmoniols.link}}"
+                      title=""
+                    >
+                      {{ testmoniols.company}}</a
+                    ></span
+                  >
+                </div>
+                {% endfor%}
+                <!--testi-slide-v2 end-->
+              </div>
+              <!--testi-slider-v2 end-->
+            </div>
+          </div>
+          <!--testi-sec-v2 end-->
+          <div class="vid-sec">
+            <div class="container">
+              <div class="video-sec wow zoomIn">
+                <img src="assets/img/vid-img.jpg" alt="" />
+                <a href="#" title="" class="play-btnn"
+                  ><img src="/assets/img/play-btn.png" alt=""
+                /></a>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <!--vid-sec end-->
+        </div>
+        <!--stories-sec-v2 end-->
+      </div>
+
+      {% include partners/partners-v2.html %}
+      <section class="blog-v2-section">
+        <div class="container">
+          <div class="mega-title">
+            {% assign insights = page.insights%}
+            <h2>{{ insights.title}}</h2>
+          </div>
+          <!--mega-title end-->
+        </div>
+        <div class="custom-container">
+          <div class="blog-v2-items">
+            <div class="row">
+              {% for post in site.posts limit:3 %}
+              <div class="col-lg-4 col-md-6">
+                <div
+                  class="blog-v2-item wow fadeInUp"
+                  data-wow-offset="30"
+                  data-wow-duration="1000ms"
+                  data-wow-delay=".1s"
+                >
+                  <div class="blog-v2-thumbnail">
+                    <img src="{{ post.layout_image}}" alt="" class="w-100" />
+                    <a href="{{ post.url}}" title="" class="pls-btn"
+                      ><i class="lni lni-plus"></i
+                    ></a>
+                  </div>
+                  <!--blog-v2-thumbnail end-->
+                  <div class="blog-v2-info">
+                    <h2>
+                      <a href="{{ post.url}}" title=""
+                        >{{ post.title}}</a
+                      >
+                    </h2>
+                    <ul class="meta">
+                      <li><a >{{ page.date | date_to_long_string: "ordinal",
+                        "US" }}</a></li>
+                    </ul>
+                  </div>
+                  <!--blog-v2-info end-->
+                </div>
+                <!--blog-v2-item end-->
+              </div>
+              {% endfor %}
+
+            </div>
+            <div class="row">
+              <div class="col-12 text-center">
+                <a href="/blog" title="" class="link3"
+                  >see more articles</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--blog-v2-items end-->
+        </div>
+      </section>
+      <!--blog-v2-section end-->
+
+      <section class="contact-v2-sec">
+        {% assign call_to_action = page.call_to_action%}
+        <div class="container">
+          <div
+            class="contact-v2-content text-center mask-solid wow fadeIn"
+            data-wow-offset="30"
+            data-wow-duration="0.2s"
+            data-wow-delay=".3s"
+          >
+            <div
+              class="mask wow slideInLeft"
+              data-wow-offset="30"
+              data-wow-duration="1.2s"
+              data-wow-delay=".3s"
+            ></div>
+            <h2>
+              {{ call_to_action.title}}
+            </h2>
+            <p>
+              {{ call_to_action.content }}
+            </p>
+            <div class="contact-ddd">
+              <strong>{{ site.phone }}</strong>
+              <a href="{{ site.email}}" title=""
+                >{{ site.email }}</a
+              >
+            </div>
+            <!--contact-ddd end-->
+          </div>
+          <!--contact-v2-content end-->
+        </div>
+      </section>
+      <!--contact-v2-sec end-->
+
+      {% include footer/footer-studio.html %}
+      <!--footer end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // init controller
+        var controller = new ScrollMagic.Controller();
+
+        // build scenes
+        new ScrollMagic.Scene({
+          triggerElement: ".promo-studio-container",
+          triggerHook: 0,
+          duration: "80%",
+        })
+          .setTween(".promo-studio-bg", { scale: 1.8, ease: Linear.easeNone })
+          // .addIndicators()
+          .addTo(controller);
+
+        new ScrollMagic.Scene({
+          triggerElement: ".promo-studio-container",
+          triggerHook: 0,
+          duration: "80%",
+        })
+          .setTween(".promo-studio-man", {
+            scale: 1.8,
+            left: "-28%",
+            top: "-23%",
+            ease: Linear.easeNone,
+          })
+          // .addIndicators()
+          .addTo(controller);
+
+        new ScrollMagic.Scene({
+          triggerElement: ".promo-studio-container",
+          triggerHook: 0,
+          duration: "80%",
+        })
+          .setTween(".promo-studio-content", {
+            top: "-60%",
+            ease: Linear.easeNone,
+          })
+          // .addIndicators()
+          .addTo(controller);
+
+        new ScrollMagic.Scene({
+          triggerElement: ".step-animate-nav",
+          triggerHook: 0,
+          duration: "15%",
+        })
+          .setTween(".nav-header-addition-container", {
+            opacity: 0,
+            ease: Linear.easeNone,
+          })
+          // .addIndicators()
+          .addTo(controller);
+
+        new ScrollMagic.Scene({
+          triggerElement: ".step-animate-nav-hidden",
+          triggerHook: 0,
+          duration: "15%",
+        })
+          .setTween(".nav-header-addition-container", {
+            visibility: "hidden",
+            ease: Linear.easeNone,
+          })
+          // .addIndicators()
+          .addTo(controller);
+
+        new ScrollMagic.Scene({
+          triggerElement: ".step-animate-opacity",
+          triggerHook: 0,
+          duration: "30%",
+        })
+          .setTween(".promo-studio", { opacity: 0, ease: Linear.easeNone })
+          // .addIndicators()
+          .addTo(controller);
+
+        new ScrollMagic.Scene({
+          triggerElement: ".step-visibility",
+          triggerHook: 0,
+          duration: "10%",
+        })
+          .setTween(".promo-studio, .nav-header-addition-container", {
+            visibility: "hidden",
+            ease: Linear.easeNone,
+          })
+          // .addIndicators()
+          .addTo(controller);
+
+        new ScrollMagic.Scene({
+          triggerElement: ".step-about-animate",
+          triggerHook: 0,
+          duration: "1%",
+        })
+          .setTween(".about-animate", {
+            top: 0,
+            opacity: 1,
+            ease: Linear.easeNone,
+          })
+          // .addIndicators()
+          .addTo(controller);
+
+        // new ScrollMagic.Scene({triggerElement: '.promo-zoom', triggerHook: 0, duration: '100%'})
+        //       .setTween('.house-right', {right: '-10%', bottom: '-20%', scale: 1.35, ease: Linear.easeNone})
+        //       .addTo(controller);
+
+        // new ScrollMagic.Scene({triggerElement: '.promo-zoom', triggerHook: 0, duration: '100%'})
+        //       .setTween('.mountains', {top: '-60%', scale: 2.2, ease: Linear.easeNone})
+        //       .addTo(controller);
+
+        // new ScrollMagic.Scene({triggerElement: '.promo-zoom', triggerHook: 0, duration: '100%'})
+        //       .setTween('.promo-zoom-titles', {top: '0%', opacity: 0, ease: Linear.easeNone})
+        //       .addTo(controller);
+
+        // new ScrollMagic.Scene({triggerElement: '.promo-zoom', triggerHook: 0, duration: '100%'})
+        //       .setTween('.navbar-nav', {opacity: 0, ease: Linear.easeNone})
+        //       .addTo(controller);
+
+        // new ScrollMagic.Scene({triggerElement: '.step-opacity', triggerHook: 0, duration: '15%'})
+        //       .setTween('.mountains, .house-right, .house-left', {opacity: 0, ease: Linear.easeNone})
+        //       .addTo(controller);
+
+        // new ScrollMagic.Scene({triggerElement: '.step-visibility', triggerHook: 0, duration: '10%'})
+        //       .setTween('.mountains, .house-right, .house-left, .navbar-nav, .promo-zoom-titles', {visibility: 'hidden', ease: Linear.easeNone})
+        //       .addTo(controller);
+      });
+    </script>
+  </body>
+</html>

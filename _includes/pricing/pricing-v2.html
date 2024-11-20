@@ -1,0 +1,57 @@
+<section class="pricing-v10 clr-default">
+  <div class="container">
+    <div class="title-v10 text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+      <span class="gray-color">{{page.title}}</span>
+      <h2>{{page.tagline}} </h2>
+    </div><!--title-v10 end-->
+    <ul class="tab-btns">
+                <li data-tab="monthly" class="tab-btn active-btn">Billed monthly </li>
+                <li data-tab="annually" class="tab-btn">Billed annually</li>
+            </ul>
+            <div class="tb-content">
+
+      <div class="tab-data active" id="monthly">
+        <div class="row prices-v10">
+          {% for monthly in site.data.pricing.pricing.monthly %}
+          <div class="col-lg-4 col-md-6">
+            <div class="price-v10">
+              <img src="{{monthly.image}}" alt="">
+              <h4>{{monthly.name}}</h4>
+              <span>{{monthly.type}}</span>
+              <h2><sup>$</sup> {{monthly.price}} <span>/ month</span></h2>
+              <ul>
+                <li>{{monthly.features}}</li>
+              </ul>
+              <a href="#" title="" class="btn-default-v10 v2">Get Started Now</a>
+            </div><!--price-v10 end-->
+          </div>
+          {% endfor %}
+        </div>
+
+
+      </div>
+      <div class="tab-data" id="annually">
+        <div class="row prices-v10">
+          {% for annual in site.data.pricing.pricing.annual %}
+          <div class="col-lg-4 col-md-6">
+            <div class="price-v10">
+              <img src="{{annual.image}}" alt="">
+              <h4>{{annual.name}}</h4>
+              <span>{{annual.type}}</span>
+              <h2><sup>$</sup> {{annual.price}} <span>/ month</span></h2>
+              <ul>
+                <li>500 request</li>
+                <li>unlimited projects</li>
+              </ul>
+              <a href="#" title="" class="btn-default-v10 v2">Get Started Now</a>
+            </div><!--price-v10 end-->
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="text-center pl-btm">
+      <p>You have a large team? <a href="#" title="">Contact us</a> for information about more enterprise options  </p>
+    </div>
+  </div>
+</section><!--pricing-v10 end-->

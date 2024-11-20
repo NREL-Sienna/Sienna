@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/portfolio-v1.html %}
+      <div class="project-single-slider">
+        {% for slider in page.slider%}
+        <div class="project-single-slide">
+          <div class="pf-single-banner">
+            <div class="container">
+              <div
+                class="pf-banner wow fadeInUp"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+                <img src="{{ slider.image}}" alt="" />
+              </div>
+              <!--pf-banner end-->
+            </div>
+          </div>
+          <!--pf-single-banner end-->
+          <div class="project-content-v1">
+            <div class="container">
+              <div class="row project-v1-info">
+                <div class="col-lg-7">
+                  <div class="project-dt">
+                    <h2>{{ slider.title}}</h2>
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                        <div class="dd-tinfo">
+                          <h3>client</h3>
+                          <span>IBM Finance Center Global Inc.</span>
+                        </div>
+                        <!--dd-tinfo end-->
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="dd-tinfo">
+                          <h3>team</h3>
+                          <span>Daniel Tan - Designer</span>
+                          <span>Naby Keita - Mobile Developer</span>
+                        </div>
+                        <!--dd-tinfo end-->
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="dd-tinfo">
+                          <h3>services</h3>
+                          <span>UI/UX, Branding</span>
+                        </div>
+                        <!--dd-tinfo end-->
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="dd-tinfo">
+                          <h3>date</h3>
+                          <span>Feburary 25th, 2020</span>
+                        </div>
+                        <!--dd-tinfo end-->
+                      </div>
+                    </div>
+                  </div>
+                  <!--project-dt end-->
+                </div>
+                <div class="col-lg-5">
+                  <div
+                    class="ppr-sldr wow fadeInRight"
+                    data-wow-duration="1000ms"
+                    data-wow-delay="0ms"
+                  >
+                    <p>
+                      “Originally, creative & with an innate understanding of
+                      their customer’s need. The team at Miles are always a
+                      pleasure to work !”
+                    </p>
+                    <div class="pp-info">
+                      <div class="pp-img">
+                        <img src="/assets/img/thumb1.png" alt="" />
+                      </div>
+                      <div class="pp-dt">
+                        <h3>Enesto Valverde</h3>
+                        <span
+                          >Director of <a href="#" title="">byzano.co</a></span
+                        >
+                      </div>
+                    </div>
+                    <!--pp-info end-->
+                  </div>
+                  <!--ppr-sldr end-->
+                </div>
+              </div>
+              <div
+                class="txt-content text-center wow fadeInUp"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+                <p>
+                  Byzano nestled right into our wheelhouse. A dynamic co-working
+                  space attracting entrepreneurs, tinkerers, and creatives in
+                  the tech hub of Ann Arbor, Michigan, they wanted a lifestyle
+                  brand—a complete ecosystem of brand visuals and assets that
+                  could be worn, posted, shared.
+                </p>
+              </div>
+              <!--txt-content end-->
+            </div>
+          </div>
+          <!-- project-content-v1 end-->
+        </div>
+        {% endfor %}
+        <!--project-single-slide end-->
+      </div>
+      <!--project-single-slider end-->
+
+      <section class="challenge-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mv-title">
+                <span>challenge</span>
+                <h2>
+                  Best finance app professional & friendly for all people.
+                </h2>
+              </div>
+              <!--mv-title end-->
+            </div>
+            <div class="col-lg-6">
+              <div class="mv-para">
+                <p>
+                  <strong>Miles Studio</strong> believes a team of creatives who
+                  are excited about unique ideas and help digital and fin-tech
+                  companies. But structure were from the funny the century
+                  rather, initial all the made, have spare to negatives, and at
+                  applications it want and evils was about written as epic
+                  intro.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row sl-sec">
+            <div class="col-md-6 col-sm-6 col-6">
+              <div class="zoom-img">
+                <img src="/assets/img/sl-img1.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-6">
+              <div class="zoom-img">
+                <img src="/assets/img/sl-img2.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row op-row">
+            <div class="col-lg-6">
+              <div
+                class="op-details wow fadeInUp"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+                <div class="mv-title">
+                  <span>our progress</span>
+                  <h2>Creating an unique visual system and strategy.</h2>
+                </div>
+                <!--mv-title end-->
+                <p>
+                  We're a team of creatives who are excited about unique ideas
+                  and help digital and fin-tech companies. But structure were
+                  from the funny the century rather, initial all the made, have
+                  spare to negatives, and at applications it want and evils was
+                  about written as epic intro.
+                </p>
+              </div>
+              <!--op-details end-->
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="pp-tabs-sec wow zoomIn"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="strategy"
+                    role="tabpanel"
+                    aria-labelledby="strategy-tab"
+                  >
+                    <div class="vl-img">
+                      <img src="/assets/img/vl-img1.png" alt="" />
+                    </div>
+                    <!--vl-img end-->
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="ui-ux"
+                    role="tabpanel"
+                    aria-labelledby="ui-ux-tab"
+                  >
+                    <div class="vl-img">
+                      <img src="/assets/img/vl-img2.png" alt="" />
+                    </div>
+                    <!--vl-img end-->
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="testing"
+                    role="tabpanel"
+                    aria-labelledby="testing-tab"
+                  >
+                    <div class="vl-img">
+                      <img src="/assets/img/vl-img3.png" alt="" />
+                    </div>
+                    <!--vl-img end-->
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="showcase"
+                    role="tabpanel"
+                    aria-labelledby="showcase-tab"
+                  >
+                    <div class="vl-img">
+                      <img src="/assets/img/vl-img4.png" alt="" />
+                    </div>
+                    <!--vl-img end-->
+                  </div>
+                </div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      id="strategy-tab"
+                      data-toggle="tab"
+                      href="#strategy"
+                      role="tab"
+                      aria-controls="strategy-tab"
+                      aria-selected="true"
+                      >Strategy
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="ui-ux-tab"
+                      data-toggle="tab"
+                      href="#ui-ux"
+                      role="tab"
+                      aria-controls="ui-ux-tab"
+                      aria-selected="false"
+                      >UI/UX</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="testing-tab"
+                      data-toggle="tab"
+                      href="#testing"
+                      role="tab"
+                      aria-controls="testing-tab"
+                      aria-selected="false"
+                      >A/B Testing
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="showcase-tab"
+                      data-toggle="tab"
+                      href="#showcase"
+                      role="tab"
+                      aria-controls="showcase"
+                      aria-selected="false"
+                      >Showcase</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--pp-tabs-sec end-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- challenge-sec end-->
+
+      <section class="showcase-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="mv-title">
+                <span>showcase</span>
+                <h2>
+                  Best solution <br />
+                  choiced
+                </h2>
+              </div>
+              <!--mv-title end-->
+            </div>
+            <div class="col-md-5">
+              <p>
+                Throughout at pretty slid fresh decided go to gloomy excuse
+                partiality let of the such of perhaps at road, succeeded asked
+                an embarrassed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row showcase-slider">
+            <div class="col-lg-3">
+              <div class="screen-slide">
+                <img src="/assets/img/screen1.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="screen-slide">
+                <img src="/assets/img/screen2.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="screen-slide">
+                <img src="/assets/img/screen3.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="screen-slide">
+                <img src="/assets/img/screen4.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="screen-slide">
+                <img src="/assets/img/screen1.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="screen-slide">
+                <img src="/assets/img/screen2.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="screen-slide">
+                <img src="/assets/img/screen3.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="screen-slide">
+                <img src="/assets/img/screen4.jpg" alt="" class="w-100" />
+              </div>
+            </div>
+          </div>
+          <!--showcase-slider end-->
+        </div>
+      </section>
+      <!--showcase-sec end-->
+
+      <section class="avl-sec">
+        <div class="container">
+          <div
+            class="avl-content wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <img src="/assets/img/avl.png" alt="" />
+            <p>
+              After launch, brand interaction across all social channels
+              increased. The brand went from having a few hundreds of thousands
+              of followers to over a million in just a few months.
+            </p>
+            <h3>available on</h3>
+            <ul class="download-links">
+              <li>
+                <a href="#" title=""
+                  ><img src="/assets/img/app1.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#" title=""
+                  ><img src="/assets/img/app2.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <!--avl-content end-->
+          <div class="avl-btm">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="shareon">
+                  <h3>Share:</h3>
+                  <ul>
+                    <li>
+                      <a href="#" title=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" title=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" title=""
+                        ><i class="fab fa-google-plus-g"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" title=""><i class="fab fa-tumblr"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" title=""><i class="fa fa-rss"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <!--shareon end-->
+              </div>
+              <div class="col-md-6">
+                <div class="liked-dv">
+                  <span class="liked"
+                    ><i class="lni lni-heart-filled"></i
+                  ></span>
+                  <span>18 Liked</span>
+                </div>
+                <!--liked-dv end-->
+              </div>
+            </div>
+          </div>
+          <!--avl-btm end-->
+        </div>
+      </section>
+      <!--avl-sec end-->
+
+      {% include footer/portfolio-v1.html %}
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>

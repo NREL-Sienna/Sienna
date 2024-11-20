@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body class="pf-horizontol">
+    <div class="wrapper">
+      <!--header end-->
+      {% include header/header-portfolio2.html %}
+
+      <div class="pt-linkss">
+        <ul id="menuMain">
+          {% for sections in page.section%}
+          <li data-menuanchor="{{sections.id}}" class="{{sections.class}}">
+            <a href="#{{sections.id}}" title="">{{sections.title}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!--list-menu end-->
+
+      <div id="pagepiling" class="dots-hidden">
+        <div class="section pp-scrollable sc-slide1" id="about">
+          <div class="slide-container">
+            <div class="fixed-bg gb-1"></div>
+            <div class="enter-btn">
+              <a href="17_portfolio_single_layout_1.html" title="">Enter</a>
+            </div>
+            <!--enter-btn end-->
+            <div class="container">
+              <div class="gb-content">
+                <div class="gb-title">
+                  <h2>
+                    <a href="17_portfolio_single_layout_1.html" title=""
+                      >ui/ux</a
+                    >
+                  </h2>
+                </div>
+                <div class="gb-img">
+                  <img src="/assets/img/gb1.png" alt="" />
+                </div>
+                <!--gb-img end-->
+              </div>
+            </div>
+            <span class="pager-count">1/3</span>
+          </div>
+        </div>
+
+        <div class="section pp-scrollable" id="services">
+          <div class="slide-container">
+            <div class="fixed-bg gb-2"></div>
+            <div class="enter-btn">
+              <a href="17_portfolio_single_layout_1.html" title="">Enter</a>
+            </div>
+            <!--enter-btn end-->
+            <div class="container">
+              <div class="gb-content">
+                <div class="gb-title">
+                  <h2>
+                    <a href="17_portfolio_single_layout_1.html" title=""
+                      >branding</a
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <span class="pager-count">2/3</span>
+          </div>
+        </div>
+        <div class="section pp-scrollable" id="why-choose-us">
+          <div class="slide-container">
+            <div class="fixed-bg gb-3"></div>
+            <div class="enter-btn">
+              <a href="17_portfolio_single_layout_1.html" title="">Enter</a>
+            </div>
+            <!--enter-btn end-->
+            <div class="container">
+              <div class="gb-content">
+                <div class="gb-title">
+                  <h2>
+                    <a href="17_portfolio_single_layout_1.html" title=""
+                      >motion</a
+                    >
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <span class="pager-count">3/3</span>
+          </div>
+        </div>
+      </div>
+      <!--page-pillinge-content end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>

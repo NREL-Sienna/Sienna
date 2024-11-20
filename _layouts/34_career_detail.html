@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-default.html %}
+
+      <section class="career-page">
+        <div class="container">
+          <div class="sv-title v2 text-center">
+            <span>job description</span>
+            <h2>{{page.title}}</h2>
+          </div>
+          <!--sv-title end-->
+          <div class="career-single">
+            <span class="job-type">{{page.tags}}</span>
+            <div class="cr-single-thumb">
+              <img src="/assets/img/cr-single.jpg" alt="" class="w-100" />
+            </div>
+            <!--cr-single-thumb end-->
+            <div class="cr-single-content">
+                {{content}}
+              <a
+                href="#"
+                title=""
+                class="btn-default box-shadow-none w-100 text-center"
+                >Send Your CV/Resume</a
+              >
+            </div>
+            <!--cr-single-content end-->
+          </div>
+          <!--career-single end-->
+        </div>
+      </section>
+      <!--career-page end-->
+      {% include footer/footer-team.html %}
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>

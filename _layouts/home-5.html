@@ -1,0 +1,266 @@
+---
+pagination:
+  enabled: true
+  collection: blog
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-blogger.html %}
+      <!--header-v5 end-->
+
+      {% include sidemenu.html %}
+      <!--responsive-menu end-->
+
+      <section class="main-banner-v5">
+        {% assign banner = page.banner%}
+        <div class="container">
+          <div class="main-banner-content">
+            <div
+              class="main-banner-txt wow fadeInLeft"
+              data-wow-duration="1000ms"
+              data-wow-delay="0ms"
+            >
+              <h2>{{banner.title}}</h2>
+              <p>{{banner.content}}</p>
+              {% assign button = banner.button %}
+              <a href="{{ button.link}}" title=""
+                ><i class="{{button.icon}}"></i>{{button.label }}</a
+              >
+            </div>
+            <!--main-banner-txt end-->
+            <div
+              class="ban-img wow fadeInUp"
+              data-wow-duration="1000ms"
+              data-wow-delay="0ms"
+            >
+              <img src="{{ banner.image}}" alt="" />
+            </div>
+            <!--ban-img end-->
+          </div>
+          <!--main-banner-content end-->
+        </div>
+      </section>
+      <!--main-banner-v5 end-->
+
+      <section class="main-content-v5">
+        <div class="container-fluid">
+          <div class="main-content-v5-sections">
+            <div class="container">
+              <div class="featured-posts-sec-v5">
+                <h3 class="sc-title">Featured Posts</h3>
+                <div class="featured-products-sec">
+                  <div class="row">
+                    <!---->
+                    {% for post in site.posts %}
+                    <!---->
+                    {% if post.featuredPost == true %}
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                      <div class="featured-product">
+                        <div class="featured-thumbnail">
+                          <img
+                            src="{{post.layout_image}}"
+                            alt=""
+                            class="w-100"
+                          />
+                        </div>
+                        <div class="featured-info">
+                          <h2>
+                            <a href="{{post.url}}" title="">{{post.title}}</a>
+                          </h2>
+                        </div>
+                        <!--featured-info end-->
+                      </div>
+                      <!--featured-product end-->
+                    </div>
+                    {% endif %} {% endfor %}
+                  </div>
+                </div>
+                <!--featured-products-sec end-->
+              </div>
+              <!--featured-posts-sec-v5 end-->
+              <div class="mile-posts-content">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="mile-pst-collection">
+                      {% for post in site.posts limit:7 %}
+                      <div class="mile-post">
+                        <div class="mile-post-thumbnail">
+                          <img
+                            src="{{post.layout_image}}"
+                            alt=""
+                            style="width: 270px"
+                          />
+                        </div>
+                        <div class="mile-post-info">
+                          <span class="posted-on"
+                            >{{ post.date | date_to_long_string: "ordinal", "US"
+                            }}</span
+                          >
+                          <h2>
+                            <a href="{{post.url}}" title="">{{post.title}}</a>
+                          </h2>
+                          <a href="#" title=""
+                            ><i class="lni lni-share"></i> Share</a
+                          >
+                        </div>
+                      </div>
+                      {% endfor %}
+                      <!--mile-post end-->
+                    </div>
+                    <!--mile-pst-collection end-->
+                    <div class="mile-pagination">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="/blog" aria-label="Next">
+                              NEXT <i class="lni lni-chevron-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <!--mile-pagination end-->
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mile-sidedar">
+                      {% include search.html %}
+                      <!--widget-search end-->
+                      <div class="widget widget-follow">
+                        <h3 class="widget-title">follow me</h3>
+                        <ul class="wd-follow">
+                          <li>
+                            <a href="#" title=""
+                              ><i class="lni lni-twitter-filled"></i>56K</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><i class="lni lni-facebook-filled"></i>26K</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><i class="lni lni-instagram-original"></i>66K</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><i class="lni lni-pinterest"></i>4.6K</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><i class="lni lni-youtube"></i>963</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <!--widget-follow end-->
+                      <div class="widget widget-popular-posts">
+                        <h3 class="widget-title">Popular posts</h3>
+                        <ul>
+                          {% for post in site.posts limit:4 %}
+                          <li class="wd-post">
+                            <span>1</span>
+                            <a href="{{post.url}}" title=""
+                              >{{post.title}}</a
+                            >
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                      <!--widget-popular-posts end-->
+                      {% include categories-widget.html %}
+                      <!--widget-categories end-->
+                      <div class="widget widget-instagram">
+                        <h3 class="widget-title">Instagram</h3>
+                        <div class="insta-head">
+                          <img src="assets/img/insta1.png" alt="" />
+                          <div class="insta-info">
+                            <h3><a href="#" title="">justina.amg</a></h3>
+                            <span>@justina.amg</span>
+                          </div>
+                          <a href="#" title="" class="follow">Follow</a>
+                        </div>
+                        <ul class="insta-count">
+                          <li><strong>256</strong> posts</li>
+                          <li><strong>4.7K</strong> followers</li>
+                          <li><strong>1.2K</strong> followings</li>
+                        </ul>
+                        <ul class="inst-imgs">
+                          <li>
+                            <a href="#" title=""
+                              ><img src="/assets/img/inst1.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><img src="/assets/img/inst2.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><img src="/assets/img/inst3.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><img src="/assets/img/inst4.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><img src="/assets/img/inst5.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#" title=""
+                              ><img src="/assets/img/inst6.jpg" alt=""
+                            /></a>
+                          </li>
+                        </ul>
+                        <!--inst-imgs end-->
+                      </div>
+                      <!--widget-instagram end-->
+                      <div class="widget widget-advertisement">
+                        <img src="/assets/img/ad-img.jpg" alt="" class="w-100" />
+                        <div class="wid-info">
+                          <span
+                            >5 days <br />
+                            4 nights</span
+                          >
+                          <h2><a href="#" title="">Santorini Resort</a></h2>
+                          <span class="limited-offer"
+                            >Limited offer from
+                            <small>July 7th - Jult 12</small></span
+                          >
+                          <strong>Best price: <span>$5000</span></strong>
+                        </div>
+                      </div>
+                      <!--widget-advertisement end-->
+                    </div>
+                    <!--mile-sidedar end-->
+                  </div>
+                </div>
+              </div>
+              <!--mile-posts-content end-->
+            </div>
+          </div>
+          <!--main-content-v5-sections end-->
+        </div>
+      </section>
+      <!--main-content-v5 end-->
+
+        {% include footer/footer-blogger.html %}
+      <!--footer-v5 end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>

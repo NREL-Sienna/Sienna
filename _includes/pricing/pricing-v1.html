@@ -1,0 +1,25 @@
+<section class="pricing-v10 service-v">
+  <div class="container">
+    <div class="title-v10 text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+      <h2>Plan suit for everyone </h2>
+    </div><!--title-v10 end-->
+    <div class="row prices-v10">
+      {% for pricing in site.data.pricing.service-pricing-v1 %}
+      <div class="col-lg-4 col-md-6">
+        <div class="price-v10">
+          <img src="{{pricing.image}}" alt="">
+          <h4>{{pricing.name}}</h4>
+          <h2><sup>$</sup> {{pricing.price}} <span>/ month</span></h2>
+          <ul>
+            <li>{{pricing.features}}</li>
+          </ul>
+          <a href="#" title="" class="btn-default-v10 v2">Get Started Now <i class="lni lni-chevron-right"></i></a>
+        </div><!--price-v10 end-->
+      </div>
+      {% endfor %}
+    </div>
+    <div class="text-center pl-btm">
+      <p>Know more about pricing details. <a href="#" title="">Check it now</a> </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-default.html %}
+      <section class="team-page">
+        <div class="container">
+          <div
+            class="sv-title text-center wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <span>{{page.title}}</span>
+            <h2>{{page.tagline}}</h2>
+          </div>
+          <!--sv-title end-->
+          <div class="row teams">
+            {% for team in site.data.team.members %}
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 full_width">
+              <div class="team-cl">
+                <img src="{{team.image}}" alt="" />
+                <div class="team-fig">
+                  <h3><a href="#" title="">{{team.name}}</a></h3>
+                  <span>Co-Founder</span>
+                </div>
+                <!--team-cl end-->
+                <ul class="social-ic">
+                  <li>
+                    <a href="{{team.link-twitter}}" title=""><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="{{team.link-fb}}" title=""><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="{{team.link-insta}}" title=""><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+                <!--social-ic end-->
+              </div>
+              <!--team-cl end-->
+            </div>
+            {% endfor %}
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 full_width">
+              <div
+                class="become-member wow fadeInUp"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+                <i class="lni lni-users"></i>
+                <h3><a href="33_career.html" title="">Become Our Member</a></h3>
+              </div>
+              <!--become-member end-->
+            </div>
+          </div>
+          <!--teams end-->
+        </div>
+      </section>
+      <!--team-page end-->
+      {% include footer/footer-team.html %}
+      <!--footer end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>

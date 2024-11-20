@@ -1,0 +1,55 @@
+# General Settings
+title: "Miles premium jekyll template"
+favicon: "/assets/img/favicon.png"
+name: "Miles."
+description: "Miles - Creative Website"
+
+# Logo
+logo_home_agency: /assets/img/logo8.png
+logo_home_studio: /assets/img/logo_13.png
+logo_home_freelancer: /assets/img/logo_8.png
+logo_home_developer: /assets/img/miles-developer.png
+logo_home_blogger: /assets/img/logo_2.png
+logo_home_startup: /assets/img/logo_12.png
+logo_home_coach: /assets/img/logo_3.png
+logo_home_marketingagency: /assets/img/logo_1.png
+logo_home_businessconsulting: /assets/img/miles-consulting.png
+logo_home_creativeagency: /assets/img/logo_1.png
+logo_home_creativeagency2: /assets/img/miles-agency-white.png
+logo_home_portfolio: /assets/img/logo_12.png
+logo_home_portfolio2: /assets/img/logo14.png
+logo_white: /assets/img/logo.png
+logo_dark: /assets/img/logo2.png
+logo_portfolio: /assets/img/logo13.png
+
+# Logo Pages
+logo_about_agency: /assets/img/logo2.png
+logo_about_business: /assets/img/logo.png
+logo_about_me: /assets/img/logo2.png
+
+# Contact info
+contact_settings:
+  phone_number: "+65-3002 56 56 376"
+  email: "miles.studio@gmail.com"
+  mailto: "mailto:miles.studio@gmail.com"
+  address1: "90 Fairground Rd, FL 3290, United States"
+
+
+# Footer info
+footer_settings:
+  copyright_text: "© 2022. All Rights Reserved"
+
+
+# Google analytics code
+google_analytics:
+  enable: false
+  key: "UA-664136761-1" # UA-664136761-1
+
+# Social urls
+social_settings:
+  twitter: http://www.twitter.com/tortoizthemes
+  medium: https://medium.com/tortoizthemes
+  dribbble: https://dribbble.com/tortoizthemes
+  github: https://github.com/tortoizthemes
+  facebook: https://www.facebook.com/tortoizthemes
+  instagram: https://www.instagram.com/tortoizthemes/

@@ -1,0 +1,44 @@
+<section class="testimonial-v4-sec v9">
+  <div class="container">
+    <div
+      class="title-v9 wow fadeInUp"
+      data-wow-duration="1000ms"
+      data-wow-delay="0ms"
+    >
+      {% assign testimonials = page.testimonials %}
+      <span>{{testimonials.title}}</span>
+      <h2>{{testimonials.subtitle}}</h2>
+    </div>
+    <!--title-v9 end-->
+    <div class="cl-slider-v4">
+      {% for testimonials in site.data.testimonials.testimonials-v3 %}
+      <div class="cl-slide">
+        <ul class="rating">
+          {% for i in (1..testimonials.rating) %}
+          <li><i class="lni lni-star-filled"></i></li>
+          {% endfor %}
+        </ul>
+        <span>{{ testimonials.rating}}.0 Rating</span>
+        <p>{{ testimonials.content}}</p>
+      </div>
+      {% endfor %}
+      <!--cl-slide end-->
+    </div>
+    <!--cl-slider-v4 end-->
+    <div class="cl-slide-thumbs">
+      {% for testimonials in site.data.testimonials.testimonials-v3 %}
+      <div class="cli-thumb">
+        <img src="{{ testimonials.image}}" alt="" />
+        <div class="col-info">
+          <h3>{{ testimonials.name}}</h3>
+          <span
+            >{{ testimonials.position}},
+            <strong>{{ testimonials.company}}.</strong></span
+          >
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!--cl-slide-thumbs end-->
+  </div>
+</section>

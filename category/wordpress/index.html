@@ -1,0 +1,10 @@
+---
+layout: categories-list
+cat_name: 'wordpress'
+---
+
+{% for post in site.categories['wordpress'] %}
+
+{% include blog-teaser.html %}
+
+{% endfor %}

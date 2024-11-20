@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper animsition">
+      {% include header/header-freelancer.html %}
+      <!--responsive-menu end-->
+
+      <section class="main-banner-v3">
+        {% assign banner = page.banner %}
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+              <div
+                class="banner-txt wow fadeInUp"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+                <h2>{{ banner.title }}</h2>
+                <span>{{ banner.sub_title }}</span>
+                <p>{{ banner.content }}</p>
+                <a href="{{ banner.link}}" title="" class="btn-default3"
+                  >{{banner.button}}</a
+                >
+              </div>
+              <!--banner-txt end-->
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div
+                class="banner-img wow zoomIn"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+                <img src="/assets/img/banner-img3.png" alt="" />
+              </div>
+              <!--banner-img end-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--main-banner-v3 end-->
+
+      <section class="vls-sections">
+        {% assign service_1 = page.service_1 %}
+        <!---->
+        {% assign service_2 = page.service_2 %}
+        <!---->
+        {% assign service_3 = page.service_3 %}
+        <div
+          class="mile-vl-sec wow fadeInUp"
+          data-wow-duration="1000ms"
+          data-wow-delay="0ms"
+        >
+          <div class="container">
+            <div class="mile-vl-sec-details">
+              <div class="mile-vl-dt">
+                <span class="vl-icon clr1"
+                  ><i class="{{ service_1.icon}}"></i
+                ></span>
+                <h3>
+                  <a
+                    href="{{service_1.link}}"
+                    title=""
+                    class="animsition-link"
+                    data-animsition-out-class="fade-out"
+                    >{{service_1.title}}</a
+                  >
+                </h3>
+                <p>{{service_1.content}}</p>
+                <a href="{{service_1.link}}" title="">See Project</a>
+              </div>
+              <!--mile-vl-dt end-->
+            </div>
+            <!--mile-vl-sec-details end-->
+          </div>
+        </div>
+        <!--mile-vl-sec end-->
+        <div
+          class="mile-vl-sec wow fadeInUp"
+          data-wow-duration="1000ms"
+          data-wow-delay="0ms"
+        >
+          <div class="container">
+            <div class="mile-vl-sec-details v2">
+              <div class="mile-vl-dt">
+                <span class="vl-icon clr2"
+                  ><i class="{{ service_2.icon}}"></i
+                ></span>
+                <h3>
+                  <a
+                    href="{{service_2.link}}"
+                    title=""
+                    class="animsition-link"
+                    data-animsition-out-class="fade-out"
+                    >{{service_2.title}}</a
+                  >
+                </h3>
+                <p>{{service_2.content}}</p>
+                <a href="{{service_2.link}}" title="">See Project</a>
+              </div>
+              <!--mile-vl-dt end-->
+              <div class="clearfix"></div>
+            </div>
+            <!--mile-vl-sec-details end-->
+          </div>
+        </div>
+        <!--mile-vl-sec end-->
+        <div
+          class="mile-vl-sec wow fadeInUp"
+          data-wow-duration="1000ms"
+          data-wow-delay="0ms"
+        >
+          <div class="container">
+            <div class="mile-vl-sec-details v3">
+              <div class="mile-vl-dt">
+                <span class="vl-icon clr3"
+                  ><i class="{{service_3.icon}}"></i
+                ></span>
+                <h3>
+                  <a
+                    href="{{service_3.link}}"
+                    title=""
+                    class="animsition-link"
+                    data-animsition-out-class="fade-out"
+                    >{{service_3.title}}</a
+                  >
+                </h3>
+                <p>{{service_3.content}}</p>
+                <a href="{{service_3.link}}" title="">See Project</a>
+              </div>
+              <!--mile-vl-dt end-->
+            </div>
+            <!--mile-vl-sec-details end-->
+          </div>
+        </div>
+        <!--mile-vl-sec end-->
+      </section>
+      <!--vls-sections end-->
+
+      <section class="clients-sec-v3">
+        {% assign partners = page.partners %}
+        <div class="container">
+          <div
+            class="section-title-v3 wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <h2>{{partners.title}}</h2>
+            <span>{{partners.content}}</span>
+          </div>
+
+          {% assign logo = partners.logo%}
+
+          <!--section-title end-->
+          <div class="client-works">
+            {% for logo in site.data.clients.clients-v3 %}
+            <div class="col-m-2">
+              <div class="cl-imag">
+                <img src="{{ logo.image}}" alt="" />
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <ul
+            class="counter-sec wow fadeInUp"
+            id="counter"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            {% for counting in page.counting %}
+            <li>
+              <div class="count-dv">
+                <h2 class="count">{{ counting.count}}</h2>
+                <span>{{counting.title}}</span>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+          <!--counter-sec end-->
+        </div>
+      </section>
+      <!--clients-sec-v3 end-->
+
+      <section class="works-v3-sec pb-0">
+        <div class="container">
+          <div class="section-title-v3">
+            {% assign works = page.works %}
+            <h2>{{works.title}}</h2>
+            <span>{{works.content}}</span>
+          </div>
+          <!--section-title end-->
+        </div>
+        <div class="work-projects">
+          <div class="container">
+            <div class="row work-slider">
+              <div class="col-lg-6">
+                <div class="work-slide">
+                  <img src="assets/img/pic2.jpg" alt="" />
+                  <div class="wkr-txt">
+                    <h3>
+                      <a
+                        href="17_portfolio_single_layout_1.html"
+                        title=""
+                        class="animsition-link"
+                        data-animsition-out-class="fade-out"
+                        >Faye Fo</a
+                      >
+                    </h3>
+                    <span>Interaction, Illustration</span>
+                  </div>
+                </div>
+                <!--work-slide end-->
+              </div>
+              <div class="col-lg-6">
+                <div class="work-slide">
+                  <img src="assets/img/pic3.jpg" alt="" />
+                  <div class="wkr-txt">
+                    <h3>
+                      <a
+                        href="17_portfolio_single_layout_1.html"
+                        title=""
+                        class="animsition-link"
+                        data-animsition-out-class="fade-out"
+                        >Taskly</a
+                      >
+                    </h3>
+                    <span>Branding, Illustration, Interaction</span>
+                  </div>
+                </div>
+                <!--work-slide end-->
+              </div>
+              <div class="col-lg-6">
+                <div class="work-slide">
+                  <img src="assets/img/pic2.jpg" alt="" />
+                  <div class="wkr-txt">
+                    <h3>
+                      <a
+                        href="17_portfolio_single_layout_1.html"
+                        title=""
+                        class="animsition-link"
+                        data-animsition-out-class="fade-out"
+                        >Faye Fo</a
+                      >
+                    </h3>
+                    <span>Interaction, Illustration</span>
+                  </div>
+                </div>
+                <!--work-slide end-->
+              </div>
+              <div class="col-lg-6">
+                <div class="work-slide">
+                  <img src="assets/img/pic3.jpg" alt="" />
+                  <div class="wkr-txt">
+                    <h3>
+                      <a
+                        href="17_portfolio_single_layout_1.html"
+                        title=""
+                        class="animsition-link"
+                        data-animsition-out-class="fade-out"
+                        >Taskly</a
+                      >
+                    </h3>
+                    <span>Branding, Illustration, Interaction</span>
+                  </div>
+                </div>
+                <!--work-slide end-->
+              </div>
+            </div>
+            <!--work-slider end-->
+          </div>
+        </div>
+        <!--work-projects end-->
+      </section>
+      <!--works-v3-sec end-->
+
+      <section class="testi-v3-sec">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-5">
+              <div class="testi-v3-slider">
+                {% for testimonials in site.data.testimonials.testimonials %}
+                <div
+                  class="testi-v3-slide {{ testimonials.class}}"
+                  id="{{ testimonials.id}}"
+                >
+                  <span class="t-icon"><i class="lni lni-quotation"></i></span>
+                  <p>{{ testimonials.content}}</p>
+                  <h3>{{ testimonials.name}}</h3>
+                  <span>{{ testimonials.designation }}</span>
+                </div>
+                {% endfor %}
+                <!--testi-v3-slide end-->
+              </div>
+              <!--testi-v3-slider end-->
+            </div>
+            <div class="col-lg-6 col-md-7">
+              <div class="testi-bg">
+                <img src="assets/img/testi-bg.png" alt="" />
+                <ul class="testi-thumbs">
+                  {% for testimonials in site.data.testimonials.testimonials %}
+                  <li
+                    data-tab="{{ testimonials.id}}"
+                    class="{{ testimonials.imag-class}} {{ testimonials.class}}"
+                  >
+                    <img src="{{ testimonials.image}}" alt="" />
+                  </li>
+                  {% endfor %}
+                </ul>
+                <!--testi-bg end-->
+              </div>
+              <!--test-bg end-->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-inquiry-sec">
+        {% assign call_to_action = page.call_to_action%}
+        <div class="container">
+          <div class="work-inquery">
+            <div class="inqu-text">
+              <h3>{{ call_to_action.title}}</h3>
+              <span>{{ call_to_action.content }}</span>
+            </div>
+            <div class="inq-btn">
+              <a href="{{ call_to_action.link}}" title="" class="btn-default3"
+                >{{ call_to_action.button}}</a
+              >
+            </div>
+          </div>
+          <!--work-inquery end-->
+        </div>
+      </section>
+      <!--work-inquiry-sec end-->
+
+      <section class="stay-touch-sec">
+        <div class="container">
+          <div
+            class="txh-text text-center wow fadeInUp"
+            data-wow-duration="1000ms"
+            data-wow-delay="0ms"
+          >
+            <h3>Stay Connected</h3>
+            <h4>San Francisco, CA</h4>
+            <h2>hello@crisdesign.co</h2>
+            <span>(+03) 456 - 8957 - 386</span>
+            <ul class="social-linkss">
+              <li>
+                <a href="#" title="" class="dribble"
+                  ><i class="lni lni-dribbble"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" title="" class="behance"
+                  ><i class="lni lni-behance-original"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" title="" class="instagram"
+                  ><i class="lni lni-instagram-original"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!--stay-touch-sec end-->
+        </div>
+      </section>
+      <!--stay-touch-sec end-->
+
+      {% include footer/footer-freelancer.html %}
+      <!--footer-v3 end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>

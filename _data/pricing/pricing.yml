@@ -1,0 +1,49 @@
+monthly:
+  - name: "Basic"
+    image: "/assets/img/p-icon1.png"
+    type: "Start for everyone"
+    price: "9.99"
+    features:
+      - Clean Design
+      - Responsive Layout
+
+  - name: "Premium"
+    image: "/assets/img/p-icon2.png"
+    type: "Start for team"
+    price: "29.99"
+    features:
+      - Clean Design
+      - Responsive Layout
+
+  - name: "Ultimate"
+    image: "/assets/img/p-icon3.png"
+    type: "Start for enterprise"
+    price: "69.99"
+    features:
+      - Clean Design
+      - Responsive Layout
+
+annual:
+  - name: "Basic"
+    image: "/assets/img/p-icon1.png"
+    type: "Start for everyone"
+    price: "9.99"
+    features:
+      - Clean Design
+      - Responsive Layout
+
+  - name: "Premium"
+    image: "/assets/img/p-icon2.png"
+    type: "Start for team"
+    price: "29.99"
+    features:
+      - Clean Design
+      - Responsive Layout
+
+  - name: "Ultimate"
+    image: "/assets/img/p-icon3.png"
+    type: "Start for enterprise"
+    price: "69.99"
+    features:
+      - Clean Design
+      - Responsive Layout

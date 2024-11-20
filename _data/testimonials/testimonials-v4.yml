@@ -1,0 +1,25 @@
+- name: "Edison Cavani"
+  image: "/assets/img/th1.jpg"
+  tag: "Product Management at Spotify"
+  content: "I don’t know what else to say, this is something that you
+    haven’t seen before. Unique design, lightweight, and
+    outstanding support. Milbase are always a pleasure to work!"
+- name: "Edison Cavani"
+  image: "/assets/img/th2.jpg"
+  tag: "Product Management at Spotify"
+  content: "I don’t know what else to say, this is something that you
+    haven’t seen before. Unique design, lightweight, and
+    outstanding support. Milbase are always a pleasure to work!"
+- name: "Edison Cavani"
+  image: "/assets/img/th3.jpg"
+  tag: "Product Management at Spotify"
+  content: "I don’t know what else to say, this is something that you
+    haven’t seen before. Unique design, lightweight, and
+    outstanding support. Milbase are always a pleasure to work!"
+
+- name: "Edison Cavani"
+  image: "/assets/img/th4.jpg"
+  tag: "Product Management at Spotify"
+  content: "I don’t know what else to say, this is something that you
+    haven’t seen before. Unique design, lightweight, and
+    outstanding support. Milbase are always a pleasure to work!"

@@ -1,0 +1,84 @@
+<header class="header-v7">
+  <div class="container">
+    <div class="header-v7-top">
+      <div class="logo-v7">
+        <a href="/" title=""><img src="{{site.data.settings.logo_home_coach}}" alt="" /></a>
+      </div>
+      <!--logo-v7 end-->
+      <button
+        class="nav-toggle-btn a-nav-toggle desktop-hide mobile-show ml-auto"
+      >
+        <span class="nav-toggle nav-toggle-sm">
+          <span class="stick stick-1"></span>
+          <span class="stick stick-2"></span>
+          <span class="stick stick-3"></span>
+        </span>
+      </button>
+    </div>
+    <!--header-v7-top end-->
+    <div class="header-v7-btm">
+      <ul class="social-links">
+        <li>
+          <a href="#" title=""><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#" title=""><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#" title=""><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#" title=""><i class="fab fa-youtube"></i></a>
+        </li>
+      </ul>
+      <!--social-links end-->
+      <nav>
+        <ul>
+          {% for item in site.data.navigation-menu.secondary.toc %}
+          <li>
+            <a href="#" title="">{{ item.title }}</a>
+            <ul>
+              {% for entry in item.subfolderitems %}
+              <li>
+                <a
+                  href="{{ entry.url }}"
+                  title="{{ entry.page }}"
+                  class="{% if item.url == page.url %}active{% endif %}"
+                  >{{ entry.page }}</a
+                >
+              </li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <!--nav end-->
+      <ul class="links-rt">
+        <li>
+          <a href="#" title="" class="searchh"
+            >Search <i class="lni lni-search-alt"></i
+          ></a>
+          <form class="search-form-field">
+            <input type="text" name="search" placeholder="Search Here..." />
+          </form>
+        </li>
+        <li>
+          <a href="#" title=""><i class="lni lni-cart"></i></a>
+          <span class="cart-count">2</span>
+        </li>
+      </ul>
+      <!--links-rt end-->
+      <button
+        class="nav-toggle-btn a-nav-toggle desktop-hide mobile-show ml-auto"
+      >
+        <span class="nav-toggle nav-toggle-sm">
+          <span class="stick stick-1"></span>
+          <span class="stick stick-2"></span>
+          <span class="stick stick-3"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+{% include sidemenu.html %}

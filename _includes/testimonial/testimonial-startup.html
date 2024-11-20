@@ -1,0 +1,70 @@
+<section class="testimonial-v6-sec">
+  {% assign testimonials = page.testimonials %}
+  <div class="container">
+    <div class="mile-title">
+      <h3>{{ testimonials.title }}</h3>
+    </div>
+    <!--mile-title end-->
+    <div class="testi-sec-v6">
+      <div class="testi-slider-v6">
+        {% for testimonials in site.data.testimonials.testimonials-v4 %}
+        <div class="testi-slide-v6">
+          <h3>{{testimonials.name}}</h3>
+          <span>{{testimonials.tag}}</span>
+          <p>{{testimonials.content}}</p>
+        </div>
+        <!--testi-slide-v6 end-->
+        {% endfor %}
+      </div>
+      <!--testi-slider-v6 end-->
+      <ul class="slider-thumb">
+        {% for testimonials in site.data.testimonials.testimonials-v4 %}
+        <li><img src="{{testimonials.image}}" alt="" /></li>
+        {% endfor %}
+      </ul>
+      <!-- slider-thumb end-->
+    </div>
+    <!--testi-sec-v6 end-->
+    <div class="mile-rtz-sec">
+      {% assign call_to_action = page.call_to_action %}
+      <div class="row">
+        <div class="col-lg-8 mile-pst-collection p-0 mw-100">
+          <div class="mile-post">
+            <div class="mile-post-thumbnail">
+              <img src="{{call_to_action.image}}" alt="" />
+            </div>
+            <div class="mile-post-info">
+              <span class="category">{{call_to_action.label}}</span>
+              <span class="posted-on">{{call_to_action.date}}</span>
+              <h2>
+                <a href="{{call_to_action.link}}" title=""
+                  >{{call_to_action.title}}</a
+                >
+              </h2>
+              <a href="#" title=""><i class="lni lni-share"></i> Share</a>
+            </div>
+          </div>
+          <!--mile-post end-->
+        </div>
+        <div class="col-lg-4">
+          <div class="newsletter-sc">
+            <h3>Newsletter</h3>
+            <p>Subscribe our newsletter to get update regularly</p>
+            <form>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+              />
+              <button type="submit">
+                <i class="lni lni-envelope"></i>
+              </button>
+            </form>
+          </div>
+          <!--newsletter-sc end-->
+        </div>
+      </div>
+    </div>
+    <!--mile-rtz-sec end-->
+  </div>
+</section>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include header/header-portfolio-masonry.html %}
+      <!--header-v8 end-->
+
+      <section class="portfolio-ms-page">
+        <div class="container-fluid">
+          <div class="sv-title v3 text-center">
+            {% assign banner = page.banner %}
+            <span>{{banner.sub_title}}</span>
+            <h2>{{banner.title}}</h2>
+          </div>
+          <!--sv-title end-->
+          <div class="options">
+            <div class="option-isotop">
+              <ul
+                id="filter"
+                class="option-set filters-nav text-center"
+                data-option-key="filter"
+              >
+                <li>
+                  <a data-option-value="*" class="selected">All Projects </a>
+                </li>
+                <li><a data-option-value=".ui-ux">UI/UX</a></li>
+                <li><a data-option-value=".branding">Branding</a></li>
+                <li><a data-option-value=".motion">Motion</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--options end-->
+          <div class="row ms-row">
+            <div class="masonary">
+              {% for images in site.data.portfolio.portfolio-masonry%}
+              <div class="col-lg-4 col-md-4 col-sm-6 {{images.class}}">
+                <div class="pt-item">
+                  <a href="{{ images.link}}" title="">
+                    <img src="{{images.image}}" alt="" />
+                  </a>
+                </div>
+                <!--pt-item end-->
+              </div>
+              {% endfor %}
+            </div>
+            <!--masonary end-->
+          </div>
+        </div>
+      </section>
+      <!--career-page end-->
+
+      {% include footer/footer-team.html %}
+      <!--footer end-->
+    </div>
+    <!--wrapper end-->
+
+    <script src="/assets/js/bundle.min.js"></script>
+  </body>
+</html>
