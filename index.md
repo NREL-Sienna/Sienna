@@ -3,8 +3,8 @@ layout: home-9
 
 ############################ Banner ##################################
 banner:
-  title: "Boost your business up to high level"
-  sub_title: "miles studio"
+  title: "The world's most advanced open-source power system modeling platform"
+  sub_title: "Sienna"
   content: "Like any great agency, we are only as good as the result we
     deliver of our recent work 😎"
   button:

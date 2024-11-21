@@ -47,9 +47,4 @@ google_analytics:
 
 # Social urls
 social_settings:
-  twitter: http://www.twitter.com/tortoizthemes
-  medium: https://medium.com/tortoizthemes
-  dribbble: https://dribbble.com/tortoizthemes
-  github: https://github.com/tortoizthemes
-  facebook: https://www.facebook.com/tortoizthemes
-  instagram: https://www.instagram.com/tortoizthemes/
+  github: https://github.com/nrel-sienna

@@ -5,32 +5,17 @@ toc:
       - page: About Agency
         url: /pages/about/about-agency.html
 
-      - page: About Business
-        url: /pages/about/about-business.html
-
-      - page: About Me
-        url: /pages/about/about-me.html
-
-  - title: Portfolio
+  - title: Applications
     subfolderitems:
-      - page: Portfolio Parallax
-        url: /portfolio/14_portfolio_parallax.html
 
-      - page: Portfolio Horizontol
-        url: /portfolio/15_portfolio_horizontal_scroll.html
+      - page: Sienna\Data
+        url: /index2.html
 
-      - page: Portfolio Masonary
-        url: /portfolio/16_portfolio_masonry.html
+      - page: Sienna\Ops
+        url: /index3.html
 
-      - page: Portfolio Single Layout V1
-        url: /portfolio/17_portfolio_single_layout_1.html
-
-      - page: Portfolio Single Layout V2
-        url: /portfolio/18_portfolio_single_layout_2.html
-
-      - page: Portfolio Single Layout V3
-        url: /portfolio/19_portfolio_single_layout_3.html
-
+      - page: Sienna\Dyn
+        url: /index4.html
 
   - title: News
     subfolderitems:
