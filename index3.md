@@ -9,8 +9,6 @@ banner:
   content: "You are a freelancer and you love dogs just like me! Let's
 shake hands, bro"
   image: "/assets/img/banner-img3.png"
-  button: "let’s chat!"
-  link: "https://tawk.to/chat/5d79cb089f6b7a4457e141f1/default"
 
 ########################## Service Sectioin #########################
 service_1:
