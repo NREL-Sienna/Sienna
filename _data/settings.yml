@@ -13,19 +13,19 @@ logo_home_blogger: /assets/img/logo_2.png
 logo_home_startup: /assets/img/logo_12.png
 logo_home_coach: /assets/img/logo_3.png
 logo_home_marketingagency: /assets/img/logo_1.png
-logo_home_businessconsulting: /assets/img/miles-consulting.png
+logo_home_businessconsulting: /assets/Sienna-logo-dark.png
 logo_home_creativeagency: /assets/img/logo_1.png
 logo_home_creativeagency2: /assets/img/miles-agency-white.png
 logo_home_portfolio: /assets/img/logo_12.png
 logo_home_portfolio2: /assets/img/logo14.png
-logo_white: /assets/img/logo.png
-logo_dark: /assets/img/logo2.png
+logo_white: /assets/Sienna-logo-white.png
+logo_dark: /assets/Sienna-logo-dark.png
 logo_portfolio: /assets/img/logo13.png
 
 # Logo Pages
-logo_about_agency: /assets/img/logo2.png
-logo_about_business: /assets/img/logo.png
-logo_about_me: /assets/img/logo2.png
+logo_about_agency: /assets/Sienna-logo-dark.png
+logo_about_business: /assets/Sienna-logo-white.png
+logo_about_me: /assets/Sienna-logo-dark.png
 
 # Contact info
 contact_settings:
@@ -37,7 +37,7 @@ contact_settings:
 
 # Footer info
 footer_settings:
-  copyright_text: "© 2022. All Rights Reserved"
+  copyright_text: "© 2024. All Rights Reserved"
 
 
 # Google analytics code
