@@ -170,7 +170,7 @@ section {
 }
 
 body {
-    font-family: DM Sans, sans-serif;
+    font-family: 'Gotham-Medium', 'Gotham-Book';
     color: #aeb4b6;
     font-size: 16px;
     font-weight: 400;
@@ -430,7 +430,7 @@ header .header-content .btn-default i {
 }
 
 .promo-primary-content p {
-    color: #999;
+    color: #282828;
     font-size: 18px;
     line-height: 34px;
     margin-bottom: 72px;
@@ -462,7 +462,7 @@ header .header-content .btn-default i {
 .square {
     width: 28.5rem;
     height: 28.5rem;
-    background: #5169fb;
+    background: #282828 !important;
     border-radius: 5rem;
     position: absolute;
     left: 0;
@@ -649,7 +649,7 @@ header .header-content .btn-default i {
 }
 
 .services-home .services-content .services-card-list .service-card.clr3:before {
-    background-color: #5169fb;
+    background-color: #282828;
 }
 
 .services-home .services-content .services-card-list .service-card:last-child {
@@ -1514,7 +1514,7 @@ header.v2 .header-content .nav-toggle-btn {
     font-size: 24px;
     line-height: 36px;
     font-style: italic;
-    font-family: Libre Baskerville, serif;
+    font-family: 'Gotham-Book', serif;
     margin-bottom: 38px;
 }
 
@@ -5517,7 +5517,7 @@ body.dark-v .slide-container {
     background-color: #4d4e52;
     padding: 2px 8px 4px;
     border-radius: 5px;
-    font-family: DM Sans, sans-serif;
+    font-family: 'Gotham-Book', DM Sans, sans-serif;
     margin-right: -5px;
 }
 
@@ -5613,7 +5613,7 @@ body.dark-v .slide-container {
     color: #fff;
     font-size: 30px;
     line-height: 46px;
-    font-family: DM Sans, sans-serif;
+    font-family: 'Gotham-Book', DM Sans, sans-serif;
     max-width: 900px;
 }
 
@@ -5686,7 +5686,7 @@ body.dark-v .slide-container {
 .testimonial-v4-sec .cl-slide-thumbs .cli-thumb .col-info > span {
     display: block;
     color: #8b8d90;
-    font-family: DM Sans, sans-serif;
+    font-family: 'Gotham-Book', DM Sans, sans-serif;
     font-size: 16px;
 }
 
@@ -5741,7 +5741,7 @@ body.dark-v .slide-container {
 .awards-v4-sec .awards-v4-content-sec .awd-infoo li > h4 {
     color: #fff;
     font-size: 18px;
-    font-family: DM Sans, sans-serif;
+    font-family: 'Gotham-Book', DM Sans, sans-serif;
     margin-bottom: 4px;
 }
 
@@ -6950,7 +6950,7 @@ body.dark-v .slide-container {
 
 .header-v8.v9 .header-content-v8 nav ul li a.active,
 .header-v8.v9 .header-content-v8 nav ul li a:hover {
-    color: #e7cca9;
+    color: #EB932F;
 }
 
 .header-v8.v9 .header-content-v8 nav ul ul li a {
@@ -6959,7 +6959,7 @@ body.dark-v .slide-container {
 
 .header-v8.v9 .header-content-v8 nav ul ul li a.active,
 .header-v8.v9 .header-content-v8 nav ul ul li a:hover {
-    color: #e7cca9;
+    color: #EB932F;
 }
 
 .header-v8.v9 .container {
@@ -7897,6 +7897,7 @@ body.dark-v .slide-container {
     position: relative;
     padding: 287px 0 322px;
     overflow: hidden;
+    padding-right: 100px;
 }
 
 .main-banner-v9:before {
@@ -7940,11 +7941,11 @@ body.dark-v .slide-container {
 }
 
 .banner-slider-v9 .slick-dots li.slick-active {
-    border-color: #e7cca9;
+    border-color: #EB932F;
 }
 
 .banner-slider-v9 .slick-dots li.slick-active button {
-    background-color: #e7cca9;
+    background-color: #EB932F;
 }
 
 .banner-slider-v9 .banner-slide-v9 > span {
@@ -7965,7 +7966,7 @@ body.dark-v .slide-container {
 
 .banner-slider-v9 .banner-slide-v9 > h2 > span {
     display: inline-block;
-    color: #e7cca9;
+    color: #EB932F;
 }
 
 .banner-slider-v9 .banner-slide-v9 p {
@@ -7977,8 +7978,8 @@ body.dark-v .slide-container {
 }
 
 .btn-default-v9 {
-    background-color: #e7cca9;
-    color: #0f2f65;
+    background-color: #EB932F;
+    color: #282828;
     font-size: 20px;
     height: 60px;
     line-height: 60px;
@@ -7989,17 +7990,17 @@ body.dark-v .slide-container {
 }
 
 .btn-default-v9:hover {
-    color: #0f2f65;
+    color: #282828;
 }
 
 .btn-default-v9.v2 {
-    background-color: #0f2f65;
-    color: #e7cca9;
+    background-color: #282828;
+    color: #EB932F;
 }
 
 .btn-default-v9.v2:hover {
-    background-color: #e7cca9;
-    color: #0f2f65;
+    background-color: #EB932F;
+    color: #282828;
 }
 
 .abt-v9-cntr {
@@ -8021,15 +8022,15 @@ body.dark-v .slide-container {
     width: 45px;
     height: 45px;
     line-height: 48px;
-    background-color: #0f2f65;
+    background-color: #282828;
     border-radius: 50%;
     text-align: center;
-    color: #e7cca9;
+    color: #EB932F;
     font-size: 18px;
 }
 
 .abt-v9-cntr .call-us-v9 h4 {
-    color: #0f2f65;
+    color: #282828;
     font-size: 14px;
     text-transform: uppercase;
     line-height: 20px;
@@ -8039,7 +8040,7 @@ body.dark-v .slide-container {
 }
 
 .abt-v9-cntr .call-us-v9 h3 {
-    color: #0f2f65;
+    color: #282828;
     font-size: 30px;
     padding-left: 40px;
 }
@@ -8060,7 +8061,7 @@ body.dark-v .slide-container {
 }
 
 .abt-v9-cntr .cl-ordr li > h3 {
-    color: #0f2f65;
+    color: #282828;
     font-size: 40px;
     margin-bottom: -2px;
 }
@@ -8116,14 +8117,14 @@ body.dark-v .slide-container {
 }
 
 .about-v9-content .about-v9-txt > span {
-    color: #0f2f65;
+    color: #282828;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
 }
 
 .about-v9-content .about-v9-txt > h2 {
-    color: #0f2f65;
+    color: #282828;
     font-size: 60px;
     line-height: 64px;
     margin-top: 25px;
@@ -8132,7 +8133,7 @@ body.dark-v .slide-container {
 
 .about-v9-content .about-v9-txt > h2 > span {
     display: inline-block;
-    color: #e7cca9;
+    color: #EB932F;
 }
 
 .about-v9-content .about-v9-txt p {
@@ -8153,9 +8154,9 @@ body.dark-v .slide-container {
     height: 50px;
     line-height: 50px;
     border-radius: 50%;
-    background-color: #e7cca9;
+    background-color: #EB932F;
     font-size: 18px;
-    color: #0f2f65;
+    color: #282828;
     margin-right: 11px;
     text-align: center;
     position: relative;
@@ -8169,7 +8170,7 @@ body.dark-v .slide-container {
     left: -4px;
     width: 56px;
     height: 56px;
-    background-color: #e7cca9;
+    background-color: #EB932F;
     opacity: 0.5;
     visibility: hidden;
     transform: scale(0.8);
@@ -8191,7 +8192,7 @@ body.dark-v .slide-container {
 
 .view-btn .vt {
     display: inline-block;
-    color: #0f2f65;
+    color: #282828;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
@@ -8202,7 +8203,7 @@ body.dark-v .slide-container {
 }
 
 .view-btn .vt:hover {
-    color: #e7cca9;
+    color: #EB932F;
 }
 
 .business-txt .view-btn.yellow .pl-btn:before {
@@ -8223,7 +8224,7 @@ body.dark-v .slide-container {
 
 .title-v9 > span {
     display: block;
-    color: #0f2f65;
+    color: #282828;
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 17px;
@@ -8231,14 +8232,14 @@ body.dark-v .slide-container {
 }
 
 .title-v9 > h2 {
-    color: #0f2f65;
+    color: #282828;
     line-height: 64px;
     font-size: 60px;
 }
 
 .title-v9 > h2 > span {
     display: inline-block;
-    color: #e7cca9;
+    color: #EB932F;
 }
 
 .services-v9 {
@@ -8284,18 +8285,18 @@ body.dark-v .slide-container {
     display: inline-block;
     width: 95px;
     height: 95px;
-    background-color: #e6cba9;
+    background-color: #EB932F;
     border-radius: 50%;
     text-align: center;
     line-height: 100px;
-    color: #0f2f65;
+    color: #282828;
     font-size: 42px;
     margin-bottom: 50px;
     transition: all 0.4s ease-in-out;
 }
 
 .services_v9 .service-v9 > h3 {
-    color: #0f2f65;
+    color: #282828;
     font-size: 30px;
     margin-bottom: 14px;
 }
@@ -8311,8 +8312,8 @@ body.dark-v .slide-container {
 }
 
 .services_v9 .service-v9:hover .s-icon {
-    background-color: #0f2f65;
-    color: #e6cba9;
+    background-color: #282828;
+    color: #EB932F;
 }
 
 .services_v9 .sv-text-v9 {
@@ -8320,7 +8321,7 @@ body.dark-v .slide-container {
 }
 
 .services_v9 .sv-text-v9 > h2 {
-    color: #0f2f65;
+    color: #282828;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -8365,7 +8366,7 @@ body.dark-v .slide-container {
 }
 
 .why-txt-v9 .us-svs .svs-icon i {
-    color: #0f2f65;
+    color: #282828;
     font-size: 60px;
 }
 
@@ -8377,7 +8378,7 @@ body.dark-v .slide-container {
 }
 
 .why-txt-v9 .us-svs .svs-info > h3 {
-    color: #0f2f65;
+    color: #282828;
     font-size: 24px;
     text-transform: capitalize;
     margin-bottom: 11px;
@@ -8413,12 +8414,12 @@ body.dark-v .slide-container {
 }
 
 .testimonial-v4-sec.v9 .cl-slider-v4 .cl-slide .rating li {
-    color: #e6cba9;
+    color: #EB932F;
     margin-right: 3px;
 }
 
 .testimonial-v4-sec.v9 .cl-slider-v4 .cl-slide > p {
-    color: #0f2f65;
+    color: #282828;
     font-size: 30px;
     font-weight: 600;
     line-height: 46px;
@@ -8429,7 +8430,7 @@ body.dark-v .slide-container {
 }
 
 .testimonial-v4-sec.v9 .cl-slide-thumbs .cli-thumb .col-info > h3 {
-    color: #0f2f65;
+    color: #282828;
 }
 
 .testimonial-v4-sec.v9 .cl-slide-thumbs .cli-thumb .col-info > span strong {
@@ -8437,7 +8438,7 @@ body.dark-v .slide-container {
 }
 
 .testimonial-v4-sec.v9 .cl-slide-thumbs .cli-thumb:before {
-    background-color: #0f2f65;
+    background-color: #282828;
 }
 
 .testimonial-v4-sec.v9 .cl-slide-thumbs {
@@ -8470,7 +8471,7 @@ body.dark-v .slide-container {
 }
 
 .footer-v9 {
-    background-color: #0f2f65;
+    background-color: #282828;
     padding: 140px 0 95px;
 }
 
@@ -8481,7 +8482,7 @@ body.dark-v .slide-container {
 }
 
 .footer-content-v9 .widget-title {
-    color: #e7cca9;
+    color: #EB932F;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -8537,7 +8538,7 @@ body.dark-v .slide-container {
 .footer-content-v9 .widget-links {
     max-width: calc(100% - 30px);
     padding-top: 43px;
-    border-top: 1px solid #e7cca9;
+    border-top: 1px solid #EB932F;
     margin-top: 3px;
 }
 
@@ -8557,12 +8558,12 @@ body.dark-v .slide-container {
 }
 
 .footer-content-v9 .widget-links .wd-links li a:hover {
-    color: #e7cca9;
+    color: #EB932F;
 }
 
 .footer-content-v9 .widget-newsletter {
     padding-top: 43px;
-    border-top: 1px solid #e7cca9;
+    border-top: 1px solid #EB932F;
     margin-top: 3px;
 }
 
@@ -13079,7 +13080,7 @@ footer.bg-white {
 
 .about-v4-sec.v11 {
     background-color: #fff;
-    font-family: DM Sans, sans-serif;
+    font-family: 'Gotham-Book', DM Sans, sans-serif;
     padding: 0 0 180px;
 }
 
@@ -15610,7 +15611,7 @@ header.v2.sticky .header-content nav ul ul {
 }
 
 .header-v8.v9.sticky {
-    background-color: #0f2f65 !important;
+    background-color: #282828 !important;
 }
 
 .header-v8.v9.sticky .header-content-v8 .chat-btn {
