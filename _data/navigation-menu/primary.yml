@@ -17,8 +17,14 @@ toc:
       - page: Sienna\Dyn
         url: /pages/applications/sienna_dyn.html
 
+  - title: Documentation
+    subfolderitems:
+
+    - page: Documentation
+      url: /SiennaDocs/docs/build/index.html
+
   - title: Getting Started
     subfolderitems:
 
       - page: Installation
-        url: /pages/sienna_install.html
+        url: /SiennaDocs/docs/build/how-to/install.html
