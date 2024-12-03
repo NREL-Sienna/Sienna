@@ -6,19 +6,46 @@
     <div class="wrapper">
       {% include header/header-default.html %}
 
+      <section class="service-page-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                class="sv-title wow fadeInUp"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+              {% assign banner = page.banner %}
+                <span>{{banner.title}}</span>
+                <h2>
+                  {{banner.sub_title}}
+                </h2>
+                <p>
+                  {{banner.content}}
+                </p>
+              </div>
+              <!--sv-title end-->
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="svss-img wow zoomIn"
+                data-wow-duration="1000ms"
+                data-wow-delay="0ms"
+              >
+                <img src={{page.img}} alt="" />
+              </div>
+              <!--svss-img end-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--service-page-banner end-->
+
       <section class="career-page">
         <div class="container">
-          <div class="sv-title v2 text-center">
-            <span>{{page.title}}</span>
-            <h2>{{page.tagline}}</h2>
-          </div>
           <!--sv-title end-->
           <div class="career-single">
             <span class="job-type">{{page.tags}}</span>
-            <div class="cr-single-thumb">
-              <img src={{page.img}} alt="" class="w-100"/>
-            </div>
-            <!--cr-single-thumb end-->
             <div class="cr-single-content">
                 {{content}}
               <a

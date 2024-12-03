@@ -1,7 +1,12 @@
 ---
 layout: info_page
-title: Simulation of power system dynamic response to disturbances and contingencies
 img: "/assets/Sienna-Dyn-logo.png"
+
+############################ Banner ##################################
+banner:
+  title: Sienna\Dyn
+  sub_title: "Simulate power system dynamic response to disturbances and contingencies"
+  content: Capture the fast dynamics of inverter-based resources
 ---
 
 ### Key Features

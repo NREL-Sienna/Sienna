@@ -1,7 +1,12 @@
 ---
 layout: info_page
-title: Efficient intake and use of energy systems input data
 img: "/assets/Sienna-Data-logo.png"
+
+############################ Banner ##################################
+banner:
+  title: Sienna\Data
+  sub_title: Efficiently input and use energy systems data
+  content: Exceptional performance for large data
 ---
 
 ### Key Features
