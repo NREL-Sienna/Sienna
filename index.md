@@ -1,5 +1,5 @@
 ---
-layout: home-9
+layout: home-sienna
 
 ############################ Banner ##################################
 banner:
