@@ -4,18 +4,12 @@
       <div class="container">
         <div class="sec-head">
           <h2>Testimonials</h2>
-          <span>What’s clients say about me</span>
+          <span>Why we use Sienna</span>
         </div>
         <!--sec-head end-->
         <div class="cl-slider-v4">
-          {% for testimonials in site.data.testimonials.testimonials-v3 %}
+          {% for testimonials in site.data.testimonials.testimonials-sienna %}
           <div class="cl-slide">
-            <ul class="rating">
-              {% for i in (1..testimonials.rating) %}
-              <li><i class="lni lni-star-filled"></i></li>
-              {% endfor %}
-            </ul>
-            <span>{{ testimonials.rating}}.0 Rating</span>
             <p>{{ testimonials.content}}</p>
           </div>
           {% endfor %}
@@ -23,7 +17,7 @@
         </div>
         <!--cl-slider-v4 end-->
         <div class="cl-slide-thumbs">
-          {% for testimonials in site.data.testimonials.testimonials-v3 %}
+          {% for testimonials in site.data.testimonials.testimonials-sienna %}
           <div class="cli-thumb">
             <img src="{{ testimonials.image}}" alt="" />
             <div class="col-info">

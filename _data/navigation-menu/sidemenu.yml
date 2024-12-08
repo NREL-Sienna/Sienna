@@ -1,36 +1,32 @@
 toc:
+
+  - title: About
+    subfolderitems:
+      - page: About Us
+        url: https://www.nrel.gov/analysis/sienna.html
+
   - title: Applications
     subfolderitems:
 
       - page: Sienna\Data
-        url: /index2.html
+        url: /pages/applications/sienna_data.html
 
       - page: Sienna\Ops
-        url: /index3.html
+        url: /pages/applications/sienna_ops.html
 
       - page: Sienna\Dyn
-        url: /index4.html
+        url: /pages/applications/sienna_dyn.html
 
-  - title: About
+  - title: Documentation
     subfolderitems:
-      - page: About Agency
-        url: /pages/about/about-agency.html
 
-  - title: Blogs
+    - page: Documentation
+      url: /SiennaDocs/docs/build/index.html
+
+  - title: Getting Started
     subfolderitems:
-      - page: Blog V1
-        url: /blog
 
-      - page: Blog V2
-        url: /blog-v2
+      - page: Installation
+        url: /SiennaDocs/docs/build/how-to/install.html
 
-      - page: Blog Single V1
-        url: /pages/blog-details-v1.html
 
-      - page: Blog Single V2
-        url: /pages/blog-details-v2.html
-
-  - title: Contact
-    subfolderitems:
-      - page: Contact V1
-        url: /pages/contact_1.html

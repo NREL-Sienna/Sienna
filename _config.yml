@@ -28,7 +28,16 @@ favicon:          "/assets/img/favicon.png"
 
 permalink: /blog/:title
 post_dirs: false
+
+highlighter: rouge
+# library used for syntax highlighting
+
 markdown: kramdown
+kramdown:
+ input: GFM
+ auto_ids: true
+ hard_wrap: false
+ syntax_highlighter: rouge
 
 plugins:
   - jekyll-feed

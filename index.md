@@ -1,12 +1,11 @@
 ---
-layout: home-9
+layout: home-sienna
 
 ############################ Banner ##################################
 banner:
   title: "The world's most advanced open-source power system modeling platform"
   sub_title: "Sienna"
-  content: "Like any great agency, we are only as good as the result we
-    deliver of our recent work 😎"
+  content: "a great model"
   button:
     link: "/"
     label: "Get Started"
