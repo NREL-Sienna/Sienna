@@ -9,13 +9,13 @@ toc:
     subfolderitems:
 
       - page: Sienna\Data
-        url: /pages/applications/sienna_data.html
+        url: ./pages/applications/sienna_data.html
 
       - page: Sienna\Ops
-        url: /pages/applications/sienna_ops.html
+        url: ./pages/applications/sienna_ops.html
 
       - page: Sienna\Dyn
-        url: /pages/applications/sienna_dyn.html
+        url: ./pages/applications/sienna_dyn.html
 
   - title: Documentation
     subfolderitems:
