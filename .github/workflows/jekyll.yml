@@ -33,16 +33,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # - uses: julia-actions/setup-julia@v1
-      #   with:
-      #     version: '1.6'
-      # - name: Install dependencies
-      #   run: julia --project=SiennaDocs/docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=joinpath(pwd(),"SiennaDocs"))); Pkg.instantiate()'
-      # - name: Build and deploy
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     DOCUMENTER_KEY: ${{ secrets.DOCUMENTER_KEY }}
-      #   run: julia --project=SiennaDocs/docs --color=yes SiennaDocs/docs/make.jl
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: '1.6'
+      - name: Install dependencies
+        run: julia --project=SiennaDocs/docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=joinpath(pwd(),"SiennaDocs"))); Pkg.instantiate()'
+      - name: Build and deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DOCUMENTER_KEY: ${{ secrets.DOCUMENTER_KEY }}
+        run: julia --project=SiennaDocs/docs --color=yes SiennaDocs/docs/make.jl
       - name: Setup Ruby
         uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
         with:
