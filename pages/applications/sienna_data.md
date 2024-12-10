@@ -1,6 +1,6 @@
 ---
 layout: info_page
-img: "assets/Sienna-Data-logo.png"
+img: "/assets/Sienna-Data-logo.png"
 
 ############################ Banner ##################################
 banner:

@@ -11,21 +11,21 @@ banner:
     label: "Get Started"
 ######################clients#################
 clients:
-  - image: "assets/img/pz1.png"
+  - image: "/assets/img/pz1.png"
     link: "/"
-  - image: "assets/img/pz2.png"
+  - image: "/assets/img/pz2.png"
     link: "/"
-  - image: "assets/img/3.png"
+  - image: "/assets/img/3.png"
     link: "/"
-  - image: "assets/img/pz4.png"
+  - image: "/assets/img/pz4.png"
     link: "/"
-  - image: "assets/img/pz5.png"
+  - image: "/assets/img/pz5.png"
     link: "/"
-  - image: "assets/img/pz6.png"
+  - image: "/assets/img/pz6.png"
     link: "/"
-  - image: "assets/img/pz7.png"
+  - image: "/assets/img/pz7.png"
     link: "/"
-  - image: "assets/img/pz8.png"
+  - image: "/assets/img/pz8.png"
     link: "/"
 
 ##################SERVICES##################
@@ -39,13 +39,13 @@ services:
   service:
     - title: "Branding"
       content: "We build and activate brands throung cultural insigh &, strategic vision."
-      icon: "assets/img/icon1.png"
+      icon: "/assets/img/icon1.png"
     - title: "Interaction"
       content: "We build and activate brands throung cultural insigh &, strategic vision."
-      icon: "assets/img/icon2.png"
+      icon: "/assets/img/icon2.png"
     - title: "Motion"
       content: "We build and activate brands throung cultural insigh &, strategic vision."
-      icon: "assets/img/icon3.png"
+      icon: "/assets/img/icon3.png"
 
 ##########################FEATURED PROJECTS#######################
 projects:
@@ -55,17 +55,17 @@ projects:
     title: "Ls. Boxes Package"
     subtitle: "Branding"
     link: "/"
-    image: "assets/img/pic21.png"
+    image: "/assets/img/pic21.png"
   service2:
     title: "Bynazo Finance Manage App"
     subtitle: "Interaction - Motion"
     link: "/"
-    image: "assets/img/pic23.png"
+    image: "/assets/img/pic23.png"
   service3:
     title: "Lewis Creative Agency"
     subtitle: "Interaction - Motion"
     link: "/"
-    image: "assets/img/pic22.png"
+    image: "/assets/img/pic22.png"
 
 ############### TESMONIALS#################
 tesmonials:

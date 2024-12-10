@@ -1,6 +1,6 @@
 # General Settings
 title: "Sienna"
-favicon: "assets/img/favicon.png"
+favicon: "/assets/img/favicon.png"
 name: "Sienna"
 description: "Sienna Platform"
 
