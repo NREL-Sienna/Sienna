@@ -20,10 +20,10 @@ copyright_text: "© 2024. All Rights Reserved"
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-baseurl: /PROJECT # the subpath of your site, e.g. /blog
-url: "https://nrel-sienna.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-favicon: "/assets/img/favicon.png"
+favicon:          "/assets/img/favicon.png"
 
 
 permalink: /blog/:title
@@ -45,7 +45,6 @@ plugins:
 
 gems:
   - jekyll-paginate
-  - jekyll-github-metadata
 
 paginate_path: "/blog/page:num/"
 
