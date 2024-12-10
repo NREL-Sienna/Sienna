@@ -1,31 +1,31 @@
 # General Settings
 title: "Sienna"
-favicon: "assets/img/favicon.png"
+favicon: "/assets/img/favicon.png"
 name: "Sienna"
 description: "Sienna Platform"
 
 # Logo
-logo_home_agency: assets/img/logo8.png
-logo_home_studio: assets/img/logo_13.png
-logo_home_freelancer: assets/img/logo_8.png
-logo_home_developer: assets/img/miles-developer.png
-logo_home_blogger: assets/img/logo_2.png
-logo_home_startup: assets/img/logo_12.png
-logo_home_coach: assets/img/logo_3.png
-logo_home_marketingagency: assets/img/logo_1.png
-logo_home_businessconsulting: assets/Sienna-logo-dark.png
-logo_home_creativeagency: assets/img/logo_1.png
-logo_home_creativeagency2: assets/img/miles-agency-white.png
-logo_home_portfolio: assets/img/logo_12.png
-logo_home_portfolio2: assets/img/logo14.png
-logo_white: assets/Sienna-logo-white.png
-logo_dark: assets/Sienna-logo-dark.png
-logo_portfolio: assets/img/logo13.png
+logo_home_agency: /assets/img/logo8.png
+logo_home_studio: /assets/img/logo_13.png
+logo_home_freelancer: /assets/img/logo_8.png
+logo_home_developer: /assets/img/miles-developer.png
+logo_home_blogger: /assets/img/logo_2.png
+logo_home_startup: /assets/img/logo_12.png
+logo_home_coach: /assets/img/logo_3.png
+logo_home_marketingagency: /assets/img/logo_1.png
+logo_home_businessconsulting: /assets/Sienna-logo-dark.png
+logo_home_creativeagency: /assets/img/logo_1.png
+logo_home_creativeagency2: /assets/img/miles-agency-white.png
+logo_home_portfolio: /assets/img/logo_12.png
+logo_home_portfolio2: /assets/img/logo14.png
+logo_white: /assets/Sienna-logo-white.png
+logo_dark: /assets/Sienna-logo-dark.png
+logo_portfolio: /assets/img/logo13.png
 
 # Logo Pages
-logo_about_agency: assets/Sienna-logo-dark.png
-logo_about_business: assets/Sienna-logo-white.png
-logo_about_me: assets/Sienna-logo-dark.png
+logo_about_agency: /assets/Sienna-logo-dark.png
+logo_about_business: /assets/Sienna-logo-white.png
+logo_about_me: /assets/Sienna-logo-dark.png
 
 # Contact info
 contact_settings:
