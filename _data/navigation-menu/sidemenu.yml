@@ -21,12 +21,12 @@ toc:
     subfolderitems:
 
     - page: Documentation
-      url: SiennaDocs/docs/build/index.html
+      url: /Sienna/SiennaDocs/docs/build/index.html
 
   - title: Getting Started
     subfolderitems:
 
       - page: Installation
-        url: SiennaDocs/docs/build/how-to/install
+        url: /Sienna/SiennaDocs/docs/build/how-to/install
 
 
