@@ -1,11 +1,11 @@
 ---
 layout: info_page
-img: "/assets/Sienna-Ops-logo.png"
+img: "assets/Sienna-Ops-logo.png"
 
 ############################ Banner ##################################
 banner:
   title: Sienna\Ops
-  sub_title: Simulate system scheduling with large shares of inverter-based resources 
+  sub_title: Simulate system scheduling with large shares of inverter-based resources
   content: Includes sequential problems for production cost modeling
 ---
 
