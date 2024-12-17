@@ -1,10 +1,32 @@
-<header>
-  <div class="container-fluid">
-    <div class="header-content d-flex flex-wrap align-items-center">
-      <div class="logo">
-        <a href="/Sienna/" title=""><img src="{{site.baseurl}}/assets/Sienna-logo-white.png" alt="" /></a>
+<header class="header-v6">
+  <div class="container">
+    <div class="header-content-v8">
+      <div class="logo-v8">
+        <a href="/Sienna/" title=""><img src="{{site.data.settings.logo_dark}}" alt=""></a>
       </div>
       <!--logo end-->
+            <nav>
+        <ul>
+          {% for item in site.data.navigation-menu.secondary.toc %}
+          <li>
+            <a href="#" title="">{{ item.title }}</a>
+            <ul>
+              {% for entry in item.subfolderitems %}
+              <li>
+                <a
+                  href="{{ entry.url }}"
+                  title="{{ entry.page }}"
+                  class="{% if item.url == page.url %}active{% endif %}"
+                  >{{ entry.page }}</a
+                >
+              </li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <!--nav end-->
       <div class="mile-right ms-auto">
         <button class="nav-toggle-btn a-nav-toggle ms-auto">
           <span class="nav-toggle-title">Menu</span>
