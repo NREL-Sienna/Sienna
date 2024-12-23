@@ -1,8 +1,9 @@
-# [The Sienna Documentation Hub](@id hub)
+# [Sienna Documentation Hub](@id hub)
 
 ```@meta
 CurrentModule = SiennaDocs
 ```
+## Quick Links
 
 | Sienna\Data | Sienna\Ops | Sienna\Dyn |
 | :----------- | :---------- | :---------- |
@@ -16,16 +17,16 @@ CurrentModule = SiennaDocs
 
 ## About
 
-The National Renewable Energy Laboratory's [Sienna ecosystem](https://www.nrel.gov/analysis/sienna.html)
+The National Renewable Energy Laboratory's [Sienna ecosystem](https://nrel-sienna.github.io/Sienna/)
 is a open source framework for scheduling problems and dynamic simulations for power systems.
 Sienna is a modular, extensible platform with three core applications enabled by multiple
 packages in the [`Julia`](http://www.julialang.org) programming language:
 
-  - [Sienna\Data](https://github.com/NREL-Sienna/Sienna?tab=readme-ov-file#siennadata) enables
+  - [Sienna\Data](https://nrel-sienna.github.io/Sienna/pages/applications/sienna_data.html) enables
     efficient data input, analysis, and transformation
-  - [Sienna\Ops](https://github.com/NREL-Sienna/Sienna?tab=readme-ov-file#siennaops) enables
+  - [Sienna\Ops](https://nrel-sienna.github.io/Sienna/pages/applications/sienna_ops.html) enables
     enables system scheduling simulations by formulating and solving optimization problems
-  - [Sienna\Dyn](https://github.com/NREL-Sienna/Sienna?tab=readme-ov-file#siennadyn) enables
+  - [Sienna\Dyn](https://nrel-sienna.github.io/Sienna/pages/applications/sienna_dyn.html) enables
     system transient analysis including small signal stability and full system dynamic
     simulations
 
