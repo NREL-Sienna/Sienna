@@ -4,7 +4,8 @@ using SiennaDocs
 
 pages = OrderedDict(
     "Sienna Documentation Hub" => "index.md",
-    "How-to" => Any["Install Sienna" => "how-to/install.md"],
+    "How-to" => Any["Install Sienna" => "how-to/install.md",
+        "Use Sienna in VSCode" => "how-to/use_vscode.md"],
     "Reference" => Any[ 
         "Developers" => ["Developer Guidelines" => "reference/developer_guidelines.md",]
     ],
