@@ -96,7 +96,7 @@ can continue to build out this troubleshooting guide for other users.
 
 ### `FMMPEG.jl` error
 
-If you get an error regarding `FMMPEG.jl` being missing when running
+If you get an error about building `FMMPEG.jl` (a dependency) when adding or running
 `using PowerGraphics.jl`, try uninstalling `PowerGraphics.jl`:
 
 ```julia
