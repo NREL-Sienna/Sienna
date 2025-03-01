@@ -6,31 +6,38 @@ resource1:
   title: Learn Julia
   sub_title: Prerequisite
   url: https://julialang.org/
-  content: Some familiarity with Julia is a prerequisite for Sienna.
-    Get started extensive learning resources on the Julia homepage.
+  content: Before diving into Sienna, get some familiarity with the Julia programming
+    language through their extensive learning resources.
 
 resource2:
+  title: Get the Code
+  sub_title: Sienna Codebase
+  url: https://github.com/NREL-Sienna
+  content: Visit the Sienna project on Github to access and contribute to
+    all the open-source software packages in the Sienna ecosystem.
+
+resource3:
   title: Read the Docs
   sub_title: Documentation
   url: /Sienna/SiennaDocs/docs/build/index.html
-  content: Visit the Sienna Documentation Hub for installation, tutorials,
-    and links to each package in Sienna's modular ecosystem. 
+  content: Access the Sienna Documentation Hub for installation, tutorials,
+    and links to documentation for each core Sienna package. 
 
-resource3:
+resource4:
   title: Watch Tutorials
   sub_title: YouTube
   url: https://www.youtube.com/@nrel-sienna
   content: See our YouTube channel for quick tutorial videos, webinars, and
     presentations showcasing Sienna at work.
 
-resource4:
+resource5:
   title: Ask Questions
   sub_title: Slack
   url: https://nrel-sienna.slack.com
   content: Join our active community on Slack to ask our developers questions and
     share your experience with other users.
 
-resource5:
+resource6:
   title: Work with Us
   sub_title: Collaborate
   url: mailto:sienna@nrel.gov
