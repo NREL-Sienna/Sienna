@@ -38,6 +38,13 @@ resource5:
     share your experience with other users.
 
 resource6:
+  title: Propose Features
+  sub_title: Discussion Board
+  url: https://github.com/orgs/NREL-Sienna/discussions
+  content: Have an idea of where you'd like Sienna to go? Propose and discuss new features
+    on Sienna's Github Discussions page.
+
+resource7:
   title: Work with Us
   sub_title: Collaborate
   url: mailto:sienna@nrel.gov
