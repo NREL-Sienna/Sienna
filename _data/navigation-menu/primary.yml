@@ -28,3 +28,6 @@ toc:
 
       - page: Installation
         url: SiennaDocs/docs/build/how-to/install.html
+
+      - page: Resources
+        url: /Sienna/pages/resources.html

@@ -29,4 +29,5 @@ toc:
       - page: Installation
         url: /Sienna/SiennaDocs/docs/build/how-to/install
 
-
+      - page: Resources
+        url: /Sienna/pages/resources.html
