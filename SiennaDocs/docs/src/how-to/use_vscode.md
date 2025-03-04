@@ -13,11 +13,11 @@ Start by completing the install steps for Julia and Sienna on the
 
 ### Step 2: Configure Julia in VSCode
 
- 1. Open **VSCode**, go to **Extensions** (`Ctrl+Shift+X`).
+ 1. Open **VSCode**, go to **Extensions** (`Ctrl+Shift+X` on Windows, `Cmd+Shift+X` on Mac).
  2. Search for and install the **Julia extension**.
  3. Set Julia's path:
     
-      + Open **Command Palette** (`Ctrl+Shift+P`).
+      + Open **Command Palette** (`Ctrl+Shift+P` on Windows, `Cmd+Shift+P` on Mac).
       + Search: `Settings` → `Julia: Executable Path`.
       + Provide the full path to your `julia` executable (`julia.exe` on Windows, `julia` on Mac and Linux).
 

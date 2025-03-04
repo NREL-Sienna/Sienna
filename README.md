@@ -22,9 +22,9 @@ bundle exec jekyll serve --livereload
 ```
 
 The website can be then viewed in a browser by navigating to:
-```
-localhost:4000/Sienna/
-```
+
+[localhost:4000/Sienna/](http://localhost:4000/Sienna/)
+
 
 ## Updating the `SiennaDocs` technical documentation
 

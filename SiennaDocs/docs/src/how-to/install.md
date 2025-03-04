@@ -75,7 +75,7 @@ Pkg.add(["PowerSystems", "PowerSimulations", "PowerGraphics", "PowerAnalytics"])
 
 ```julia
 using Pkg;
-Pkg.add(["PowerSystems", "PowerSimulationsDynamics", "PowerGraphics"]);
+Pkg.add(["PowerSystems", "PowerSimulationsDynamics", "PowerGraphics", "PowerAnalytics"]);
 ```
 
 These commands may take a few minutes to download the packages and compile them.
