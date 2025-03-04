@@ -19,7 +19,7 @@ Start by completing the install steps for Julia and Sienna on the
     
       + Open **Command Palette** (`Ctrl+Shift+P`).
       + Search: `Settings` → `Julia: Executable Path`.
-      + Provide the full path to your `julia.exe`.
+      + Provide the full path to your `julia` executable (`julia.exe` on Windows, `julia` on Mac and Linux).
 
 ### Step 3: Start Julia REPL in VSCode
 
