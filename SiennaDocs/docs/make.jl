@@ -18,6 +18,15 @@ pages = OrderedDict(
     "Sienna Documentation Hub" => "index.md",
     "How-to" => Any["Install Sienna" => "how-to/install.md",
         "Use Sienna in VSCode" => "how-to/use_vscode.md"],
+    "Tutorials" => Any[
+        "Sienna\\Ops" => Any[
+            "Production Cost Modeling" => Any[
+                "Getting Started" => "tutorials/pcm_1.md",
+                "Loading and Manipulating Data" => "tutorials/pcm_2.md",
+                "A Single Unit Commitment Problem" => "tutorials/pcm_3.md",
+                "Multi-Stage Production Cost Modeling" => "tutorials/pcm_4.md"
+            ],],
+    ],
     "Reference" => Any[ 
         "Developers" => ["Developer Guidelines" => "reference/developer_guidelines.md",]
     ],
@@ -33,5 +42,6 @@ makedocs(
     sitename = "Sienna Documentation Hub",
     authors = "Kate Doubleday",
     pages = Any[p for p in pages],
+    plugins = [links],
     draft = false,
 )
