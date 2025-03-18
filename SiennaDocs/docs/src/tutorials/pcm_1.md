@@ -19,7 +19,7 @@ Sienna\Ops: [`PowerSystems.jl`](https://nrel-sienna.github.io/PowerSystems.jl/st
 Before getting started, follow the [Sienna installation instructions](@ref install).
 
 In a Julia REPL, load the Sienna\Ops packages:
-```@repl pcm
+```@example pcm
 using PowerSystems
 using PowerSystemCaseBuilder
 using PowerSimulations
@@ -28,9 +28,10 @@ using PowerAnalytics
 # using PowerGraphics
 ```
 
-We will also need an optimization problem solver -- we'll use
+We will also need an optimization problem solver -- we'll install and use
 [`HiGHS.jl`](https://ergo-code.github.io/HiGHS/dev/interfaces/julia/), which is open-source:
-```@repl pcm
+```@example pcm
+using Pkg
 Pkg.add(["HiGHS"])
 using HiGHS
 ```
@@ -41,8 +42,7 @@ Sienna is under active development, so new breaking changes can cause errors.
 We ensure that this tutorial is reproducible using these Sienna\Ops package versions,
 which you can check using [`Pkg.status`](@extref) from Julia's package manager:
 
-```@repl pcm
-using Pkg
+```@example pcm
 Pkg.status()
 ```
 
