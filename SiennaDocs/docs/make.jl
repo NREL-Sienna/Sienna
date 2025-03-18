@@ -1,6 +1,18 @@
 using Documenter
 import DataStructures: OrderedDict
 using SiennaDocs
+using DocumenterInterLinks
+
+links = InterLinks(
+    "Pkg" => "https://pkgdocs.julialang.org/v1/",
+    "PowerSystems" => "https://nrel-sienna.github.io/PowerSystems.jl/stable/",
+    "PowerSimulations" => "https://nrel-sienna.github.io/PowerSimulations.jl/stable/",
+    "PowerAnalytics" => "https://nrel-sienna.github.io/PowerAnalytics.jl/stable/",
+    # todo change to stable
+    "PowerGraphics" => "https://nrel-sienna.github.io/PowerGraphics.jl/dev/",
+    # "PowerSystemCaseBuilder" => "https://nrel-sienna.github.io/PowerSystemCaseBuilder.jl/stable/",
+)
+
 
 pages = OrderedDict(
     "Sienna Documentation Hub" => "index.md",
