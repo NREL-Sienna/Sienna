@@ -14,6 +14,7 @@ Follow the instructions on [the Julia Downloads page](https://julialang.org/down
 Tips for Windows:
 
  1. Visit [Julia Downloads](https://julialang.org/downloads/platform/#windows).
+
  2. Download the **Windows installer** (`.exe`).
  3. Run the installer and follow these steps:
     

@@ -14,5 +14,4 @@ commitment decisions over a 24-hour window, with a 24-hour look ahead. This is a
 building block of a production cost model, our starting place on the way to solving a
 full, multi-stage production cost model on the next page.
 
-
 ## to do: should this be followed by an analysis and visualization page? So it's not so similar to what already in PSI?
