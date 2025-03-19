@@ -7,6 +7,12 @@ banner:
   title: Sienna\Dyn
   sub_title: "Simulate power system dynamic response to disturbances and contingencies"
   content: Capture the fast dynamics of inverter-based resources
+
+############################ Transition Badges ##################################
+badges:
+  content1: What makes Sienna\Dyn different?
+  content2: Is Sienna\Dyn right for your use case?
+  content3: How is Sienna\Dyn structured? 
 ---
 
 ### Key Features

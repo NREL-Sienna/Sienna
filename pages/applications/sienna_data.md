@@ -7,6 +7,52 @@ banner:
   title: Sienna\Data
   sub_title: Efficiently input and use energy systems data
   content: Exceptional performance for large data
+
+############################ Transition Badges ##################################
+badges:
+  content1: What makes Sienna\Data different?
+  content2: Is Sienna\Data right for your use case?
+  content3: How is Sienna\Data structured? 
+
+########################## How it Works #########################
+why_us:
+  title: "How It Works"
+  content: "Sienna\\Data has a modular framework with five core packages written in the Julia programming language.  Use whichever combination is right for your use case.Cell All packages are open-source, free to use, and have a command-line interface."
+
+tablist:
+  # tab item1
+  - name: "PowerSystems.jl"
+    icon: 
+    content: "The power horse of Sienna\\Data. Parse and format input data for consistent representation"
+    version: "v1"
+
+  # tab item2
+  - name: "PowerGraphics.jl"
+    icon: "lni lni-invention"
+    content: "Visualize data inputs and results"
+    link: "/"
+    version: "v2"
+
+  # tab item3
+  - name: "PowerNetwork Matrices.jl"
+    icon: "lni lni-money-protection"
+    content: "Build common power system matrices (Y bus, PTDF, LODF)"
+    link: "/"
+    version: "v3"
+
+  # tab item4
+  - name: "PowerSystems CaseBuilder.jl"
+    icon: "lni lni-headphone"
+    content: "Load test system and custom system data"
+    link: "/"
+    version: "v4"
+
+    # tab item5
+  - name: "PowerFlows.jl"
+    icon: "lni lni-headphone"
+    content: "Calculate simple power flows"
+    link: "/"
+    version: "v5"
 ---
 
 ### Key Features

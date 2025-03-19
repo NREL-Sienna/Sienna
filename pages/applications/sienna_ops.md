@@ -6,7 +6,13 @@ img: "/Sienna/assets/Sienna-Ops-info-page.png"
 banner:
   title: Sienna\Ops
   sub_title: Simulate system scheduling with large shares of inverter-based resources
-  content: Includes sequential problems for production cost modeling
+  content: Simulate sequential problems for production cost modeling
+
+############################ Transition Badges ##################################
+badges:
+  content1: What makes Sienna\Ops different?
+  content2: Is Sienna\Ops right for your use case?
+  content3: How is Sienna\Ops structured? 
 ---
 
 ### Key Features
