@@ -12,7 +12,43 @@ banner:
 badges:
   content1: What makes Sienna\Dyn different?
   content2: Is Sienna\Dyn right for your use case?
-  content3: How is Sienna\Dyn structured? 
+  content3: How is Sienna\Dyn structured?
+
+########################## How it Works #########################
+### Formatting from home11, there is a subtitle option available
+why_us:
+  title: "How It Works"
+  subtitle: 
+  content: "Sienna\\Dyn has a modular framework with four core packages written in the Julia programming language. Use whichever combination is right for your use case. All packages are open-source, free to use, and have a command-line interface. See the Sienna Documentation Hub for each package's documentation, general installation instructions, and tutorials."
+
+tablist:
+# tab item1
+  - name: "PowerSystemDynamics.jl"
+    icon: "lni lni-invention"
+    content: "Simulate small signal stability and electromagnetic transients"
+    link: "https://github.com/NREL-Sienna/PowerSimulationsDynamics.jl"
+    version: "v2"
+
+# tab item2
+  - name: "PowerSystems.jl"
+    icon: 
+    content: "Consistently represent data for devices' dynamic behavior"
+    link: "https://github.com/NREL-Sienna/PowerSystems.jl"
+    version: "v1"
+
+# tab item3
+  - name: "PowerFlows.jl"
+    icon: "lni lni-headphone"
+    content: "Calculate AC power flows"
+    link: "https://github.com/NREL-Sienna/PowerFlows.jl"
+    version: "v5"
+
+# tab item4
+  - name: "PowerGraphics.jl"
+    icon: "lni lni-invention"
+    content: "Visualize data inputs and results"
+    link: "https://github.com/NREL-Sienna/PowerGraphics.jl"
+    version: "v2"
 ---
 
 ### Key Features

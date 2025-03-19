@@ -13,6 +13,62 @@ badges:
   content1: What makes Sienna\Ops different?
   content2: Is Sienna\Ops right for your use case?
   content3: How is Sienna\Ops structured? 
+
+########################## How it Works #########################
+why_us:
+  title: "How It Works"
+  subtitle: 
+  content: "Sienna\\Ops has a modular framework with seven core packages written in the Julia programming language. Use whichever combination is right for your use case. All packages are open-source, free to use, and have a command-line interface. See the Sienna Documentation Hub for each package's documentation, general installation instructions, and tutorials."
+
+tablist:
+  # tab item1
+  - name: "PowerSimulations.jl"
+    icon: "lni lni-money-protection"
+    content: "Formulate and solve optimization problems to simulate system scheduling"
+    link: "https://github.com/NREL-Sienna/PowerSimulations.jl"
+    version: "v3"
+
+  # tab item2
+  - name: "StorageSystemsSimulations.jl"
+    icon: "lni lni-money-protection"
+    content: "Extend capabilties to simulate energy storage systems"
+    link: "https://github.com/NREL-Sienna/StorageSystemsSimulations.jl"
+    version: "v3"
+
+  # tab item3
+  - name: "HydroPowerSimulations.jl"
+    icon: "lni lni-money-protection"
+    content: "Extend capabilties to simulate hydropower generators"
+    link: "https://github.com/NREL-Sienna/HydroPowerSimulations.jl"
+    version: "v3"
+
+  # tab item4
+  - name: "PowerSystems.jl"
+    icon: 
+    content: "Consistently represent power system data, including time series"
+    link: "https://github.com/NREL-Sienna/PowerSystems.jl"
+    version: "v1"
+
+  # tab item5
+  - name: "PowerFlows.jl"
+    icon: "lni lni-headphone"
+    content: "Calculate DC and AC optimal power flows"
+    link: "https://github.com/NREL-Sienna/PowerFlows.jl"
+    version: "v5"
+
+  # tab item6
+  - name: "PowerAnalytics.jl"
+    icon: "lni lni-headphone"
+    content: "Analyze common metrics and compare results across scenarios"
+    link: "https://github.com/NREL-Sienna/PowerAnalytics.jl"
+    version: "v4"
+
+  # tab item7
+  - name: "PowerGraphics.jl"
+    icon: "lni lni-invention"
+    content: "Visualize data inputs and results"
+    link: "https://github.com/NREL-Sienna/PowerGraphics.jl"
+    version: "v2"
 ---
 
 ### Key Features

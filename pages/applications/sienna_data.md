@@ -17,42 +17,44 @@ badges:
 ########################## How it Works #########################
 why_us:
   title: "How It Works"
-  content: "Sienna\\Data has a modular framework with five core packages written in the Julia programming language.  Use whichever combination is right for your use case.Cell All packages are open-source, free to use, and have a command-line interface."
+  subtitle: 
+  content: "Sienna\\Data has a modular framework with five core packages written in the Julia programming language. Use whichever combination is right for your use case. All packages are open-source, free to use, and have a command-line interface. See the Sienna Documentation Hub for each package's documentation, general installation instructions, and tutorials."
 
 tablist:
   # tab item1
   - name: "PowerSystems.jl"
     icon: 
-    content: "The power horse of Sienna\\Data. Parse and format input data for consistent representation"
+    content: "Parse and format input data for consistent representation"
+    link: "https://github.com/NREL-Sienna/PowerSystems.jl"
     version: "v1"
 
   # tab item2
-  - name: "PowerGraphics.jl"
-    icon: "lni lni-invention"
-    content: "Visualize data inputs and results"
-    link: "/"
-    version: "v2"
+  - name: "PowerSystemsCaseBuilder.jl"
+    icon: "lni lni-headphone"
+    content: "Load test system and custom system data"
+    link: "https://github.com/NREL-Sienna/PowerSystemCaseBuilder.jl"
+    version: "v4"
 
   # tab item3
-  - name: "PowerNetwork Matrices.jl"
+  - name: "PowerNetworkMatrices.jl"
     icon: "lni lni-money-protection"
     content: "Build common power system matrices (Y bus, PTDF, LODF)"
-    link: "/"
+    link: "https://github.com/NREL-Sienna/PowerNetworkMatrices.jl"
     version: "v3"
 
   # tab item4
-  - name: "PowerSystems CaseBuilder.jl"
-    icon: "lni lni-headphone"
-    content: "Load test system and custom system data"
-    link: "/"
-    version: "v4"
-
-    # tab item5
   - name: "PowerFlows.jl"
     icon: "lni lni-headphone"
     content: "Calculate simple power flows"
-    link: "/"
+    link: "https://github.com/NREL-Sienna/PowerFlows.jl"
     version: "v5"
+
+  # tab item5
+  - name: "PowerGraphics.jl"
+    icon: "lni lni-invention"
+    content: "Visualize data inputs and results"
+    link: "https://github.com/NREL-Sienna/PowerGraphics.jl"
+    version: "v2"
 ---
 
 ### Key Features

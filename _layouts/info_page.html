@@ -1,153 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    <div class="wrapper">
-      {% include header/header-default.html %}
+<body>
+  <div class="wrapper">
+    {% include header/header-default.html %}
 
-      <section class="service-page-banner">
-        <div class="container">
+    <section class="service-page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="sv-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+              {% assign banner = page.banner %}
+              <span>{{banner.title}}</span>
+              <h2>
+                {{banner.sub_title}}
+              </h2>
+              <p>
+                {{banner.content}}
+              </p>
+            </div>
+            <!--sv-title end-->
+          </div>
+          <div class="col-lg-6">
+            <div class="svss-img wow zoomIn" data-wow-duration="1000ms" data-wow-delay="0ms">
+              <img src={{page.img}} alt="" />
+            </div>
+            <!--svss-img end-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--service-page-banner end-->
+
+    {% assign badges = page.badges %}
+    <section class="our-services-sec v10">
+      <div class="container">
+        <div class="our-services-content">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card-mile wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="0ms">
+                <img src="/Sienna/assets/img/icon_checklist_big.svg" alt="" />
+                <h2><a href="27_service_1.html" title="">Key Features</a></h2>
+                <p>{{badges.content1}}</p>
+                <a href="#" title="" class="cat-up">Learn More</a>
+              </div>
+              <!--service-card end-->
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card-mile wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
+                <img src="/Sienna/assets/img/icon_gear.svg" alt="" />
+                <h2><a href="27_service_1.html" title="">Core Capabilities</a></h2>
+                <p>{{badges.content2}}</p>
+                <a href="#" title="" class="cat-up">Learn More</a>
+              </div>
+              <!--service-card end-->
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-card-mile wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">
+                <img src="/Sienna/assets/img/icon_comp_mouse.svg" alt="" />
+                <h2><a href="#how_works" title="">How It Works</a></h2>
+                <p>{{badges.content3}}</p>
+                <a href="#how_works" title="" class="cat-up">Learn More</a>
+              </div>
+              <!--service-card end-->
+            </div>
+          </div>
+        </div>
+        <!--our-services-content end-->
+      </div>
+    </section>
+    <!--our-services-sec end-->
+
+    <section class="about-v4-sec v11 gray-bg">
+      <div class="container">
+        <a id="how_works" name="how_works"> </a>
+        {% assign why_us = page.why_us %}
+        <div class="about-v4-content">
           <div class="row">
             <div class="col-lg-6">
-              <div
-                class="sv-title wow fadeInUp"
-                data-wow-duration="1000ms"
-                data-wow-delay="0ms"
-              >
-              {% assign banner = page.banner %}
-                <span>{{banner.title}}</span>
-                <h2>
-                  {{banner.sub_title}}
-                </h2>
-                <p>
-                  {{banner.content}}
-                </p>
+              <div class="abt-list">
+                {% for tablist in page.tablist %}
+                <div class="abt-content">
+                  <h3><a href="{{ tablist.link }}", target="_blank" title="">{{tablist.name}}</a></h3>
+                  <a href="{{ tablist.link }}", target="_blank" title="">{{tablist.content}}</a>
+                </div>
+                {% endfor %}
               </div>
-              <!--sv-title end-->
+              <!--abt-list end-->
             </div>
             <div class="col-lg-6">
               <div
-                class="svss-img wow zoomIn"
+                class="abt-col-text wow fadeInUp"
                 data-wow-duration="1000ms"
                 data-wow-delay="0ms"
               >
-                <img src={{page.img}} alt="" />
-              </div>
-              <!--svss-img end-->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--service-page-banner end-->
-
-      {% assign badges = page.badges %}
-      <section class="our-services-sec v10">
-        <div class="container">
-          <div class="our-services-content">
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div
-                  class="service-card-mile wow fadeInLeft"
-                  data-wow-duration="1000ms"
-                  data-wow-delay="0ms"
+                <h2>{{ why_us.title}}</h2>
+                <h3>{{why_us.subtitle}}</h3>
+                <p>{{why_us.content}}</p>
+                <a
+                  href="/Sienna/SiennaDocs/docs/build/"
+                  target="_blank" 
+                  title=""
+                  class="btn-default"
+                  >Sienna Documentation Hub</a
                 >
-                  <img src="/Sienna/assets/img/icon_checklist_big.svg" alt="" />
-                  <h2><a href="27_service_1.html" title="">Key Features</a></h2>
-                  <p>{{badges.content1}}</p>
-                  <a href="#" title="" class="cat-up">Learn More</a>
-                </div>
-                <!--service-card end-->
               </div>
-              <div class="col-lg-4 col-md-6">
-                <div
-                  class="service-card-mile wow fadeInUp"
-                  data-wow-duration="1000ms"
-                  data-wow-delay="200ms"
-                >
-                  <img src="/Sienna/assets/img/icon_gear.svg" alt="" />
-                  <h2><a href="27_service_1.html" title="">Core Capabilities</a></h2>
-                  <p>{{badges.content2}}</p>
-                  <a href="#" title="" class="cat-up">Learn More</a>
-                </div>
-                <!--service-card end-->
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div
-                  class="service-card-mile wow fadeInRight"
-                  data-wow-duration="1000ms"
-                  data-wow-delay="400ms"
-                >
-                  <img src="/Sienna/assets/img/icon_comp_mouse.svg" alt="" />
-                  <h2><a href="#how_works" title="">How It Works</a></h2>
-                  <p>{{badges.content3}}</p>
-                  <a href="#how_works" title="" class="cat-up">Learn More</a>
-                </div>
-                <!--service-card end-->
-              </div>
-            </div>
+              <!--abt-col-text end-->
           </div>
-          <!--our-services-content end-->
         </div>
-      </section>
-      <!--our-services-sec end-->
+      </div>
+      <!--about-v4-content end-->
+  </div>
+  </section>
 
-      <section class="why-us-v8">
-        <div class="container">
-          <div
-            class="title-v8 text-center wow fadeInUp"
-            data-wow-duration="1000ms"
-            data-wow-delay="0ms"
-          >
-            {% assign why_us = page.why_us %}
-            <h2><a name="how_works" id="how_works">{{ why_us.title}}</a></h2>
-            <p>{{ why_us.content}}</p>
-          </div>
-          <!--title-v8 end-->
-          <div class="row fzt-row">
-            {% for tablist in page.tablist %}
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="our-fzt">
-                <h3>
-                  <a href="{{ tablist.link }}" title="">{{ tablist.name }}</a>
-                </h3>
-                <p>{{ tablist.content }}</p>
-                <span class="fzt-icon {{ tablist.version }}"
-                  ><i class="{{ tablist.icon }}"></i
-                ></span>
-              </div>
-              <!--our-fzt end-->
-            </div>
-            {% endfor %}
-          </div>
+  <section class="career-page">
+    <div class="container">
+      <!--sv-title end-->
+      <div class="career-single">
+        <span class="job-type">{{page.tags}}</span>
+        <div class="cr-single-content">
+          {{content}}
+          <a href="/Sienna/SiennaDocs/docs/build/how-to/install" title=""
+            class="btn-default box-shadow-none w-100 text-center">Get Started</a>
         </div>
-      </section>
-      <!--why-us-v8 end-->
-
-      <section class="career-page">
-        <div class="container">
-          <!--sv-title end-->
-          <div class="career-single">
-            <span class="job-type">{{page.tags}}</span>
-            <div class="cr-single-content">
-                {{content}}
-              <a
-                href="/Sienna/SiennaDocs/docs/build/how-to/install"
-                title=""
-                class="btn-default box-shadow-none w-100 text-center"
-                >Get Started</a
-              >
-            </div>
-            <!--cr-single-content end-->
-          </div>
-          <!--career-single end-->
-        </div>
-      </section>
-      <!--career-page end-->
-      {% include footer/footer-sienna.html %}
+        <!--cr-single-content end-->
+      </div>
+      <!--career-single end-->
     </div>
-    <!--wrapper end-->
+  </section>
+  <!--career-page end-->
+  {% include footer/footer-sienna.html %}
+  </div>
+  <!--wrapper end-->
 
-    <script src="{{site.baseurl}}/assets/js/bundle.min.js"></script>
-  </body>
+  <script src="{{site.baseurl}}/assets/js/bundle.min.js"></script>
+</body>
+
 </html>
