@@ -23,49 +23,49 @@ why_us:
 tablist:
   # tab item1
   - name: "PowerSimulations.jl"
-    icon: "lni lni-money-protection"
+    icon: "/Sienna/assets/img/icon_trajectory_org.svg"
     content: "Formulate and solve optimization problems to simulate system scheduling"
     link: "https://github.com/NREL-Sienna/PowerSimulations.jl"
     version: "v3"
 
   # tab item2
   - name: "StorageSystemsSimulations.jl"
-    icon: "lni lni-money-protection"
+    icon: "/Sienna/assets/img/icon_battery_org.svg"
     content: "Extend capabilties to simulate energy storage systems"
     link: "https://github.com/NREL-Sienna/StorageSystemsSimulations.jl"
     version: "v3"
 
   # tab item3
   - name: "HydroPowerSimulations.jl"
-    icon: "lni lni-money-protection"
+    icon: "/Sienna/assets/img/icon_hydro_org.svg"
     content: "Extend capabilties to simulate hydropower generators"
     link: "https://github.com/NREL-Sienna/HydroPowerSimulations.jl"
     version: "v3"
 
   # tab item4
   - name: "PowerSystems.jl"
-    icon: 
+    icon: "/Sienna/assets/img/icon_transmission_org.svg"
     content: "Consistently represent power system data, including time series"
     link: "https://github.com/NREL-Sienna/PowerSystems.jl"
     version: "v1"
 
   # tab item5
   - name: "PowerFlows.jl"
-    icon: "lni lni-headphone"
+    icon: "/Sienna/assets/img/icon_network_org.svg"
     content: "Calculate DC and AC optimal power flows"
     link: "https://github.com/NREL-Sienna/PowerFlows.jl"
     version: "v5"
 
   # tab item6
   - name: "PowerAnalytics.jl"
-    icon: "lni lni-headphone"
+    icon: "/Sienna/assets/img/icon_comp_$_org.svg"
     content: "Analyze common metrics and compare results across scenarios"
     link: "https://github.com/NREL-Sienna/PowerAnalytics.jl"
     version: "v4"
 
   # tab item7
   - name: "PowerGraphics.jl"
-    icon: "lni lni-invention"
+    icon: "/Sienna/assets/img/icon_graph_org.svg"
     content: "Visualize data inputs and results"
     link: "https://github.com/NREL-Sienna/PowerGraphics.jl"
     version: "v2"

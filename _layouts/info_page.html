@@ -82,7 +82,11 @@
               <div class="abt-list">
                 {% for tablist in page.tablist %}
                 <div class="abt-content">
-                  <h3><a href="{{ tablist.link }}", target="_blank" title="">{{tablist.name}}</a></h3>
+
+                  <h3>
+                    <img src={{tablist.icon}} alt="" />
+                    <a href="{{ tablist.link }}", target="_blank" title="">{{tablist.name}}</a>
+                  </h3>
                   <a href="{{ tablist.link }}", target="_blank" title="">{{tablist.content}}</a>
                 </div>
                 {% endfor %}
