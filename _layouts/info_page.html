@@ -33,44 +33,62 @@
     </section>
     <!--service-page-banner end-->
 
-    {% assign badges = page.badges %}
-    <section class="our-services-sec v10">
+    <section class="what-we-do-v2">
+      {% assign what_we_do = page.what_we_do%}
       <div class="container">
-        <div class="our-services-content">
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="service-card-mile wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="0ms">
-                <img src="/Sienna/assets/img/icon_checklist_big.svg" alt="" />
-                <h2><a href="27_service_1.html" title="">Key Features</a></h2>
-                <p>{{badges.content1}}</p>
-                <a href="#" title="" class="cat-up">Learn More</a>
-              </div>
-              <!--service-card end-->
+        <div
+          class="section-title-v2"
+        >
+          <h2>{{ what_we_do.title}}</h2>
+        </div>
+        <!--section-title-v2 end-->
+        <div class="what-we-do-content">
+          <div class="mile-sz">
+            <div class="row">
+                {% assign service_section1 = what_we_do.service_section1%}
+                <div
+                  class="sz-list mask-solid"
+                  data-wow-offset="30"
+                  data-wow-duration="0.2s"
+                  data-wow-delay=".3s"
+                >
+                  <h3>{{ service_section1.title}}</h3>
+                  <ul>
+                    {% for service_list in service_section1.service_list
+                    %}
+                    <li>
+                      <a>{{ service_list.service}}</a
+                      >
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                <!--sz-list end-->
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="service-card-mile wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
-                <img src="/Sienna/assets/img/icon_gear.svg" alt="" />
-                <h2><a href="27_service_1.html" title="">Core Capabilities</a></h2>
-                <p>{{badges.content2}}</p>
-                <a href="#" title="" class="cat-up">Learn More</a>
-              </div>
-              <!--service-card end-->
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="service-card-mile wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">
-                <img src="/Sienna/assets/img/icon_comp_mouse.svg" alt="" />
-                <h2><a href="#how_works" title="">How It Works</a></h2>
-                <p>{{badges.content3}}</p>
-                <a href="#how_works" title="" class="cat-up">Learn More</a>
-              </div>
-              <!--service-card end-->
+            <div class="row">
+                {% assign service_section3 = what_we_do.service_section3%}
+                <div
+                  class="sz-list mask-solid"
+                >
+                  <h3>{{ service_section3.title}}</h3>
+                  <ul>
+                    {% for service_list in service_section3.service_list
+                    %}
+                    <li>
+                      <a>{{ service_list.service}}</a>
+                    </li>
+                    {% endfor%}
+                  </ul>
+                </div>
+                <!--sz-list end-->
             </div>
           </div>
+          <!--mile-sz end-->
         </div>
-        <!--our-services-content end-->
+        <!--what-we-do-content end-->
       </div>
     </section>
-    <!--our-services-sec end-->
+    <!--what-we-do-v2 end-->
 
     <section class="about-v4-sec v11 gray-bg">
       <div class="container">
@@ -118,21 +136,6 @@
   </div>
   </section>
 
-  <section class="career-page">
-    <div class="container">
-      <!--sv-title end-->
-      <div class="career-single">
-        <span class="job-type">{{page.tags}}</span>
-        <div class="cr-single-content">
-          {{content}}
-          <a href="/Sienna/SiennaDocs/docs/build/how-to/install" title=""
-            class="btn-default box-shadow-none w-100 text-center">Get Started</a>
-        </div>
-        <!--cr-single-content end-->
-      </div>
-      <!--career-single end-->
-    </div>
-  </section>
   <!--career-page end-->
   {% include footer/footer-sienna.html %}
   </div>

@@ -14,6 +14,30 @@ badges:
   content2: Is Sienna\Dyn right for your use case?
   content3: How is Sienna\Dyn structured?
 
+  ########################## WHAT WE DO?#########################
+what_we_do:
+  title: Features and Capabilities
+  content: Things and stuff
+
+  service_section1:
+    title: "Key Features"
+    service_list:
+      - service: "Industry-standard models for synchronous machines, automatic voltage regulators, governors, and inverters"
+      - service: "Novel models, including synchronous machines, machine learning surrogates and aggregate distribution systems"
+      - service: "Exchangeable solvers from the scientific machine learning ecosystem"
+      - service: "Separation of models from the integration algorithms coupled with novel numerical techniques"
+
+  service_section3:
+    title: "Core Capabilities"
+    service_list:
+      - service: "Runs quasi-static, electromagnetic time domain simulations and small signal stability analysis"
+      - service: "Models novel and advanced inverter control methodologies "
+      - service: "Integrates with Sienna\\Ops to perform stability analyses of systems with high share of inverter-based resources"
+      - service: "Accelerates electromagnetic analysis of large interconnected systems by over 10×"
+      - service: "Runs electromagnetic simulations employing averaging techniques and modern integration methods"
+      - service: "Provides flexibility in choosing between precision and solution speed for distinct use cases and requirements"
+      - service: "Allows researchers to assess the numerical requirements for new control techniques for inverter-based generation"
+
 ########################## How it Works #########################
 ### Formatting from home11, there is a subtitle option available
 why_us:
@@ -57,20 +81,3 @@ tablist:
     link: "https://github.com/NREL-Sienna/PowerGraphics.jl"
     version: "v2"
 ---
-
-### Key Features
-
-- Incorporation of industry-standard models for synchronous machines, automatic voltage regulators, governors, and inverters as well as novel models, including synchronous machines, machine learning surrogates and aggregate distribution systems
-- Exchangeable solvers from the Scientific Machine Learning ecosystem
-- Separation of models from the integration algorithms coupled with novel numerical techniques
-
-### Core Capabilities
-
-- Runs quasi-static, electromagnetic time domain simulations and small signal stability analysis
-- Models novel and advanced inverter control methodologies
-- Integrates with the rest of Sienna to perform stability analyses of systems with high penetration of inverter-based resources
-- Accelerates the electromagnetic analysis of large interconnected systems by over 10×, employing advanced modeling and algorithmic innovations
-- Runs electromagnetic simulations of large interconnected systems employing averaging techniques and modern integration methods
-- Provides flexibility when making trade-offs between precision and solution speed for distinct use cases and requirements
-- Increases levels of control for modelers to arrive at conclusions about system stability within a required parameter of precision
-- Allows researchers to implement new control techniques for modern inverter-based generation and assess the numerical requirements of the proposed controls

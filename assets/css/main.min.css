@@ -1696,7 +1696,7 @@ header.v2 .header-content .nav-toggle-btn {
 }
 
 .what-we-do-v2 {
-    padding: 90px 0 160px;
+    padding: 90px 0 90px;
 }
 
 .what-we-do-v2 .what-we-do-content .wed-img {
@@ -1723,7 +1723,7 @@ header.v2 .header-content .nav-toggle-btn {
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 30px;
-    max-width: 190px;
+    max-width: 300px;
     text-transform: uppercase;
 }
 
@@ -1736,15 +1736,10 @@ header.v2 .header-content .nav-toggle-btn {
 }
 
 .what-we-do-v2 .what-we-do-content .sz-list ul li a {
-    text-transform: capitalize;
     display: block;
     font-weight: 500;
     color: #000;
     font-size: 18px;
-}
-
-.what-we-do-v2 .what-we-do-content .sz-list ul li a:hover {
-    color: #f59e31;
 }
 
 .what-we-do-v2 .what-we-do-content .sz-list ul li:before {
@@ -11325,7 +11320,7 @@ polygon.arrow-top {
 
 .service-page-banner {
     background-color: #eceff5;
-    padding: 265px 0 458px;
+    padding: 180px 0 180px;
 }
 
 .service-page-banner .sv-title {
@@ -13107,7 +13102,7 @@ footer.bg-white {
 .about-v4-sec.v11 {
     background-color: #fff;
     font-family: 'Gotham-Book', DM Sans, sans-serif;
-    padding: 0 0 180px;
+    padding: 90 0 90px;
 }
 
 .about-v4-sec.v11 .container {
@@ -17112,7 +17107,7 @@ header.header-v12.v13.pb .light-logo {
     }
 
     .about-v4-sec.v11 {
-        padding-bottom: 120px;
+        padding: 120 0 120px;
     }
 
     .about_me_content .about_txt {
@@ -18464,7 +18459,7 @@ header.header-v12.v13.pb .light-logo {
     }
 
     .about-v4-sec.v11 {
-        padding-bottom: 120px;
+        padding: 120 0 120px;
     }
 
     .why-us-v8.v11 .counter-sec-v6 {
