@@ -14,10 +14,9 @@ badges:
   content2: Is Sienna\Dyn right for your use case?
   content3: How is Sienna\Dyn structured?
 
-  ########################## WHAT WE DO?#########################
+########################## Features #########################
 what_we_do:
   title: Features and Capabilities
-  content: Things and stuff
 
   service_section1:
     title: "Key Features"
@@ -27,7 +26,7 @@ what_we_do:
       - service: "Exchangeable solvers from the scientific machine learning ecosystem"
       - service: "Separation of models from the integration algorithms coupled with novel numerical techniques"
 
-  service_section3:
+  service_section2:
     title: "Core Capabilities"
     service_list:
       - service: "Runs quasi-static, electromagnetic time domain simulations and small signal stability analysis"

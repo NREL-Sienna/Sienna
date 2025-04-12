@@ -66,13 +66,13 @@
                 <!--sz-list end-->
             </div>
             <div class="row">
-                {% assign service_section3 = what_we_do.service_section3%}
+                {% assign service_section2 = what_we_do.service_section2%}
                 <div
                   class="sz-list mask-solid"
                 >
-                  <h3>{{ service_section3.title}}</h3>
+                  <h3>{{ service_section2.title}}</h3>
                   <ul>
-                    {% for service_list in service_section3.service_list
+                    {% for service_list in service_section2.service_list
                     %}
                     <li>
                       <a>{{ service_list.service}}</a>

@@ -14,6 +14,26 @@ badges:
   content2: Is Sienna\Ops right for your use case?
   content3: How is Sienna\Ops structured? 
 
+########################## Features #########################
+what_we_do:
+  title: Features and Capabilities
+
+  service_section1:
+    title: "Key Features"
+    service_list:
+      - service: Rigorous simulation definitions
+      - service: Systematic, templated approach to optimization problems
+      - service: Modular and composable framework with game-changing extensibility
+
+  service_section2:
+    title: "Core Capabilities"
+    service_list:
+      - service: "Efficiently defines and solves new optimization problems"
+      - service: "Sequentially executes multiple problems with clear definitions of how decisions made in one step affect options in subsequent steps"
+      - service: "Minimizes compilation time and uses incumbent solutions from previous periods to guide the search for optimal results when modifying complex optimization problems to represent new time periods"
+      - service: "Enables reproducible simulations using Sienna\\Data's rigorous data models"
+      - service: "Allows for custom development to represent new ways of operating devices or entirely different decision processes"
+
 ########################## How it Works #########################
 why_us:
   title: "How It Works"
@@ -70,16 +90,3 @@ tablist:
     link: "https://github.com/NREL-Sienna/PowerGraphics.jl"
     version: "v2"
 ---
-
-### Key Features
-
-- Rigorous simulation definitions
-- Systematic, templated approach to optimization problems
-- Modular and composable framework
-
-### Core Capabilities
-
-* Sequential Execution of Multiple Problems: With clearly defined definitions that elucidate how decisions made in one step affect options in subsequent steps, Sienna\Ops supports configuration of simulations to represent different decision-making processes.
-- Efficient Definition of and Streamlined Solutions to New Optimization Problems: Sienna\Ops facilitates modification of complex optimization problems to represent new time periods, minimizing compilation time and allowing incumbent solutions from previous periods to guide the search for optimal results.
-- Scientifically Reproducible Simulations: Sienna\Ops' rigorous data models and dependable interfaces ensure that when users define a simulation, they can reproduce the exact same results tomorrow, next year, or whenever. This improves the scientific integrity of studies using Sienna and allows users to update simulations with new information as it comes to light.
-- Game-Changing Extensibility: Sienna\Ops allows for the development of new tools and models to represent new ways of operating devices, or entirely different decision processes or system.

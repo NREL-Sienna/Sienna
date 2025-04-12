@@ -12,7 +12,29 @@ banner:
 badges:
   content1: What makes Sienna\Data different?
   content2: Is Sienna\Data right for your use case?
-  content3: How is Sienna\Data structured? 
+  content3: How is Sienna\Data structured?
+
+########################## Features #########################
+what_we_do:
+  title: Features and Capabilities
+
+  service_section1:
+    title: "Key Features"
+    service_list:
+      - service: Comprehensive, extensible library of data structures for energy systems modeling
+      - service: Well-defined user interface
+      - service: Large-scale dataset development tools based on common text-based data formats (e.g., PSS/e .raw and .dyr, and MATPOWER .m) and configurable tabular data (e.g., CSV) parsing capabilities
+      - service: Optimized container for component data and time series
+
+  service_section2:
+    title: "Core Capabilities"
+    service_list:
+      - service: Efficient management of large quantities of time-series data, including time-series data for any device parameter
+      - service: Expanded access for more users to solve more problems as energy systems evolve
+      - service: Open-source sharing of publicly available data with a repository of 200+ data sets
+      - service: Optimized serialization of huge datasets into compressed file formats, allowing users to easily save and load  data
+      - service: Comprehensive validation rules for every parameter of every device
+      - service: Consistent representation of millions of devices with automatic crosschecking for data compatability
 
 ########################## How it Works #########################
 why_us:
@@ -56,18 +78,3 @@ tablist:
     link: "https://github.com/NREL-Sienna/PowerGraphics.jl"
     version: "v2"
 ---
-
-### Key Features
-
-- Comprehensive, extensible library of data structures for energy systems modeling
-- Well-defined user interface
-- Large-scale dataset development tools based on common text-based data formats (e.g., PSS/e .raw and .dyr, and MATPOWER .m) and configurable tabular data (e.g., CSV)
-parsing capabilities
-- Optimized container for component data and time series
-
-### Core Capabilities
-
-- Efficient Management of Large Quantities of Time-Series Data: Sienna\Data supports time series representations of any device parameters.
-- Expanded Access: Sienna\Data enables more users to solve more problems as energy systems evolve.
-- Optimized Serialization of Huge Datasets: Compressed file formats allow users to save vast quantities of energy systems data and read it easily.
-- Comprehensive Validation: Sienna\Data assigns a range of valid values for every parameter of every device the data describes, thereby automatically validating the values of each new representation of any device and then crosschecking its compatibility in the system, ultimately enabling consistent representation of millions of devices.
