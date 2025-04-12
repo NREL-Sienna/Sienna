@@ -5281,7 +5281,7 @@ header.v2 .header-content .nav-toggle-btn {
 .about-v4-sec .about-v4-content .abt-list .abt-content {
     position: relative;
     background-color: #2d2e31;
-    padding: 50px 60px;
+    padding: 25px 60px;
     margin-bottom: 10px;
     border-radius: 10px;
     transition: all 0.4s ease-in-out;
