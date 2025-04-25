@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+  <div class="wrapper">
+    {% include header/header-default.html %}
+
+    <section class="upcoming-events-sec">
+      {% assign events = page.events %}
+      <div class="container">
+        <div class="title-v9 text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+          <h2><span>{{events.section_title }}</h2>
+        </div>
+
+        <ul class="events-list">
+          {% for pub in page.publist %}
+          <li>
+            <div class="event-details">
+              <div class="event-date">
+                <span>{{pub.year}}</span>
+                <div class="get-ticket">
+                  <a href={{pub.applink}} title="" class="active">{{pub.app}}</a>
+                </div>
+              </div>
+              <div class="ms-project">
+                <div class="ms-info">
+                  <h3>
+                    <a href={{pub.url}} target="_blank" title=""
+                      >{{pub.title}}</a
+                    >
+                  </h3>
+                </div>
+              </div>
+              <!--ms-project end-->
+              <div class="event-location">
+                <span>{{pub.descriptor}}</span>
+                <h4>{{pub.venue}}</h4>
+              </div>
+              <!--event-location end-->
+
+            <!--event-details end-->
+          </li>
+          {% endfor %}
+        </ul>
+
+    </section>
+    <!--upcoming-events-sec end-->
+
+
+  {% include footer/footer-sienna.html %}
+  </div>
+  <!--wrapper end-->
+
+  <script src="{{site.baseurl}}/assets/js/bundle.min.js"></script>
+</body>
+
+</html>

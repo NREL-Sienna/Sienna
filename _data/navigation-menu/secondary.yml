@@ -31,3 +31,9 @@ toc:
 
       - page: Resources
         url: /Sienna/pages/resources.html
+
+  - title: Reference
+    subfolderitems:
+    
+      - page: Publications
+        url: /Sienna/pages/publications.html

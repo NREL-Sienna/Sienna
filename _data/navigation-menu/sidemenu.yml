@@ -16,6 +16,9 @@ toc:
 
       - page: Sienna\Dyn
         url: /Sienna/pages/applications/sienna_dyn.html
+      
+      - page: Publications
+        url: /Sienna/pages/publications.html
 
   - title: Documentation
     subfolderitems:
@@ -31,3 +34,9 @@ toc:
 
       - page: Resources
         url: /Sienna/pages/resources.html
+
+  - title: Reference
+    subfolderitems:
+
+      - page: Publications
+        url: /Sienna/pages/publications.html

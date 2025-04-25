@@ -6583,9 +6583,9 @@ body.dark-v .slide-container {
     flex-wrap: wrap;
     -ms-flex-align: center;
     align-items: center;
-    max-width: 580px;
-    -ms-flex: 0 0 580px;
-    flex: 0 0 580px;
+    max-width: 700px;
+    -ms-flex: 0 0 700px;
+    flex: 0 0 700px;
 }
 
 .events-list .event-details .ms-project > img {
@@ -6596,12 +6596,12 @@ body.dark-v .slide-container {
 .events-list .event-details .ms-project .ms-info {
     max-width: calc(100% - 75px);
     padding-left: 24px;
-    max-width: 330px;
+    max-width: 676px;
 }
 
 .events-list .event-details .ms-project .ms-info > h3 {
     color: #000;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .events-list .event-details .ms-project .ms-info > h3 a:hover {
@@ -6616,6 +6616,15 @@ body.dark-v .slide-container {
 }
 
 .events-list .event-details .event-location > h4 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 300px;
+    -ms-flex: 0 0 300px;
+    flex: 0 0 300px;
     color: #000;
     font-size: 18px;
 }
@@ -6629,7 +6638,6 @@ body.dark-v .slide-container {
     color: #000;
     font-size: 20px;
     font-weight: 700;
-    text-transform: uppercase;
     position: relative;
 }
 
@@ -6640,7 +6648,7 @@ body.dark-v .slide-container {
     left: 0;
     width: 0;
     height: 10px;
-    background-color: #ffd760;
+    background-color: #F3AB59;
     z-index: -1;
     transition: all 0.4s ease-in-out;
 }
