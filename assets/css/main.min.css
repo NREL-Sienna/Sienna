@@ -6596,7 +6596,8 @@ body.dark-v .slide-container {
 .events-list .event-details .ms-project .ms-info {
     max-width: calc(100% - 75px);
     padding-left: 24px;
-    max-width: 676px;
+    padding-right: 24px;
+    max-width: 700px;
 }
 
 .events-list .event-details .ms-project .ms-info > h3 {
