@@ -62,14 +62,28 @@ Sienna\Data, Sienna\Ops, and/or Sienna\Dyn, run:
 
 ```julia
 using Pkg;
-Pkg.add(["PowerSystems", "PowerNetworkMatrices", "PowerFlows", "PowerSystemCaseBuilder"]);
+Pkg.add([
+    "PowerSystems",
+    "PowerNetworkMatrices",
+    "PowerFlows",
+    "PowerSystemCaseBuilder",
+    "PowerGraphics",
+]);
 ```
 
 #### Install Sienna\Ops
 
 ```julia
 using Pkg;
-Pkg.add(["PowerSystems", "PowerSimulations", "PowerGraphics", "PowerAnalytics"]);
+Pkg.add([
+    "PowerSystems",
+    "PowerSimulations",
+    "StorageSystemsSimulations",
+    "HydroPowerSimulations",
+    "PowerFlows",
+    "PowerGraphics",
+    "PowerAnalytics",
+]);
 ```
 
 #### Install Sienna\Dyn
