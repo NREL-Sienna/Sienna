@@ -265,17 +265,17 @@
   <section class="blog-section-v7 v9">
     <div class="container">
       <div class="title-v9 text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
-        <span>publications</span>
-        <h2><span>Latest</span> Articles</h2>
+        <span><a href="pages/publications.html">publications</a></span>
+        <h2><span><a href="pages/publications.html">Latest</a></span> <a href="pages/publications.html">Articles</a></h2>
       </div>
       <!--title-v9 end-->
       <div class="blog-posts-v7">
         <div class="row">
-          {% for blog in site.blog limit: 3 %}
+          {% for blog in page.blog limit: 3 %}
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="blog-post-v7">
               <div class="blog-thumbnail">
-                <img src="{{blog.layout_image}}" alt="" class="w-100" />
+                <a href="{{blog.url}}" target="_blank"><img src="{{blog.layout_image}}" alt="" class="w-100" /></a>
               </div>
               <div class="blog-info">
                 <ul class="meta">
@@ -285,7 +285,7 @@
                   </li>
                 </ul>
                 <h2>
-                  <a href="{{blog.url}}" title="">{{blog.title}}</a>
+                  <a href="{{blog.url}}" target="_blank" title="">{{blog.title}}</a>
                 </h2>
               </div>
             </div>
