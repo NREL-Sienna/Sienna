@@ -7,6 +7,8 @@ using PowerSimulations
 using PowerAnalytics
 ```
 
+We'll start off by loading
+
 ## Loading a Test System
 
  5. Load in a version of the Reliability Test System with time-series for day-ahead modeling:
