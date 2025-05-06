@@ -1,11 +1,6 @@
 toc:
 
-  - title: About
-    subfolderitems:
-      - page: About Us
-        url: https://www.nrel.gov/analysis/sienna.html
-
-  - title: Applications
+  - title: Sienna Applications
     subfolderitems:
 
       - page: Sienna\Data
@@ -17,26 +12,22 @@ toc:
       - page: Sienna\Dyn
         url: /Sienna/pages/applications/sienna_dyn.html
       
-      - page: Publications
-        url: /Sienna/pages/publications.html
-
   - title: Documentation
     subfolderitems:
 
     - page: Documentation
       url: /Sienna/SiennaDocs/docs/build/index.html
 
-  - title: Getting Started
+  - title: Resources
     subfolderitems:
 
-      - page: Installation
-        url: /Sienna/SiennaDocs/docs/build/how-to/install
-
-      - page: Resources
+      - page: Learn and Contribute
         url: /Sienna/pages/resources.html
-
-  - title: Reference
-    subfolderitems:
 
       - page: Publications
         url: /Sienna/pages/publications.html
+
+  - title: About
+    subfolderitems:
+      - page: About Us
+        url: https://www.nrel.gov/analysis/sienna.html
