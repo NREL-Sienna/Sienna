@@ -6738,7 +6738,7 @@ body.dark-v .slide-container {
 
 .blog-post-v7 .blog-info > h2 {
     color: #000;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 36px;
     margin-bottom: 24px;
 }
@@ -8498,6 +8498,10 @@ body.dark-v .slide-container {
 
 .blog-section-v7.v9 .blog-post-v7 .blog-info > h2:hover {
     color: #e5caa8;
+}
+
+.blog-section-v7.v9 .title-v9 {
+    margin-bottom: 50px;
 }
 
 .footer-v9 {

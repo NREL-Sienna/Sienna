@@ -13,7 +13,7 @@ banner:
 ##################FEATURED POST################
 blog:
   - layout_image: "/Sienna/assets/img/NTP_2024.png"
-    title: "The National Transmission Planning Study (Chapters 3 and 4)"
+    title: "The National Transmission Planning Study (Ch. 3 and 4)"
     url: https://www.energy.gov/gdo/national-transmission-planning-study
 
   - layout_image: "/Sienna/assets/img/hybrids_2025.gif"
