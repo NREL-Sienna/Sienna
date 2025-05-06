@@ -36,10 +36,8 @@
     <section class="what-we-do-v2">
       {% assign what_we_do = page.what_we_do%}
       <div class="container">
-        <div
-          class="section-title-v2"
-        >
-          <h2>{{ what_we_do.title}}</h2>
+        <div class="title-v9 text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+            <h2><span>Features</span> and Capabilities</h2>
         </div>
         <!--section-title-v2 end-->
         <div class="what-we-do-content">
@@ -117,12 +115,14 @@
                 data-wow-duration="1000ms"
                 data-wow-delay="0ms"
               >
-                <h2>{{ why_us.title}}</h2>
+                <div class="title-v9 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+                  <h2>{{ why_us.title}}</h2>
+                </div>
                 <h3>{{why_us.subtitle}}</h3>
                 <p>{{why_us.content}}</p>
                 <a
                   href="/Sienna/SiennaDocs/docs/build/"
-                  target="_blank" 
+                  target="_blank"
                   title=""
                   class="btn-default"
                   >Sienna Documentation Hub</a
