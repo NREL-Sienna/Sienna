@@ -27,6 +27,9 @@ toc:
       - page: Publications
         url: /Sienna/pages/publications.html
 
+      - page: Citation
+        url: /Sienna/SiennaDocs/docs/build/reference/citing.html
+
   - title: About
     subfolderitems:
       - page: About Us
