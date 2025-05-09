@@ -7005,6 +7005,13 @@ body.dark-v .slide-container {
     margin-left: 225px;
 }
 
+.headeranchor{
+    display:block;
+    height:175px;
+    margin-top:-175px;
+    visibility:hidden;
+}
+
 .header-v8.v9:before {
     display: none;
 }
@@ -7921,7 +7928,7 @@ body.dark-v .slide-container {
 }
 
 .main-banner-v9 {
-    background-image: url(../img/decarbonized.jpg);
+    background-image: url(../img/62260.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -7930,6 +7937,16 @@ body.dark-v .slide-container {
     padding-right: 100px;
 }
 
+.main-banner-v9:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* 
 .main-banner-v9:before {
     content: "";
     position: absolute;
@@ -7939,7 +7956,7 @@ body.dark-v .slide-container {
     height: 1500px;
     background-image: url(../img/bg-shape1.png);
     background-repeat: no-repeat;
-}
+} */
 
 .banner-slider-v9 {
     max-width: 650px;
