@@ -8272,10 +8272,10 @@ body.dark-v .slide-container {
 .title-v9 > span {
     display: block;
     color: #282828;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     margin-bottom: 17px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .title-v9 > h2 {
@@ -8311,9 +8311,9 @@ body.dark-v .slide-container {
     position: absolute;
     top: 52px;
     right: 47px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #000;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     padding-bottom: 3px;
 }
@@ -11077,9 +11077,9 @@ polygon.arrow-top {
 
 .sv-title > span {
     display: block;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #999;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 47px;
 }
