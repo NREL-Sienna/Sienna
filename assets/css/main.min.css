@@ -7089,7 +7089,7 @@ body.dark-v .slide-container {
     color: #000;
     font-size: 14px;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .header-content-v8 nav ul li a:hover {
@@ -7149,7 +7149,7 @@ body.dark-v .slide-container {
     color: #000;
     font-size: 14px;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding-bottom: 11px;
     border-bottom: 1px solid #000;
 }
