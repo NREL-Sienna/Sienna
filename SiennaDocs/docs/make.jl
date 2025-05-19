@@ -43,5 +43,4 @@ makedocs(
     authors = "Kate Doubleday",
     pages = Any[p for p in pages],
     plugins = [links],
-    draft = true,
 )
