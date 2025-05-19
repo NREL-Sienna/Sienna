@@ -1,70 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    <div class="wrapper">
-      {% include header/header-default.html %}
+<body>
+  <div class="wrapper">
+    {% include header/header-default.html %}
 
-      <section class="service-page-banner">
-        <div class="container">
+    <section class="service-page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="sv-title wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+              {% assign banner = page.banner %}
+              <span>{{banner.title}}</span>
+              <h2>
+                {{banner.sub_title}}
+              </h2>
+              <p>
+                {{banner.content}}
+              </p>
+            </div>
+            <!--sv-title end-->
+          </div>
+          <div class="col-lg-6">
+            <div class="svss-img wow zoomIn" data-wow-duration="1000ms" data-wow-delay="0ms">
+              <img src={{page.img}} alt="" />
+            </div>
+            <!--svss-img end-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--service-page-banner end-->
+
+    <section class="what-we-do-v2">
+      {% assign what_we_do = page.what_we_do%}
+      <div class="container">
+        <div class="title-v9 text-center wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+            <h2><span>Features</span> and Capabilities</h2>
+        </div>
+        <!--section-title-v2 end-->
+        <div class="what-we-do-content">
+          <div class="mile-sz">
+            <div class="row">
+                {% assign service_section1 = what_we_do.service_section1%}
+                <div
+                  class="sz-list mask-solid"
+                  data-wow-offset="30"
+                  data-wow-duration="0.2s"
+                  data-wow-delay=".3s"
+                >
+                  <h3>{{ service_section1.title}}</h3>
+                  <ul>
+                    {% for service_list in service_section1.service_list
+                    %}
+                    <li>
+                      <a>{{ service_list.service}}</a
+                      >
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                <!--sz-list end-->
+            </div>
+            <div class="row">
+                {% assign service_section2 = what_we_do.service_section2%}
+                <div
+                  class="sz-list mask-solid"
+                >
+                  <h3>{{ service_section2.title}}</h3>
+                  <ul>
+                    {% for service_list in service_section2.service_list
+                    %}
+                    <li>
+                      <a>{{ service_list.service}}</a>
+                    </li>
+                    {% endfor%}
+                  </ul>
+                </div>
+                <!--sz-list end-->
+            </div>
+          </div>
+          <!--mile-sz end-->
+        </div>
+        <!--what-we-do-content end-->
+      </div>
+    </section>
+    <!--what-we-do-v2 end-->
+
+    <section class="about-v4-sec v11 gray-bg">
+      <div class="container">
+        <a id="how_works" name="how_works"> </a>
+        {% assign why_us = page.why_us %}
+        <div class="about-v4-content">
           <div class="row">
             <div class="col-lg-6">
-              <div
-                class="sv-title wow fadeInUp"
-                data-wow-duration="1000ms"
-                data-wow-delay="0ms"
-              >
-              {% assign banner = page.banner %}
-                <span>{{banner.title}}</span>
-                <h2>
-                  {{banner.sub_title}}
-                </h2>
-                <p>
-                  {{banner.content}}
-                </p>
+              <div class="abt-list">
+                {% for tablist in page.tablist %}
+                <div class="abt-content">
+
+                  <h3>
+                    <img src={{tablist.icon}} alt="" />
+                    <a href="{{ tablist.link }}", target="_blank" title="">{{tablist.name}}</a>
+                  </h3>
+                  <a href="{{ tablist.link }}", target="_blank" title="">{{tablist.content}}</a>
+                </div>
+                {% endfor %}
               </div>
-              <!--sv-title end-->
+              <!--abt-list end-->
             </div>
             <div class="col-lg-6">
               <div
-                class="svss-img wow zoomIn"
+                class="abt-col-text wow fadeInUp"
                 data-wow-duration="1000ms"
                 data-wow-delay="0ms"
               >
-                <img src={{page.img}} alt="" />
+                <div class="title-v9 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0ms">
+                  <h2>{{ why_us.title}}</h2>
+                </div>
+                <h3>{{why_us.subtitle}}</h3>
+                <p>{{why_us.content}}</p>
+                <a
+                  href="/Sienna/SiennaDocs/docs/build/"
+                  target="_blank"
+                  title=""
+                  class="btn-default"
+                  >Sienna Documentation Hub</a
+                >
               </div>
-              <!--svss-img end-->
-            </div>
+              <!--abt-col-text end-->
           </div>
         </div>
-      </section>
-      <!--service-page-banner end-->
+      </div>
+      <!--about-v4-content end-->
+  </div>
+  </section>
 
-      <section class="career-page">
-        <div class="container">
-          <!--sv-title end-->
-          <div class="career-single">
-            <span class="job-type">{{page.tags}}</span>
-            <div class="cr-single-content">
-                {{content}}
-              <a
-                href="/Sienna/SiennaDocs/docs/build/how-to/install"
-                title=""
-                class="btn-default box-shadow-none w-100 text-center"
-                >Get Started</a
-              >
-            </div>
-            <!--cr-single-content end-->
-          </div>
-          <!--career-single end-->
-        </div>
-      </section>
-      <!--career-page end-->
-      {% include footer/footer-sienna.html %}
-    </div>
-    <!--wrapper end-->
+  <!--career-page end-->
+  {% include footer/footer-sienna.html %}
+  </div>
+  <!--wrapper end-->
 
-    <script src="{{site.baseurl}}/assets/js/bundle.min.js"></script>
-  </body>
+  <script src="{{site.baseurl}}/assets/js/bundle.min.js"></script>
+</body>
+
 </html>

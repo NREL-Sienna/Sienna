@@ -1,3 +1,9 @@
+- name: "Jim Himelic"
+  position: "Founding Principal"
+  company: "First Principles Advisory"
+  content: "With its innovative data architecture and flexible modeling capabilities, Sienna has the potential to bridge the longstanding divide between planning and operations."
+  image: "assets/img/himelic_pic.jpg"
+
 - name: "Clayton Barrows, Ph.D."
   position: "Sienna Principal Investigator"
   company: "Researcher & Group Manager, NREL"
